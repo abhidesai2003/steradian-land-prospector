@@ -127,7 +127,9 @@ function addLayers() {
     paint: {
       "circle-color": C.magenta,
       "circle-radius": ["interpolate", ["linear"], ["sqrt", ["get", "mw"]], 2, 2, 40, 9],
-      "circle-opacity": 0.55, "circle-stroke-color": "rgba(255,255,255,0.35)", "circle-stroke-width": 0.5,
+      "circle-opacity": 0.55,
+      "circle-stroke-color": ["case", ["==", ["get", "new"], true], "#2fbf8a", "rgba(255,255,255,0.35)"],
+      "circle-stroke-width": ["case", ["==", ["get", "new"], true], 1.6, 0.5],
     },
   });
 
@@ -172,6 +174,7 @@ function hookPopups() {
     <div class="pp-r"><b>${p.net_count}</b> networks · <b>${p.carrier_count}</b> carriers · <b>${p.ix_count}</b> IXs</div>`);
   hoverPopup("queue", (p) => `
     <div class="pp-t">${esc(p.name)}</div>
+    ${p.new ? `<div class="pp-r" style="color:#2fbf8a"><b>NEW</b> in latest GIS report</div>` : ""}
     <div class="pp-r"><b>${fmt(Math.round(p.mw))} MW ${esc(p.cat)}</b> · ${esc(p.zone)} zone</div>
     <div class="pp-r">COD ${esc(p.cod || "TBD")} · ${esc(p.county)} Co. (county-level position)</div>
     <div class="pp-r">POI: ${esc(p.poi || "—")}</div>
@@ -200,12 +203,13 @@ function buildMarkers() {
   for (const f of feats) {
     const p = f.properties;
     const el = document.createElement("div");
-    el.className = "mk" + (p.kind === "signal" ? " signal" : "");
+    el.className = "mk" + (p.kind === "signal" ? " signal" : "") + (p.is_new ? " new" : "");
     el.innerHTML = `<div class="pin"></div>`;
     el.addEventListener("click", (ev) => { ev.stopPropagation(); selectSite(p.id, true); });
     el.addEventListener("mouseenter", () => {
       popup.setLngLat(f.geometry.coordinates)
         .setHTML(`<div class="pp-t">${esc(p.name)}</div>
+          ${p.is_new ? `<div class="pp-r" style="color:#2fbf8a"><b>NEW</b> · added ${esc(p.added)}</div>` : ""}
           <div class="pp-r">${p.kind === "listing" ? "FOR SALE" : "MARKET SIGNAL"} · score <b>${p.score}</b>/100</div>
           <div class="pp-r">${p.acres ? "<b>" + fmt(p.acres) + "</b> acres · " : ""}${p.power_mw ? "<b>" + fmtMW(p.power_mw) + "</b> · " : ""}${esc(p.county)} Co.</div>`)
         .addTo(map);
@@ -232,6 +236,7 @@ function statTiles() {
 
 function siteCard(p, sel) {
   const chips = [];
+  if (p.is_new) chips.push(`<span class="chip newchip">NEW</span>`);
   if (p.kind === "listing") chips.push(`<span class="chip gold">FOR SALE</span>`);
   else chips.push(`<span class="chip violet">SIGNAL</span>`);
   if (p.acres) chips.push(`<span class="chip">${fmt(p.acres)} ac</span>`);
@@ -268,9 +273,13 @@ function renderList() {
     .filter((p) => !q || (p.name + " " + p.county).toLowerCase().includes(q))
     .sort((a, b) => b.score - a.score).slice(0, 30);
 
+  const fresh = feats.filter((p) => p.is_new);
+  const rest = feats.filter((p) => !p.is_new);
   el.innerHTML =
-    `<div class="section-h">Marketed sites &amp; signals · ${feats.length}</div>` +
-    feats.map((p) => siteCard(p, state.selected === p.id)).join("") +
+    (fresh.length ? `<div class="section-h new-h">Newly added · ${fresh.length}</div>` +
+      fresh.map((p) => siteCard(p, state.selected === p.id)).join("") : "") +
+    `<div class="section-h">Marketed sites &amp; signals · ${rest.length}</div>` +
+    rest.map((p) => siteCard(p, state.selected === p.id)).join("") +
     `<div class="section-h">Top substation opportunities · grid-derived</div>` +
     subs.map(subCard).join("");
 
@@ -378,10 +387,10 @@ function proxRow(sw, label, val) {
 function openSiteDrawer(p) {
   const isListing = p.kind === "listing";
   const head = document.getElementById("drawer-head");
-  head.querySelector(".kind").textContent = isListing ? "For sale · powered land" : "Market signal";
-  head.querySelector(".kind").style.color = isListing ? "var(--gold-bright)" : "#b9aef0";
+  head.querySelector(".kind").textContent = (p.is_new ? "NEW · " : "") + (isListing ? "For sale · powered land" : "Market signal");
+  head.querySelector(".kind").style.color = p.is_new ? "var(--teal-bright)" : (isListing ? "var(--gold-bright)" : "#b9aef0");
   head.querySelector("h2").textContent = p.name;
-  head.querySelector(".loc").textContent = `${p.city || ""} · ${p.county} County · location ${p.precision}-level`;
+  head.querySelector(".loc").textContent = `${p.city || ""} · ${p.county} County · location ${p.precision}-level` + (p.is_new ? ` · added ${p.added}` : "");
 
   document.getElementById("drawer-body").innerHTML = `
     <div class="score-hero">
@@ -514,7 +523,9 @@ function initControls() {
 function updateStamp() {
   const s = state.data.summary;
   const el = document.getElementById("stamp");
-  if (el && s) el.textContent = `Data updated ${s.generated} · ${s.gis_report ? s.gis_report.replace("GIS_Report_", "ERCOT ") : ""} · auto-refreshing`;
+  if (!el || !s) return;
+  const fresh = s.new_sites ? ` · ${s.new_sites} new site${s.new_sites > 1 ? "s" : ""}` : "";
+  el.textContent = `Data updated ${s.generated} · ${s.gis_report ? s.gis_report.replace("GIS_Report_", "ERCOT ") : ""} · auto-refreshing${fresh}`;
 }
 
 function watchForUpdates() {

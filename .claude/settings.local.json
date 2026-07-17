@@ -79,7 +79,9 @@
       "Bash(git stash *)",
       "Bash(git pull *)",
       "Bash(git commit -q -m 'ci: deploy Pages directly from refresh-data \\(bot pushes don'\\\\''t retrigger workflows\\); rebrand to Steradian; live-update stamp + client polling *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('live data generated:', d['generated'], '| queue projects:', d['queue_projects'], '| listings:', d['listings_total']\\)\")",
+      "Bash(git commit -q -m 'feat: newly-added indicators — first-seen registry, NEW badges, green pulse markers, new-section in list, queue NEW flags *)"
     ]
   }
 }

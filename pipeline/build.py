@@ -21,6 +21,14 @@ from common import RAW, haversine_mi, load_json
 
 WEB = "web/data"
 
+# First-seen registry: stamps when each listing / queue project first appeared,
+# so the UI can flag newly added locations. Entries from the tracker's launch
+# baseline are never flagged.
+FIRST_SEEN_PATH = "pipeline/first_seen.json"
+BASELINE = "2026-07-16"
+NEW_LISTING_DAYS = 14
+NEW_QUEUE_DAYS = 35
+
 VOLT_CLASS_NOMINAL = {"100-161": 138, "220-287": 230, "345": 345, "500": 500}
 
 FUEL_NAMES = {"SOL": "Solar", "WIN": "Wind", "GAS": "Gas", "NUC": "Nuclear",
@@ -155,6 +163,20 @@ def prox_score(dist_mi, full_at, zero_at, max_pts):
 def main():
     d = load_all()
 
+    try:
+        first_seen = load_json(FIRST_SEEN_PATH)
+    except FileNotFoundError:
+        first_seen = {}
+    today = datetime.date.today()
+
+    def mark(kind, key):
+        """Record first sighting; return (date_first_seen, age_days)."""
+        k = f"{kind}:{key}"
+        if k not in first_seen:
+            first_seen[k] = today.isoformat()
+        seen = first_seen[k]
+        return seen, (today - datetime.date.fromisoformat(seen)).days
+
     # counties: name -> centroid, and rollup holder
     county = {}
     for f in d["counties"]:
@@ -218,11 +240,13 @@ def main():
             cat = FUEL_NAMES.get(fuel, "Other")
         cnames = [c.strip().lower() for c in (pr.get("county") or "").replace("/", ",").split(",") if c.strip()]
         c0 = next((c for c in cnames if c in county), None)
+        since, age = mark("queue", pr["inr"])
         item = {
             "inr": pr["inr"], "name": pr["name"], "mw": mw, "cat": cat,
             "fuel": fuel, "tech": tech, "county": pr.get("county"),
             "zone": pr.get("zone"), "cod": pr.get("cod"), "phase": pr.get("phase"),
             "poi": pr.get("poi"),
+            "new": since > BASELINE and age <= NEW_QUEUE_DAYS,
         }
         if c0:
             dx, dy = jitter(pr["inr"])
@@ -329,8 +353,11 @@ def main():
             momentum = min(100, momentum + 25)
         overall = round(0.42 * power + 0.23 * fiber_sc + 0.15 * scale + 0.20 * momentum)
 
+        added, age = mark("listing", L["id"])
         E = dict(L)
         E.update({
+            "added": added,
+            "is_new": added > BASELINE and age <= NEW_LISTING_DAYS,
             "nearest_sub": (ns["name"] or "Unnamed") if ns else None,
             "nearest_sub_kv": ns["kv"] if ns else None,
             "nearest_sub_mi": round(nsd, 1) if ns else None,
@@ -392,7 +419,7 @@ def main():
     qf = [{"type": "Feature",
            "geometry": {"type": "Point", "coordinates": [round(q["lon"], 5), round(q["lat"], 5)]},
            "properties": {k: q[k] for k in ("inr", "name", "mw", "cat", "county", "zone",
-                                            "cod", "phase", "poi")}}
+                                            "cod", "phase", "poi", "new")}}
           for q in queue if "lon" in q]
     w("queue.geojson", fc(qf))
 
@@ -439,6 +466,8 @@ def main():
         "queue_mw": round(sum(q["mw"] for q in queue)),
         "queue_by_cat": {},
         "queue_near_term_mw": round(sum(q["mw"] for q in queue if (q.get("cod") or "9999") <= "2027-12-31")),
+        "new_sites": sum(1 for L in listings if L["is_new"]),
+        "new_queue_n": sum(1 for q in queue if q["new"]),
         "fiber_facilities": len(fiber),
         "ix_total": len(d["ix"]),
         "plants_mw": round(sum(p["mw"] for p in plants)),
@@ -450,6 +479,10 @@ def main():
     for q in queue:
         summary["queue_by_cat"][q["cat"]] = round(summary["queue_by_cat"].get(q["cat"], 0) + q["mw"])
     w("summary.json", summary)
+
+    with open(FIRST_SEEN_PATH, "w") as f:
+        json.dump(first_seen, f, indent=0, sort_keys=True)
+    print(f"first-seen registry: {len(first_seen)} entries")
 
 
 if __name__ == "__main__":
