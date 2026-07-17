@@ -245,18 +245,18 @@
     {
       "id": "aeic-amarillo",
       "kind": "signal",
-      "name": "Advanced Energy & Intelligence Campus — Amarillo (5,800 ac)",
-      "county": "Potter/Randall",
+      "name": "Advanced Energy & Intelligence Campus — Amarillo (aka Project Matador/HyperGrid, ~7,570 ac)",
+      "county": "Carson (Pantex vicinity)",
       "city": "Near Amarillo",
-      "lat": 35.19, "lon": -101.7, "precision": "region",
-      "acres": 5800,
-      "power_mw": null,
-      "power_notes": "18M sq ft of data centers planned; gas, solar, wind and nuclear power mix.",
+      "lat": 35.31, "lon": -101.57, "precision": "region",
+      "acres": 7570,
+      "power_mw": 17000,
+      "power_notes": "Fermi America / Texas Tech University System campus on a 99-year ground lease; ~6GW of natural gas generation already TCEQ-permitted (Nov 2025) en route to a targeted 17GW total (11GW natural gas, 4.4GW nuclear, plus solar/battery); 18M sq ft of data centers planned.",
       "fiber_notes": null,
       "price": null,
-      "status": "Announced / in development",
+      "status": "In development (TCEQ preliminary approval for first 6GW clean natural gas facility, Nov 2025)",
       "broker": null,
-      "source": "https://www.blackridgeresearch.com/blog/largest-biggest-upcoming-new-data-centers-in-texas-united-states"
+      "source": "https://www.prnewswire.com/news-releases/worlds-largest-private-grid-fermi-america-to-file-additional-5gw-clean-air-permit-for-project-matador-with-the-texas-commission-on-environmental-quality-tceq-upsizing-campus-projections-to-17gw-of-private-power-302713405.html"
     },
     {
       "id": "blackmountain-bowie",
@@ -369,6 +369,54 @@
       "status": "Option agreement / under development and community negotiation (Jul 2026)",
       "broker": null,
       "source": "https://www.texastribune.org/2026/07/09/data-center-backlash-east-texas/"
+    },
+    {
+      "id": "medina-technology-park-tract",
+      "kind": "signal",
+      "name": "Tract — Medina Technology Park (265 ac, 500MW)",
+      "county": "Medina",
+      "city": "Near Castroville (west of San Antonio)",
+      "lat": 29.3527, "lon": -98.8797, "precision": "city",
+      "acres": 265,
+      "power_mw": 500,
+      "power_notes": "Shovel-ready data center campus off CR 4516/US-90W, served by Medina Electric Cooperative and East Medina County SUD; site energization targeted mid-2028; adjacent to an existing Microsoft campus in Castroville. One of three San Antonio-area Tract sites (with Caldwell County and a third location) totaling ~3,500 ac / 5,220MW across the region.",
+      "fiber_notes": null,
+      "price": null,
+      "status": "Acquired / in development",
+      "broker": null,
+      "source": "https://www.tract.com/project/medina-technology-park/"
+    },
+    {
+      "id": "newera-tcdc-ector",
+      "kind": "signal",
+      "name": "New Era Energy & Digital — TCDC Campus (Ector County, 438+54 ac, 1GW+)",
+      "county": "Ector",
+      "city": "Near Odessa",
+      "lat": 31.8457, "lon": -102.3676, "precision": "county",
+      "acres": 438,
+      "power_mw": 1000,
+      "power_notes": "Flagship hyperscale AI/HPC campus; 438 acres owned plus a 54-acre corridor pending; on-site natural gas-fired power generation with carbon capture (up to 250,000 metric tons CO2/yr); phased buildout toward 1+GW. Non-binding JV letter of intent with Stream Data Centers for development/financing announced Apr 2026.",
+      "fiber_notes": null,
+      "price": null,
+      "status": "In development (JV LOI with Stream Data Centers, Apr 1 2026; underwriters' option funding secured Apr 14 2026)",
+      "broker": null,
+      "source": "https://www.businesswire.com/news/home/20260401723659/en/New-Era-Energy-Digital-Partners-with-Stream-Data-Centers-for-Flagship-TCDC-Campus"
+    },
+    {
+      "id": "infrakey-lacylakeview",
+      "kind": "signal",
+      "name": "Infrakey — Lacy Lakeview Data District (520 ac, 925MW)",
+      "county": "McLennan",
+      "city": "Elm Mott/Ross area (north of Waco)",
+      "lat": 31.6799, "lon": -97.1489, "precision": "region",
+      "acres": 520,
+      "power_mw": 925,
+      "power_notes": "Public-private data center district formed with the City of Lacy Lakeview on farmland west of Elm Mott; includes a planned ~1.2GW gas-fired power plant; ~$10B projected investment. Facing active community opposition and an annexation/jurisdiction dispute with the City of Waco.",
+      "fiber_notes": null,
+      "price": null,
+      "status": "Announced / in development; community and jurisdictional disputes ongoing as of Jun 2026",
+      "broker": null,
+      "source": "https://fortune.com/2026/06/16/ai-data-center-texas-lacy-lakeview-ross/"
     }
   ]
 }
