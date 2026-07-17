@@ -1,5 +1,5 @@
 {
-  "compiled": "2026-07-16",
+  "compiled": "2026-07-17",
   "note": "Publicly marketed powered-land listings and market signals compiled from broker pages, press releases, and news coverage. Coordinates are approximate (city/county-level) unless precision says 'exact'. Prices shown only where publicly stated.",
   "sites": [
     {
@@ -305,6 +305,70 @@
       "status": "Operating / expanding",
       "broker": null,
       "source": "https://trerc.tamu.edu/blog/the-helios-story-from-bitcoin-mine-to-data-center/"
+    },
+    {
+      "id": "stream-graham-plugpower",
+      "kind": "signal",
+      "name": "Stream Data Centers — Graham Project (ex-Plug Power, 164MW interconnect)",
+      "county": "Young",
+      "city": "Graham",
+      "lat": 33.1071, "lon": -98.5906, "precision": "city",
+      "acres": null,
+      "power_mw": 164,
+      "power_notes": "Plug Power sold its Graham, TX land and associated 164MW of grid interconnection assets to Stream Data Centers for up to $76.5M ($50M at closing, up to $26.5M tied to confirmed load capacity in the final Texas utility interconnection agreement).",
+      "fiber_notes": null,
+      "price": "$76,500,000 (up to)",
+      "status": "Sale agreement signed; closing expected on/about Jul 31, 2026",
+      "broker": null,
+      "source": "https://www.globenewswire.com/news-release/2026/07/13/3326068/0/en/plug-power-announces-sale-of-graham-texas-project-and-staged-closing-of-new-york-gateway-project-with-stream-data-centers-expects-80-million-in-near-term-liquidity-as-part-of-275-m.html"
+    },
+    {
+      "id": "bigdigital-hoodcounty",
+      "kind": "signal",
+      "name": "Big Digital Energy / 10NetZero JV — Hood County Site",
+      "county": "Hood",
+      "city": "Hood County",
+      "lat": 32.4421, "lon": -97.7942, "precision": "county",
+      "acres": 50,
+      "power_mw": 17,
+      "power_notes": "Powered industrial site with 17MW operational power today, expandable to 111MW grid power pending ERCOT validation. On-site natural gas pipelines (two 12-inch, one 20-inch) allow behind-the-meter generation for a buildout to up to 311MW total. 30,000+ sq ft of existing structures to be repurposed for AI data center use.",
+      "fiber_notes": null,
+      "price": null,
+      "status": "50/50 JV + signed letter of intent to acquire (Jul 6, 2026)",
+      "broker": null,
+      "source": "https://www.globenewswire.com/news-release/2026/07/06/3322404/0/en/big-digital-energy-announces-partnership-with-10netzero-to-acquire-power-ready-hood-county-texas-site-for-ai-datacenter-development.html"
+    },
+    {
+      "id": "mara-hif-matagorda",
+      "kind": "signal",
+      "name": "MARA — Matagorda County Site (ex-HIF USA, up to 2GW)",
+      "county": "Matagorda",
+      "city": "Bay City area",
+      "lat": 28.9819, "lon": -95.9694, "precision": "county",
+      "acres": 1200,
+      "power_mw": 2000,
+      "power_notes": "Definitive agreement with HIF USA for a large-scale powered land site ~90 miles SW of Houston; access to up to 1GW of grid capacity by Oct 2027, up to 2GW by Apr 2028. To be developed with Starwood Digital Ventures for HPC/flexible compute including Bitcoin mining.",
+      "fiber_notes": null,
+      "price": "$600,000,000 (up to, milestone-based installments)",
+      "status": "Definitive agreement signed (Jul 2026)",
+      "broker": null,
+      "source": "https://ir.mara.com/news-events/press-releases/detail/1424/mara-signs-agreement-with-hif-to-acquire-strategic-powered-land-site-in-texas"
+    },
+    {
+      "id": "ampz-champion-angelina",
+      "kind": "signal",
+      "name": "AmpZ Champion / EPG Champion — Angelina County (former Southland Paper Mill)",
+      "county": "Angelina",
+      "city": "Lufkin",
+      "lat": 31.3382, "lon": -94.7291, "precision": "city",
+      "acres": 1041,
+      "power_mw": null,
+      "power_notes": "Memorandum of option for ~1,041 acres across multiple abstracts/surveys at the former Southland Paper Mill site; nearby land could expand the project to ~4,000 acres. Part of the site to be used as a sound/wetland buffer. Estimated $1.05B private capital investment if finalized.",
+      "fiber_notes": null,
+      "price": null,
+      "status": "Option agreement / under development and community negotiation (Jul 2026)",
+      "broker": null,
+      "source": "https://www.texastribune.org/2026/07/09/data-center-backlash-east-texas/"
     }
   ]
 }
