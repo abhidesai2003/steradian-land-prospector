@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Steradian Land Prospector</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='34' fill='%23c98500'/><circle cx='50' cy='50' r='44' fill='none' stroke='%23ffb52e' stroke-width='6'/></svg>">
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div id="map"></div>
+
+<aside id="panel">
+  <div id="brand">
+    <h1>Steradian Land Prospector</h1>
+    <div class="sub">5 MW+ sites · power · fiber · for-sale intelligence — built from public data</div>
+    <div class="sub" id="stamp" style="margin-top:2px;color:#6f9d6f"></div>
+  </div>
+  <div id="stats"></div>
+  <div id="tabs">
+    <button class="on" data-tab="sites">Sites</button>
+    <button data-tab="analytics">Market analytics</button>
+  </div>
+  <div id="filters" class="show">
+    <input id="search" type="text" placeholder="Search sites, counties…" autocomplete="off">
+    <div class="frow">
+      <label>Min score</label>
+      <input id="min-score" type="range" min="0" max="90" step="5" value="0">
+      <output id="min-score-out">0</output>
+    </div>
+    <div class="frow">
+      <label>Substation kV ≥</label>
+      <input id="min-kv" type="range" min="0" max="4" step="1" value="2">
+      <output id="min-kv-out">138 kV</output>
+    </div>
+    <div class="frow">
+      <label>Show</label>
+      <div class="seg" id="kind-seg">
+        <button class="on" data-kind="all">All</button>
+        <button data-kind="listing">For sale</button>
+        <button data-kind="signal">Signals</button>
+      </div>
+    </div>
+  </div>
+  <div id="list"></div>
+  <div id="analytics"></div>
+</aside>
+
+<div id="layers">
+  <div class="lchip on" data-layer="counties"><span class="dot" style="background:#3987e5"></span>County heat</div>
+  <div class="lchip on" data-layer="lines"><span class="dot" style="background:#86b6ef"></span>Transmission</div>
+  <div class="lchip on" data-layer="subs"><span class="dot" style="background:#4a8ce2"></span>Substations</div>
+  <div class="lchip on" data-layer="fiber"><span class="dot" style="background:#2fbf8a"></span>Fiber / colo</div>
+  <div class="lchip" data-layer="queue"><span class="dot" style="background:#da5c92"></span>ERCOT queue</div>
+  <div class="lchip" data-layer="plants"><span class="dot" style="background:#e9722e"></span>Power plants</div>
+</div>
+
+<div id="legend">
+  <div class="lg-h">Legend</div>
+  <div class="lg-r"><span class="sw" style="background:#c98500;border:2px solid #ffd583;width:12px;height:12px"></span>For-sale powered land</div>
+  <div class="lg-r"><span class="sw hollow"></span>Market signal / comp</div>
+  <div class="lg-r"><span class="ln" style="background:#cde2fb"></span>500 kV line</div>
+  <div class="lg-r"><span class="ln" style="background:#86b6ef"></span>345 kV line</div>
+  <div class="lg-r"><span class="ln" style="background:#4a8ce2"></span>230 kV line</div>
+  <div class="lg-r"><span class="ln" style="background:#2f5f9e"></span>100–161 kV line</div>
+  <div class="lg-r"><span class="sw" style="background:#4a8ce2"></span>Substation (size = kV)</div>
+  <div class="lg-r"><span class="sw" style="background:#12855d;border:1.5px solid #2fbf8a"></span>Colo / carrier hotel</div>
+  <div class="lg-r"><span class="sw" style="background:#da5c92"></span>Queue project (county-level)</div>
+  <div class="lg-r"><span class="sw" style="background:#b64a1f"></span>Power plant (size = MW)</div>
+</div>
+
+<div id="drawer">
+  <div id="drawer-head">
+    <div class="kind"></div>
+    <h2></h2>
+    <div class="loc"></div>
+    <button id="drawer-close" aria-label="Close">✕</button>
+  </div>
+  <div id="drawer-body"></div>
+</div>
+
+<div id="credit">Data: HIFLD · EIA · ERCOT · PeeringDB · public listings — compiled Jul 2026. Verify before underwriting.</div>
+
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
