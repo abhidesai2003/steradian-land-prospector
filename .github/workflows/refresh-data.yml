@@ -6,6 +6,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: refresh-data
@@ -46,3 +48,23 @@ jobs:
             git commit -m "data: automated refresh $(date -u +%Y-%m-%dT%H:%MZ)"
             git push
           fi
+
+      # Bot pushes don't trigger the deploy-pages workflow (GITHUB_TOKEN
+      # suppression), so deploy the freshly built site from this run directly.
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+
+  deploy:
+    needs: refresh
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: pages
+      cancel-in-progress: true
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

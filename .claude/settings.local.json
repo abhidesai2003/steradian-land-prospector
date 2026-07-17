@@ -62,7 +62,24 @@
       "Bash(gh auth *)",
       "Bash(git init *)",
       "Bash(git add *)",
-      "Bash(git commit -q -m 'Steradian Land Prospector: TX powered-land pipeline + live dashboard *)"
+      "Bash(git commit -q -m 'Steradian Land Prospector: TX powered-land pipeline + live dashboard *)",
+      "Bash(gh repo *)",
+      "Bash(gh api *)",
+      "Bash(gh workflow *)",
+      "Skill(schedule)",
+      "Bash(python3 -c \"import uuid; print\\(uuid.uuid4\\(\\)\\)\")",
+      "Bash(gh run *)",
+      "Bash(git -C /Users/abhi/finalland fetch -q origin main)",
+      "Bash(git -C /Users/abhi/finalland log --oneline origin/main)",
+      "Bash(python3 -c \"import json,sys; print\\('live data generated:', json.load\\(sys.stdin\\)['generated']\\)\")",
+      "Bash(git -C /Users/abhi/finalland pull -q --rebase origin main)",
+      "Bash(git -C /Users/abhi/finalland add -A)",
+      "Bash(git -C /Users/abhi/finalland commit -q -m 'ci: deploy Pages directly from refresh-data \\(bot pushes don'\\\\''t retrigger workflows\\); rebrand to Steradian; live-update stamp + client polling *)",
+      "Bash(git -C /Users/abhi/finalland push -q origin main)",
+      "Bash(git stash *)",
+      "Bash(git pull *)",
+      "Bash(git commit -q -m 'ci: deploy Pages directly from refresh-data \\(bot pushes don'\\\\''t retrigger workflows\\); rebrand to Steradian; live-update stamp + client polling *)",
+      "Bash(git push *)"
     ]
   }
 }
