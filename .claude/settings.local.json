@@ -85,7 +85,8 @@
       "Bash(git commit -q -m 'data: stamp hunter'\\\\''s first 4 finds in first-seen registry *)",
       "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('live: new_sites =', d['new_sites'], '| listings =', d['listings_total'], '| signals =', d['signals_total']\\)\")",
       "Bash(awk '{print $5, $9}')",
-      "Bash(git commit -q -m 'feat: sourcing playbook — EIA gas pipeline layer + gas scoring, dead-industry site kind, 5-state expansion \\(TX/LA/MS/AR/AZ\\) *)"
+      "Bash(git commit -q -m 'feat: sourcing playbook — EIA gas pipeline layer + gas scoring, dead-industry site kind, 5-state expansion \\(TX/LA/MS/AR/AZ\\) *)",
+      "Bash(git commit -q -m 'fix: regenerate web/data cleanly after autostash conflict \\(26 sites incl. today'\\\\''s 3 new hunter finds\\) *)"
     ]
   }
 }
