@@ -14,7 +14,7 @@ const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "
 const state = {
   data: {}, markers: [], selected: null,
   minScore: 0, minKV: 138, kindFilter: "all", search: "",
-  layers: { counties: true, lines: true, subs: true, fiber: true, queue: false, plants: false },
+  layers: { counties: true, lines: true, subs: true, fiber: true, queue: false, plants: false, pipelines: true },
 };
 
 let map = null;
@@ -48,7 +48,7 @@ try {
 }
 
 async function loadData() {
-  const names = ["summary", "listings", "substations", "lines", "plants", "queue", "fiber", "counties"];
+  const names = ["summary", "listings", "substations", "lines", "plants", "queue", "fiber", "counties", "pipelines"];
   const res = await Promise.all(names.map((n) => fetch(`data/${n}.${n === "summary" ? "json" : "geojson"}`).then((r) => r.json())));
   names.forEach((n, i) => (state.data[n] = res[i]));
 }
@@ -70,6 +70,17 @@ function addLayers() {
   map.addLayer({
     id: "counties-line", type: "line", source: "counties",
     paint: { "line-color": "rgba(255,255,255,0.07)", "line-width": 0.6 },
+  });
+
+  map.addSource("pipelines", { type: "geojson", data: d.pipelines });
+  map.addLayer({
+    id: "pipelines", type: "line", source: "pipelines",
+    paint: {
+      "line-color": ["match", ["get", "t"], "Interstate", "#e9722e", "#a3653a"],
+      "line-width": ["interpolate", ["linear"], ["zoom"], 5, 0.7, 10, 1.8],
+      "line-opacity": ["match", ["get", "t"], "Interstate", 0.55, 0.35],
+      "line-dasharray": [2.2, 1.8],
+    },
   });
 
   map.addSource("lines", { type: "geojson", data: d.lines });
@@ -183,6 +194,9 @@ function hookPopups() {
     <div class="pp-t">${esc(p.name)}</div>
     <div class="pp-r"><b>${fmt(p.mw)} MW</b> · ${esc(p.fuel)}</div>
     <div class="pp-r">${esc(p.tech || "")}</div>`);
+  hoverPopup("pipelines", (p) => `
+    <div class="pp-t">${esc(p.op || "Gas pipeline")}</div>
+    <div class="pp-r">${esc(p.t || "")} natural gas transmission</div>`);
   hoverPopup("counties-fill", (p) => `
     <div class="pp-t">${esc(p.name)} County</div>
     <div class="pp-r">Queue: <b>${fmtMW(p.queue_mw)}</b> across ${p.queue_n} projects</div>
@@ -203,14 +217,14 @@ function buildMarkers() {
   for (const f of feats) {
     const p = f.properties;
     const el = document.createElement("div");
-    el.className = "mk" + (p.kind === "signal" ? " signal" : "") + (p.is_new ? " new" : "");
+    el.className = "mk" + (p.kind === "signal" ? " signal" : "") + (p.kind === "industrial" ? " industrial" : "") + (p.is_new ? " new" : "");
     el.innerHTML = `<div class="pin"></div>`;
     el.addEventListener("click", (ev) => { ev.stopPropagation(); selectSite(p.id, true); });
     el.addEventListener("mouseenter", () => {
       popup.setLngLat(f.geometry.coordinates)
         .setHTML(`<div class="pp-t">${esc(p.name)}</div>
           ${p.is_new ? `<div class="pp-r" style="color:#2fbf8a"><b>NEW</b> · added ${esc(p.added)}</div>` : ""}
-          <div class="pp-r">${p.kind === "listing" ? "FOR SALE" : "MARKET SIGNAL"} · score <b>${p.score}</b>/100</div>
+          <div class="pp-r">${p.kind === "listing" ? "FOR SALE" : p.kind === "industrial" ? "DEAD INDUSTRY / IDLE ASSET" : "MARKET SIGNAL"} · score <b>${p.score}</b>/100</div>
           <div class="pp-r">${p.acres ? "<b>" + fmt(p.acres) + "</b> acres · " : ""}${p.power_mw ? "<b>" + fmtMW(p.power_mw) + "</b> · " : ""}${esc(p.county)} Co.</div>`)
         .addTo(map);
     });
@@ -238,11 +252,14 @@ function siteCard(p, sel) {
   const chips = [];
   if (p.is_new) chips.push(`<span class="chip newchip">NEW</span>`);
   if (p.kind === "listing") chips.push(`<span class="chip gold">FOR SALE</span>`);
+  else if (p.kind === "industrial") chips.push(`<span class="chip steel">DEAD INDUSTRY</span>`);
   else chips.push(`<span class="chip violet">SIGNAL</span>`);
+  if (p.state && p.state !== "TX") chips.push(`<span class="chip">${esc(p.state)}</span>`);
   if (p.acres) chips.push(`<span class="chip">${fmt(p.acres)} ac</span>`);
   if (p.power_mw) chips.push(`<span class="chip">${fmtMW(p.power_mw)}</span>`);
   if (p.nearest_sub_kv) chips.push(`<span class="chip">${p.nearest_sub_kv}kV @ ${p.nearest_sub_mi}mi</span>`);
   if (p.d345_mi != null && p.d345_mi <= 25) chips.push(`<span class="chip">345kV line ${p.d345_mi}mi</span>`);
+  if (p.gas_mi != null && p.gas_mi <= 15) chips.push(`<span class="chip">gas ${p.gas_mi}mi</span>`);
   return `<div class="card ${sel ? "sel" : ""}" data-id="${p.id}">
     <div class="r1"><div class="nm">${esc(p.name)}</div><div class="sc">${p.score}</div></div>
     <div class="r2">${chips.join("")}</div></div>`;
@@ -387,8 +404,9 @@ function proxRow(sw, label, val) {
 function openSiteDrawer(p) {
   const isListing = p.kind === "listing";
   const head = document.getElementById("drawer-head");
-  head.querySelector(".kind").textContent = (p.is_new ? "NEW · " : "") + (isListing ? "For sale · powered land" : "Market signal");
-  head.querySelector(".kind").style.color = p.is_new ? "var(--teal-bright)" : (isListing ? "var(--gold-bright)" : "#b9aef0");
+  const kindLabel = isListing ? "For sale · powered land" : p.kind === "industrial" ? "Dead industry · idle powered asset" : "Market signal";
+  head.querySelector(".kind").textContent = (p.is_new ? "NEW · " : "") + kindLabel;
+  head.querySelector(".kind").style.color = p.is_new ? "var(--teal-bright)" : (isListing ? "var(--gold-bright)" : p.kind === "industrial" ? "#aebccd" : "#b9aef0");
   head.querySelector("h2").textContent = p.name;
   head.querySelector(".loc").textContent = `${p.city || ""} · ${p.county} County · location ${p.precision}-level` + (p.is_new ? ` · added ${p.added}` : "");
 
@@ -410,6 +428,7 @@ function openSiteDrawer(p) {
         ${proxRow("var(--blue)", `Nearest HV substation ${p.nearest_sub ? "· " + esc(p.nearest_sub) : ""}`, p.nearest_sub_kv ? `${p.nearest_sub_kv} kV · ${p.nearest_sub_mi} mi` : "—")}
         ${proxRow(C.line345, "Nearest 345 kV line", p.d345_mi != null ? p.d345_mi + " mi" : "—")}
         ${proxRow(C.line138, "Nearest 100 kV+ line", p.dline_mi != null ? p.dline_mi + " mi" : "—")}
+        ${proxRow("#e9722e", `Nearest gas pipeline ${p.gas_op ? "· " + esc(p.gas_op) : ""}`, p.gas_mi != null ? p.gas_mi + " mi" : "—")}
         ${proxRow("var(--teal-bright)", `Nearest colo ${p.fiber_fac ? "· " + esc(p.fiber_fac) : ""}`, p.fiber_mi != null ? `${p.fiber_mi} mi · ${p.fiber_nets} nets` : "—")}
         ${proxRow("var(--orange-bright)", `Nearest 100 MW+ plant ${p.plant100 ? "· " + esc(p.plant100) : ""}`, p.plant100_mi != null ? `${fmt(p.plant100_mw)} MW · ${p.plant100_mi} mi` : "—")}
         ${proxRow("var(--magenta)", "County ERCOT queue", fmtMW(p.county_queue_mw))}
@@ -508,6 +527,7 @@ function initControls() {
   const layerMap = {
     counties: ["counties-fill", "counties-line"], lines: ["lines-glow", "lines-core"],
     subs: ["subs"], fiber: ["fiber"], queue: ["queue"], plants: ["plants"],
+    pipelines: ["pipelines"],
   };
   document.querySelectorAll(".lchip").forEach((chip) =>
     chip.addEventListener("click", () => {

@@ -34,6 +34,9 @@ jobs:
       - name: Fetch fiber / colo data (PeeringDB)
         run: python pipeline/fetch_fiber.py
 
+      - name: Fetch gas pipelines (EIA)
+        run: python pipeline/fetch_gas.py
+
       - name: Rebuild scores and web data
         run: python pipeline/build.py
 

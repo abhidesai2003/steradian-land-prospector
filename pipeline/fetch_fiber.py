@@ -12,9 +12,11 @@ from common import RAW, http_json, save_json
 
 
 def main():
-    print("== PeeringDB facilities (TX) ==", flush=True)
-    d = http_json("https://www.peeringdb.com/api/fac", {"state": "TX", "limit": 500})
-    facs = [
+    print("== PeeringDB facilities (coverage states) ==", flush=True)
+    facs = []
+    for st in ("TX", "LA", "MS", "AR", "AZ", "TN"):
+        d = http_json("https://www.peeringdb.com/api/fac", {"state": st, "limit": 500})
+        facs += [
         {
             "id": f["id"], "name": f["name"], "org": f["org_name"],
             "city": f["city"], "zip": f.get("zipcode"),
@@ -23,8 +25,8 @@ def main():
             "ix_count": f.get("ix_count", 0),
             "carrier_count": f.get("carrier_count", 0),
         }
-        for f in d["data"] if f.get("latitude") and f.get("longitude")
-    ]
+            for f in d["data"] if f.get("latitude") and f.get("longitude")
+        ]
     save_json(f"{RAW}/peeringdb_fac_tx.json", facs)
 
     print("== PeeringDB IXs (TX) ==", flush=True)

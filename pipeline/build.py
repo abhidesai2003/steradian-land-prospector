@@ -17,7 +17,9 @@ import math
 import sys
 
 sys.path.insert(0, "pipeline")
-from common import RAW, haversine_mi, load_json
+from common import RAW, STATE_NAMES, haversine_mi, load_json
+
+FIPS_STATE = {"48": "TX", "22": "LA", "28": "MS", "05": "AR", "04": "AZ"}
 
 WEB = "web/data"
 
@@ -114,6 +116,7 @@ def load_all():
     d["plants"] = load_json(f"{RAW}/power_plants_tx.geojson")["features"]
     d["queue"] = load_json(f"{RAW}/ercot_queue.json")
     d["fiber"] = load_json(f"{RAW}/peeringdb_fac_tx.json")
+    d["gas"] = load_json(f"{RAW}/gas_pipelines.geojson")["features"]
     d["ix"] = load_json(f"{RAW}/peeringdb_ix_tx.json")
     d["counties"] = load_json(f"{RAW}/tx_counties.geojson")["features"]
     d["curated"] = load_json("pipeline/listings_curated.json")
@@ -177,15 +180,20 @@ def main():
         seen = first_seen[k]
         return seen, (today - datetime.date.fromisoformat(seen)).days
 
-    # counties: name -> centroid, and rollup holder
+    # counties keyed by FIPS (avoids cross-state name collisions), with a
+    # per-state name lookup for sources that only give county names
     county = {}
+    name_fips = {}
     for f in d["counties"]:
-        name = f["properties"]["NAME"].lower()
+        p = f["properties"]
+        fips = p["STATE"] + p["COUNTY"]
+        st = FIPS_STATE[p["STATE"]]
         lon, lat = poly_centroid(f["geometry"])
-        county[name] = {"lon": lon, "lat": lat, "fips": f["properties"]["STATE"] + f["properties"]["COUNTY"],
+        county[fips] = {"name": p["NAME"], "st": st, "lon": lon, "lat": lat, "fips": fips,
                         "queue_mw": 0.0, "queue_n": 0, "queue_solar": 0.0, "queue_wind": 0.0,
                         "queue_gas": 0.0, "queue_battery": 0.0, "hv_subs": 0, "plants_mw": 0.0,
                         "listings": 0}
+        name_fips[(st, p["NAME"].lower())] = fips
 
     # ---- substations (in service, deduped) ----
     subs = []
@@ -203,9 +211,11 @@ def main():
             "min_kv": (None if not p.get("MIN_VOLT") or p["MIN_VOLT"] <= 0 else p["MIN_VOLT"]),
             "lines": p.get("LINES") or 0,
             "county": (p.get("COUNTY") or "").lower(),
+            "st": p.get("STATE"),
+            "cfips": p.get("COUNTYFIPS"),
             "status": p.get("STATUS"),
         })
-        c = county.get((p.get("COUNTY") or "").lower())
+        c = county.get(p.get("COUNTYFIPS"))
         if c is not None and kv and kv >= 138:
             c["hv_subs"] += 1
 
@@ -216,13 +226,14 @@ def main():
         mw = p.get("Total_MW") or 0
         if mw < 10:
             continue
+        st = STATE_NAMES.get(p.get("State"), "TX")
         plants.append({
             "name": p.get("Plant_Name"), "mw": mw,
             "fuel": p.get("PrimSource"), "tech": p.get("tech_desc"),
-            "county": (p.get("County") or "").lower(),
+            "county": (p.get("County") or "").lower(), "st": st,
             "lon": p.get("Longitude"), "lat": p.get("Latitude"),
         })
-        c = county.get((p.get("County") or "").lower())
+        c = county.get(name_fips.get((st, (p.get("County") or "").lower())))
         if c is not None:
             c["plants_mw"] += mw
 
@@ -239,7 +250,7 @@ def main():
         else:
             cat = FUEL_NAMES.get(fuel, "Other")
         cnames = [c.strip().lower() for c in (pr.get("county") or "").replace("/", ",").split(",") if c.strip()]
-        c0 = next((c for c in cnames if c in county), None)
+        c0 = next((name_fips[("TX", c)] for c in cnames if ("TX", c) in name_fips), None)
         since, age = mark("queue", pr["inr"])
         item = {
             "inr": pr["inr"], "name": pr["name"], "mw": mw, "cat": cat,
@@ -266,6 +277,8 @@ def main():
     metro_nets = {}
     for x in d["ix"]:
         metro_nets[x["city"].lower()] = metro_nets.get(x["city"].lower(), 0) + x["net_count"]
+
+    gas_lines = d["gas"]
 
     # ---- 345kV line list for distance checks ----
     lines345 = [f for f in d["lines"] if VOLT_CLASS_NOMINAL.get(f["properties"].get("VOLT_CLASS"), 0) >= 345]
@@ -297,7 +310,7 @@ def main():
         near_plant_mw = sum(p["mw"] for p in plants
                             if abs(p["lon"] - s["lon"]) < 0.25 and abs(p["lat"] - s["lat"]) < 0.2
                             and haversine_mi(s["lon"], s["lat"], p["lon"], p["lat"]) <= 10)
-        cq = county.get(s["county"], {}).get("queue_mw", 0)
+        cq = county.get(s["cfips"], {}).get("queue_mw", 0)
         score = (volt_points(s["kv"])
                  + min(s["lines"], 8) / 8 * 15
                  + prox_score(fd, 1, 120, 15)
@@ -320,20 +333,29 @@ def main():
         dall = nearest_line_mi(lines_all, lon, lat)
         nf, nfd = nearest(fiber, lon, lat)
         np_, npd = nearest([p for p in plants if p["mw"] >= 100], lon, lat)
-        cnames = [c.strip().lower().split("(")[0].strip()
-                  for c in (L.get("county") or "").replace("/", ",").split(",")]
-        cq = sum(county[c]["queue_mw"] for c in cnames if c in county)
-        if any(c in county for c in cnames):
-            for c in cnames:
-                if c in county:
-                    county[c]["listings"] += 1
-                    break
+        dgas = nearest_line_mi(gas_lines, lon, lat)
+        gas_op = None
+        if dgas < 1e8:
+            best = 1e9
+            for g in gas_lines:
+                dd = dist_to_line_mi(lon, lat, g, cutoff=best)
+                if dd < best:
+                    best, gas_op = dd, (g["properties"].get("Operator") or None)
+        lst = L.get("state", "TX")
+        cfs = [name_fips[(lst, c)] for c in
+               (c.strip().lower().split("(")[0].strip()
+                for c in (L.get("county") or "").replace("/", ",").split(","))
+               if (lst, c) in name_fips]
+        cq = sum(county[c]["queue_mw"] for c in cfs)
+        if cfs:
+            county[cfs[0]]["listings"] += 1
 
         stated = 20 if L.get("power_mw") else (10 if L.get("power_notes") else 0)
         power = min(100, volt_points(ns["kv"] if ns else None)
                     + prox_score(nsd, 2, 30, 20)
                     + prox_score(d345, 1, 25, 20)
                     + prox_score(dall, 0.5, 15, 10)
+                    + prox_score(dgas, 1.5, 25, 12)
                     + stated)
         fiber_sc = min(100, prox_score(nfd, 5, 150, 55)
                        + (25 if L.get("fiber_notes") else 0)
@@ -366,6 +388,9 @@ def main():
             "fiber_fac": nf["name"] if nf else None,
             "fiber_mi": round(nfd, 1) if nf else None,
             "fiber_nets": (nf or {}).get("net_count"),
+            "gas_mi": round(dgas, 1) if dgas < 1e8 else None,
+            "gas_op": gas_op,
+            "state": lst,
             "plant100": np_["name"] if np_ else None,
             "plant100_mw": (np_ or {}).get("mw"),
             "plant100_mi": round(npd, 1) if np_ else None,
@@ -436,12 +461,27 @@ def main():
           for L in listings]
     w("listings.geojson", fc(Lf))
 
+    gf = []
+    for f in d["gas"]:
+        p = f["properties"]
+        geom = f["geometry"]
+        if not geom:
+            continue
+        if geom["type"] == "LineString":
+            ng = {"type": "LineString", "coordinates": decimate(geom["coordinates"], 0.004)}
+        else:
+            ng = {"type": "MultiLineString",
+                  "coordinates": [decimate(c, 0.004) for c in geom["coordinates"]]}
+        gf.append({"type": "Feature", "geometry": ng, "properties": {
+            "op": p.get("Operator"), "t": p.get("TYPEPIPE")}})
+    w("pipelines.geojson", fc(gf))
+
     cf = []
     for f in d["counties"]:
-        name = f["properties"]["NAME"]
-        c = county[name.lower()]
+        p = f["properties"]
+        c = county[p["STATE"] + p["COUNTY"]]
         cf.append({"type": "Feature", "geometry": f["geometry"], "properties": {
-            "name": name, "fips": c["fips"],
+            "name": c["name"], "st": c["st"], "fips": c["fips"],
             "queue_mw": round(c["queue_mw"]), "queue_n": c["queue_n"],
             "queue_solar": round(c["queue_solar"]), "queue_wind": round(c["queue_wind"]),
             "queue_gas": round(c["queue_gas"]), "queue_battery": round(c["queue_battery"]),
@@ -449,9 +489,15 @@ def main():
             "listings": c["listings"]}})
     w("counties.geojson", fc(cf))
 
-    top_counties = sorted(county.items(), key=lambda kv_: -kv_[1]["queue_mw"])[:15]
+    top_counties = sorted(county.values(), key=lambda v: -v["queue_mw"])[:15]
     summary = {
         "generated": datetime.date.today().isoformat(),
+        "states": ["TX", "LA", "MS", "AR", "AZ"],
+        "gas_miles": round(sum(
+            haversine_mi(a[0], a[1], b[0], b[1])
+            for f in d["gas"] if f.get("geometry")
+            for coords in line_coords(f["geometry"])
+            for a, b in zip(coords, coords[1:]))),
         "gis_report": d["queue"].get("report"),
         "listings_total": sum(1 for L in listings if L["kind"] == "listing"),
         "signals_total": sum(1 for L in listings if L["kind"] == "signal"),
@@ -471,10 +517,10 @@ def main():
         "fiber_facilities": len(fiber),
         "ix_total": len(d["ix"]),
         "plants_mw": round(sum(p["mw"] for p in plants)),
-        "top_counties": [{"name": k.title(), **{x: round(v[x]) for x in
+        "top_counties": [{"name": v["name"], "st": v["st"], **{x: round(v[x]) for x in
                           ("queue_mw", "queue_solar", "queue_wind", "queue_gas", "queue_battery")},
                           "queue_n": v["queue_n"], "hv_subs": v["hv_subs"]}
-                         for k, v in top_counties],
+                         for v in top_counties],
     }
     for q in queue:
         summary["queue_by_cat"][q["cat"]] = round(summary["queue_by_cat"].get(q["cat"], 0) + q["mw"])

@@ -14,7 +14,7 @@
 <aside id="panel">
   <div id="brand">
     <h1>Steradian Land Prospector</h1>
-    <div class="sub">5 MW+ sites · power · fiber · for-sale intelligence — built from public data</div>
+    <div class="sub">5 MW+ powered land · TX · LA · MS · AR · AZ — grid, gas, fiber &amp; deal intelligence from public data</div>
     <div class="sub" id="stamp" style="margin-top:2px;color:#6f9d6f"></div>
   </div>
   <div id="stats"></div>
@@ -40,6 +40,7 @@
         <button class="on" data-kind="all">All</button>
         <button data-kind="listing">For sale</button>
         <button data-kind="signal">Signals</button>
+        <button data-kind="industrial">Industrial</button>
       </div>
     </div>
   </div>
@@ -49,6 +50,7 @@
 
 <div id="layers">
   <div class="lchip on" data-layer="counties"><span class="dot" style="background:#3987e5"></span>County heat</div>
+  <div class="lchip on" data-layer="pipelines"><span class="dot" style="background:#e9722e"></span>Gas pipelines</div>
   <div class="lchip on" data-layer="lines"><span class="dot" style="background:#86b6ef"></span>Transmission</div>
   <div class="lchip on" data-layer="subs"><span class="dot" style="background:#4a8ce2"></span>Substations</div>
   <div class="lchip on" data-layer="fiber"><span class="dot" style="background:#2fbf8a"></span>Fiber / colo</div>
@@ -61,6 +63,8 @@
   <div class="lg-r"><span class="sw" style="background:#c98500;border:2px solid #ffd583;width:12px;height:12px"></span>For-sale powered land</div>
   <div class="lg-r"><span class="sw hollow"></span>Market signal / comp</div>
   <div class="lg-r"><span class="sw" style="background:#c98500;border:2px solid #2fbf8a;width:12px;height:12px"></span>Newly added (last 14 d)</div>
+  <div class="lg-r"><span class="sw" style="background:#46586e;border:2px solid #aebccd;border-radius:3px;width:11px;height:11px"></span>Dead industry / idle asset</div>
+  <div class="lg-r"><span class="ln" style="background:repeating-linear-gradient(90deg,#e9722e 0 4px,transparent 4px 7px)"></span>Gas pipeline (dashed)</div>
   <div class="lg-r"><span class="ln" style="background:#cde2fb"></span>500 kV line</div>
   <div class="lg-r"><span class="ln" style="background:#86b6ef"></span>345 kV line</div>
   <div class="lg-r"><span class="ln" style="background:#4a8ce2"></span>230 kV line</div>

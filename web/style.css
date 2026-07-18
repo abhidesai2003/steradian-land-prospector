@@ -130,6 +130,7 @@ input[type="range"] { flex: 1; accent-color: var(--gold-bright); height: 3px; }
 }
 .chip.gold { color: var(--gold-bright); border-color: rgba(255, 181, 46, 0.3); background: rgba(255, 181, 46, 0.08); }
 .chip.violet { color: #b9aef0; border-color: rgba(144,133,233,0.35); background: rgba(144,133,233,0.10); }
+.chip.steel { color: #aebccd; border-color: rgba(174,188,205,0.4); background: rgba(174,188,205,0.09); }
 .chip.newchip { color: var(--teal-bright); border-color: rgba(47,191,138,0.5); background: rgba(47,191,138,0.12); font-weight: 700; letter-spacing: 0.04em; }
 .section-h.new-h { color: var(--teal-bright); }
 
@@ -265,6 +266,11 @@ details.tbl td { color: var(--ink-2); }
   60% { box-shadow: 0 0 0 14px rgba(255, 181, 46, 0); }
   100% { box-shadow: 0 0 0 0 rgba(255, 181, 46, 0); }
 }
+.mk.industrial .pin {
+  border-radius: 3px; width: 13px; height: 13px;
+  background: #46586e; border: 2px solid #aebccd; animation: none;
+}
+.mk.industrial:hover .pin { border-color: #fff; }
 /* newly added sites: persistent green ring + green pulse */
 .mk.new .pin { animation: pulseNew 1.9s infinite; }
 .mk.signal.new .pin { animation: pulseNew 1.9s infinite; }

@@ -1,8 +1,28 @@
 # Steradian Land Prospector
 
-A **living** prospecting tool for powered land in Texas — 5 MW-and-up sites with power and
-fiber that are (or may soon be) for sale. Public grid, queue, fiber, and listing data are
-combined into one scored, explorable map that **updates itself**.
+A **living** prospecting tool for powered land across **TX · LA · MS · AR · AZ** — 5 MW-and-up
+sites with power, gas, and fiber that are (or may soon be) for sale. Public grid, pipeline,
+queue, fiber, and listing data are combined into one scored, explorable map that **updates
+itself**.
+
+## The sourcing playbook (what the daily hunter runs)
+
+1. **Start from the pipe, not the land.** The universe is parcels near high-pressure gas
+   transmission with available capacity (TGP, Transco, Texas Gas Transmission, Gulf South…).
+   The EIA pipeline layer is on the map; every site is scored on gas proximity.
+2. **Hunt dead industry on those pipes.** Closed paper mills, chemical plants, smelters,
+   ethanol and tire plants — they died holding the asset stack (gas tap, water rights,
+   discharge permits, rail/barge, slabs, industrial zoning). Sources: LA LED / MS LOIS /
+   AR AEDC site-selection portals, EPA ECHO for recently inactive permits, closure news
+   2015–2024. These get the `industrial` kind (steel squares on the map).
+3. **The boring brokers.** Regional industrial brokers with stale dead-mill listings, and
+   utility economic-development certified-site programs (Entergy, Cleco, Mississippi Power,
+   Oncor, APS/SRP) — load is their product; they hand out lists.
+4. **Port and levee authorities.** River ports Baton Rouge → Memphis hold industrial land
+   with heavy-haul docks and are politically desperate for tenants.
+5. **The gas marketer shortcut.** Midstream BD teams know every underutilized tap — dead
+   taps are dead revenue. The tool records tap/interconnect intel in site notes; the
+   relationships are yours to make.
 
 ## How it stays live
 

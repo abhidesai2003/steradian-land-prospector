@@ -1,4 +1,4 @@
-"""Fetch Texas grid infrastructure: transmission lines, substations, power plants.
+"""Fetch grid infrastructure for the coverage area (TX + LA/MS/AR + AZ).
 
 Sources (all public ArcGIS FeatureServer REST endpoints):
 - Transmission lines: HIFLD Open (DHS) — voltage, owner, status per segment
@@ -9,7 +9,8 @@ import json
 import sys
 
 sys.path.insert(0, "pipeline")
-from common import RAW, TX_BBOX, arcgis_query_all, http_bytes, save_geojson
+from common import (RAW, CORRIDOR_BBOX, COUNTY_FIPS_PREFIXES, STATES,
+                    arcgis_query_all, http_bytes, save_geojson)
 
 LINES_URL = ("https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/"
              "Electric_Power_Transmission_Lines/FeatureServer/0")
@@ -25,7 +26,7 @@ COUNTIES_URL = "https://raw.githubusercontent.com/plotly/datasets/master/geojson
 def fetch_counties():
     """US counties GeoJSON filtered to Texas (FIPS 48)."""
     d = json.loads(http_bytes(COUNTIES_URL))
-    tx = [f for f in d["features"] if f["id"].startswith("48")]
+    tx = [f for f in d["features"] if f["id"].startswith(tuple(COUNTY_FIPS_PREFIXES))]
     save_geojson(f"{RAW}/tx_counties.geojson", tx)
 
 
@@ -34,15 +35,18 @@ def main():
     fetch_counties()
 
     print("== Substations (TX) ==", flush=True)
-    subs = arcgis_query_all(SUBS_URL, where="STATE='TX'")
+    st = ",".join(f"'{x}'" for x in STATES)
+    subs = arcgis_query_all(SUBS_URL, where=f"STATE IN ({st})")
     save_geojson(f"{RAW}/substations_tx.geojson", subs)
 
     print("== Power plants (TX) ==", flush=True)
-    plants = arcgis_query_all(PLANTS_URL, where="State='Texas'")
+    plants = arcgis_query_all(
+        PLANTS_URL,
+        where="State IN ('Texas','Louisiana','Mississippi','Arkansas','Arizona')")
     save_geojson(f"{RAW}/power_plants_tx.geojson", plants)
 
-    print("== Transmission lines (TX bbox) ==", flush=True)
-    lines = arcgis_query_all(LINES_URL, geometry_bbox=TX_BBOX, page_size=2000)
+    print("== Transmission lines (corridor bbox) ==", flush=True)
+    lines = arcgis_query_all(LINES_URL, geometry_bbox=CORRIDOR_BBOX, page_size=2000)
     save_geojson(f"{RAW}/transmission_lines_tx.geojson", lines)
 
 

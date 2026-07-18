@@ -13,6 +13,13 @@ UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit
 # Texas bounding box (generous)
 TX_BBOX = (-107.0, 25.4, -93.2, 36.8)
 
+# Coverage corridor: TX + LA/MS/AR (Baton Rouge–Memphis) + AZ
+CORRIDOR_BBOX = (-115.0, 25.4, -88.7, 37.05)
+STATES = ("TX", "LA", "MS", "AR", "AZ")
+STATE_NAMES = {"Texas": "TX", "Louisiana": "LA", "Mississippi": "MS",
+               "Arkansas": "AR", "Arizona": "AZ"}
+COUNTY_FIPS_PREFIXES = ("48", "22", "28", "05", "04")
+
 
 def http_json(url, params=None, retries=3, timeout=90):
     if params:

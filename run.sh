@@ -19,6 +19,8 @@ if [ "$1" = "refresh" ]; then
   $PY pipeline/fetch_ercot.py
   echo "== Fetching fiber/colo data (PeeringDB) =="
   $PY pipeline/fetch_fiber.py
+  echo "== Fetching gas pipelines (EIA) =="
+  $PY pipeline/fetch_gas.py
   echo "== Rebuilding scores and web data =="
   $PY pipeline/build.py
 elif [ ! -f web/data/summary.json ]; then
