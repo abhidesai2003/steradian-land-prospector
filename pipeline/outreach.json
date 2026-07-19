@@ -12,9 +12,9 @@
       "to_name": "Robert Maxwell, Port Director",
       "to": "info@portofrosedale.com",
       "phone": "662-759-6212",
-      "status": "new",
-      "drafted_at": null,
-      "subject": null,
+      "status": "drafted",
+      "drafted_at": "2026-07-19",
+      "subject": "Inquiry: Port of Rosedale industrial acreage — powered-land interest",
       "notes": "Mississippi River slackwater harbor; industrial acreage; playbook Play 4."
     },
     {
@@ -34,21 +34,21 @@
       "to_name": "Roxanne Marquis",
       "to": "rose@8888cre.com",
       "phone": "972-805-7587",
-      "status": "new",
-      "drafted_at": null,
-      "subject": null,
+      "status": "drafted",
+      "drafted_at": "2026-07-19",
+      "subject": "Inquiry: West Texas Panhandle 5,000-acre AI campus — powered-land interest",
       "notes": "Also represents DFW 1GW ground-lease, 1500ac hyperscale parcel, Waco-Austin 88ac, West TX 82ac — reference portfolio, anchor on the 5,000ac Panhandle campus data room."
     },
     {
       "site_id": "abilene-north-1630",
       "org": "Heather Dawn (listing agent)",
       "to_name": "Heather Dawn",
-      "to": null,
+      "to": "Heather@texashuntingland.com",
       "phone": "325-232-4670",
-      "status": "needs-email",
+      "status": "new",
       "drafted_at": null,
       "subject": null,
-      "notes": "1,630ac tract with on-site substation in the Abilene/Stargate corridor; phone-only so far."
+      "notes": "1,630ac tract with on-site substation in the Abilene/Stargate corridor. Published business email found on her brokerage's own site (texashuntingland.com agent profile), consistent across repeated lookups — direct fetch of the page was blocked by bot protection (403) but the domain-restricted lookup confirms it's her own firm's listing, not a third-party scrape."
     },
     {
       "site_id": "madison-parish-port-la",
@@ -59,7 +59,7 @@
       "status": "needs-email",
       "drafted_at": null,
       "subject": null,
-      "notes": "Play 4 river port; check port/parish site for published email."
+      "notes": "Play 4 river port; checked madisonparishport.com/contact and /personnel — site only offers a contact form, no published email address found; direct fetch blocked by bot protection (403). Executive Director is Patrick (Terry) Murphy. Follow up by phone (318-574-2181) or web contact form."
     },
     {
       "site_id": "kiowa-243ac-ok",
@@ -70,7 +70,7 @@
       "status": "needs-email",
       "drafted_at": null,
       "subject": null,
-      "notes": "Adjacent to Kiowa Power Plant (~1,250MW gas), Pittsburg County OK; phone-only so far via Crexi listing page."
+      "notes": "Adjacent to Kiowa Power Plant (~1,250MW gas), Pittsburg County OK; no owner/broker official site, only the Crexi third-party marketplace listing (fetch blocked, 403) — no published email found. Phone-only."
     },
     {
       "site_id": "port-muskogee-ok",
@@ -81,7 +81,7 @@
       "status": "needs-email",
       "drafted_at": null,
       "subject": null,
-      "notes": "5201 Three Forks Rd, Fort Gibson OK; ~115ac available across multiple tracts; McClellan-Kerr river navigation + BNSF rail. Play 4."
+      "notes": "5201 Three Forks Rd, Fort Gibson OK; ~115ac available across multiple tracts; McClellan-Kerr river navigation + BNSF rail. Play 4. Checked portmuskogee.com/about/team/ (direct fetch blocked, 403); indirect lookups returned inconsistent/unconfirmed staff addresses, so not recorded — call main line (918-682-7886) to get a verified contact."
     },
     {
       "site_id": "gallup-energy-logistics-park-nm",
@@ -100,9 +100,9 @@
       "to_name": "Brian Garcia, VP Business Development",
       "to": "brian@mveda.com",
       "phone": "575-525-2852",
-      "status": "new",
-      "drafted_at": null,
-      "subject": null,
+      "status": "drafted",
+      "drafted_at": "2026-07-19",
+      "subject": "Inquiry: Santa Teresa Gateway Rail Park — on-site substation powered land",
       "notes": "UP-owned 23kV/12.47kV substation on-site w/ dual transformers; water/sewer/gas/electric/fiber all available; adjacent UP Santa Teresa Intermodal Complex."
     },
     {
