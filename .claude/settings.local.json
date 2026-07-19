@@ -86,7 +86,14 @@
       "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('live: new_sites =', d['new_sites'], '| listings =', d['listings_total'], '| signals =', d['signals_total']\\)\")",
       "Bash(awk '{print $5, $9}')",
       "Bash(git commit -q -m 'feat: sourcing playbook — EIA gas pipeline layer + gas scoring, dead-industry site kind, 5-state expansion \\(TX/LA/MS/AR/AZ\\) *)",
-      "Bash(git commit -q -m 'fix: regenerate web/data cleanly after autostash conflict \\(26 sites incl. today'\\\\''s 3 new hunter finds\\) *)"
+      "Bash(git commit -q -m 'fix: regenerate web/data cleanly after autostash conflict \\(26 sites incl. today'\\\\''s 3 new hunter finds\\) *)",
+      "Bash(git checkout *)",
+      "Bash(git commit -q -m 'feat: NM + OK coverage, all-state county heat modes \\(queue/gen/HV subs\\), first-visit how-to intro *)",
+      "Bash(git commit -q -m 'data: stamp state field on all sites \\(13 non-TX\\), rebuild with 7-state grid *)",
+      "Bash(git fetch *)",
+      "Bash(git rebase *)",
+      "Bash(git -c core.editor=true rebase --continue)",
+      "Bash(git commit -q -m 'fix: 7-state FIPS map in build \\(NM/OK\\) + full rebuild — the missing piece behind KeyError 35 *)"
     ]
   }
 }

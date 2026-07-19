@@ -19,7 +19,8 @@ import sys
 sys.path.insert(0, "pipeline")
 from common import RAW, STATE_NAMES, haversine_mi, load_json
 
-FIPS_STATE = {"48": "TX", "22": "LA", "28": "MS", "05": "AR", "04": "AZ"}
+FIPS_STATE = {"48": "TX", "22": "LA", "28": "MS", "05": "AR", "04": "AZ",
+              "35": "NM", "40": "OK"}
 
 WEB = "web/data"
 
@@ -492,7 +493,7 @@ def main():
     top_counties = sorted(county.values(), key=lambda v: -v["queue_mw"])[:15]
     summary = {
         "generated": datetime.date.today().isoformat(),
-        "states": ["TX", "LA", "MS", "AR", "AZ"],
+        "states": ["TX", "LA", "MS", "AR", "AZ", "NM", "OK"],
         "gas_miles": round(sum(
             haversine_mi(a[0], a[1], b[0], b[1])
             for f in d["gas"] if f.get("geometry")
