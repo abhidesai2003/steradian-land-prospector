@@ -24,6 +24,16 @@ itself**.
    taps are dead revenue. The tool records tap/interconnect intel in site notes; the
    relationships are yours to make.
 
+## The outreach loop (drafts, never sends)
+
+The hunter captures **published business contacts** (broker emails, port directors, EDC
+offices) into `pipeline/outreach.json`. A second daily agent — the **outreach drafter**
+(15:37 UTC) — writes a personalized email per new target, citing the site's actual asset
+stack, and drops it into **Gmail drafts** for human review. Sending is always a human
+click: review drafts each morning, edit, send. The ledger tracks status
+(`new → drafted → sent → replied`); mark `sent`/`replied`/`passed` by hand (or ask Claude)
+so agents never double-touch a contact.
+
 ## How it stays live
 
 | Loop | Cadence | What it does |
