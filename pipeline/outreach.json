@@ -62,6 +62,50 @@
       "notes": "Play 4 river port; check port/parish site for published email."
     },
     {
+      "site_id": "kiowa-243ac-ok",
+      "org": "Kiowa 243-Acre Renewable/Data Center Tract (Crexi listing)",
+      "to_name": null,
+      "to": null,
+      "phone": "405-778-3355 (office) / 580-583-3517 (direct)",
+      "status": "needs-email",
+      "drafted_at": null,
+      "subject": null,
+      "notes": "Adjacent to Kiowa Power Plant (~1,250MW gas), Pittsburg County OK; phone-only so far via Crexi listing page."
+    },
+    {
+      "site_id": "port-muskogee-ok",
+      "org": "Port Muskogee",
+      "to_name": "Port Muskogee (main line)",
+      "to": null,
+      "phone": "918-682-7886",
+      "status": "needs-email",
+      "drafted_at": null,
+      "subject": null,
+      "notes": "5201 Three Forks Rd, Fort Gibson OK; ~115ac available across multiple tracts; McClellan-Kerr river navigation + BNSF rail. Play 4."
+    },
+    {
+      "site_id": "gallup-energy-logistics-park-nm",
+      "org": "Greater Gallup Economic Development Corp",
+      "to_name": "Patricia (Patty) Lundstrom",
+      "to": "patty@gallupedc.com",
+      "phone": "505-722-2980",
+      "status": "new",
+      "drafted_at": null,
+      "subject": null,
+      "notes": "2,500ac park w/ 365ac BNSF-certified rail site; NM Gas Co pipeline expansion noted; existing crude-oil transload facility on-site."
+    },
+    {
+      "site_id": "santateresa-gateway-railpark-nm",
+      "org": "Mesilla Valley Economic Development Alliance",
+      "to_name": "Brian Garcia, VP Business Development",
+      "to": "brian@mveda.com",
+      "phone": "575-525-2852",
+      "status": "new",
+      "drafted_at": null,
+      "subject": null,
+      "notes": "UP-owned 23kV/12.47kV substation on-site w/ dual transformers; water/sewer/gas/electric/fiber all available; adjacent UP Santa Teresa Intermodal Complex."
+    },
+    {
       "site_id": "helena-harbor-ar",
       "org": "Helena-West Helena / Phillips County Port Authority",
       "to_name": "Port Authority",
