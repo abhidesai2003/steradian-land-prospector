@@ -1,0 +1,76 @@
+{
+  "note": "Outreach ledger. Agents append targets (public contact info only) and draft emails into Gmail DRAFTS — never send. Statuses: new (ready to draft), needs-email (public email not yet found), drafted (in Gmail drafts awaiting human review/send), sent (human sent it), replied, passed (not pursuing).",
+  "identity": {
+    "name": "Abhi Desai",
+    "email": "abhi.v.desai@gmail.com",
+    "context": "Principal prospecting powered land (5 MW+ capable sites: grid/gas/fiber) for data-center and industrial-energy deployment across TX/LA/MS/AR/AZ/NM/OK."
+  },
+  "targets": [
+    {
+      "site_id": "rosedale-port-ms",
+      "org": "Port of Rosedale (Bolivar County Port Commission)",
+      "to_name": "Robert Maxwell, Port Director",
+      "to": "info@portofrosedale.com",
+      "phone": "662-759-6212",
+      "status": "new",
+      "drafted_at": null,
+      "subject": null,
+      "notes": "Mississippi River slackwater harbor; industrial acreage; playbook Play 4."
+    },
+    {
+      "site_id": "westmemphis-railport-ar",
+      "org": "Watco / West Memphis RailPort",
+      "to_name": "Watco terminal sales",
+      "to": "sales@watco.com",
+      "phone": null,
+      "status": "new",
+      "drafted_at": null,
+      "subject": null,
+      "notes": "Rail-served port terminal land near Memphis fiber corridor; Play 4."
+    },
+    {
+      "site_id": "panhandle-5000",
+      "org": "8888CRE",
+      "to_name": "Roxanne Marquis",
+      "to": "rose@8888cre.com",
+      "phone": "972-805-7587",
+      "status": "new",
+      "drafted_at": null,
+      "subject": null,
+      "notes": "Also represents DFW 1GW ground-lease, 1500ac hyperscale parcel, Waco-Austin 88ac, West TX 82ac — reference portfolio, anchor on the 5,000ac Panhandle campus data room."
+    },
+    {
+      "site_id": "abilene-north-1630",
+      "org": "Heather Dawn (listing agent)",
+      "to_name": "Heather Dawn",
+      "to": null,
+      "phone": "325-232-4670",
+      "status": "needs-email",
+      "drafted_at": null,
+      "subject": null,
+      "notes": "1,630ac tract with on-site substation in the Abilene/Stargate corridor; phone-only so far."
+    },
+    {
+      "site_id": "madison-parish-port-la",
+      "org": "Madison Parish Port Commission",
+      "to_name": "Port Commission",
+      "to": null,
+      "phone": "318-574-2181",
+      "status": "needs-email",
+      "drafted_at": null,
+      "subject": null,
+      "notes": "Play 4 river port; check port/parish site for published email."
+    },
+    {
+      "site_id": "helena-harbor-ar",
+      "org": "Helena-West Helena / Phillips County Port Authority",
+      "to_name": "Port Authority",
+      "to": null,
+      "phone": null,
+      "status": "needs-email",
+      "drafted_at": null,
+      "subject": null,
+      "notes": "4,000ac park, on-site 800psi gas line, barge dock; find published contact on helenaharbor.com."
+    }
+  ]
+}
