@@ -42,7 +42,8 @@ def main():
     print("== Power plants (TX) ==", flush=True)
     plants = arcgis_query_all(
         PLANTS_URL,
-        where="State IN ('Texas','Louisiana','Mississippi','Arkansas','Arizona')")
+        where="State IN ('Texas','Louisiana','Mississippi','Arkansas','Arizona',"
+              "'New Mexico','Oklahoma')")
     save_geojson(f"{RAW}/power_plants_tx.geojson", plants)
 
     print("== Transmission lines (corridor bbox) ==", flush=True)

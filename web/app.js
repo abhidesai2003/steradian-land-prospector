@@ -13,7 +13,7 @@ const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "
 
 const state = {
   data: {}, markers: [], selected: null,
-  minScore: 0, minKV: 138, kindFilter: "all", search: "",
+  minScore: 0, minKV: 138, kindFilter: "all", search: "", heatMetric: "heat",
   layers: { counties: true, lines: true, subs: true, fiber: true, queue: false, plants: false, pipelines: true },
 };
 
@@ -53,6 +53,22 @@ async function loadData() {
   names.forEach((n, i) => (state.data[n] = res[i]));
 }
 
+/* ---------------- county heat ---------------- */
+const HEAT_EXPR = {
+  heat: ["interpolate", ["linear"], ["get", "heat"],
+    0, "rgba(30,40,60,0)", 8, "rgba(24,79,149,0.16)", 25, "rgba(28,92,171,0.30)",
+    55, "rgba(57,135,229,0.42)", 90, "rgba(134,182,239,0.55)"],
+  queue_mw: ["interpolate", ["linear"], ["get", "queue_mw"],
+    0, "rgba(30,40,60,0)", 500, "rgba(24,79,149,0.16)", 2000, "rgba(28,92,171,0.30)",
+    6000, "rgba(57,135,229,0.42)", 15000, "rgba(134,182,239,0.55)"],
+  plants_mw: ["interpolate", ["linear"], ["get", "plants_mw"],
+    0, "rgba(30,40,60,0)", 200, "rgba(24,79,149,0.16)", 1000, "rgba(28,92,171,0.30)",
+    4000, "rgba(57,135,229,0.42)", 10000, "rgba(134,182,239,0.55)"],
+  hv_subs: ["interpolate", ["linear"], ["get", "hv_subs"],
+    0, "rgba(30,40,60,0)", 4, "rgba(24,79,149,0.16)", 12, "rgba(28,92,171,0.30)",
+    30, "rgba(57,135,229,0.42)", 70, "rgba(134,182,239,0.55)"],
+};
+
 /* ---------------- map layers ---------------- */
 function addLayers() {
   const d = state.data;
@@ -61,9 +77,7 @@ function addLayers() {
   map.addLayer({
     id: "counties-fill", type: "fill", source: "counties",
     paint: {
-      "fill-color": ["interpolate", ["linear"], ["get", "queue_mw"],
-        0, "rgba(30,40,60,0)", 500, "rgba(24,79,149,0.16)", 2000, "rgba(28,92,171,0.30)",
-        6000, "rgba(57,135,229,0.42)", 15000, "rgba(134,182,239,0.55)"],
+      "fill-color": HEAT_EXPR[state.heatMetric],
       "fill-opacity": ["interpolate", ["linear"], ["zoom"], 6, 1, 8, 0.35, 10, 0.12],
     },
   });
@@ -198,7 +212,7 @@ function hookPopups() {
     <div class="pp-t">${esc(p.op || "Gas pipeline")}</div>
     <div class="pp-r">${esc(p.t || "")} natural gas transmission</div>`);
   hoverPopup("counties-fill", (p) => `
-    <div class="pp-t">${esc(p.name)} County</div>
+    <div class="pp-t">${esc(p.name)} ${p.st === "LA" ? "Parish" : "County"}, ${esc(p.st)}</div>
     <div class="pp-r">Queue: <b>${fmtMW(p.queue_mw)}</b> across ${p.queue_n} projects</div>
     <div class="pp-r">☀ ${fmt(p.queue_solar)} · 🔋 batt ${fmt(p.queue_battery)} · 🔥 gas ${fmt(p.queue_gas)} · 🌀 ${fmt(p.queue_wind)} MW</div>
     <div class="pp-r">HV subs (≥138kV): <b>${p.hv_subs}</b> · Installed gen: <b>${fmtMW(p.plants_mw)}</b></div>`);
@@ -514,6 +528,14 @@ function initControls() {
       document.querySelectorAll("#kind-seg button").forEach((x) => x.classList.toggle("on", x === b));
       state.kindFilter = b.dataset.kind; renderList();
     }));
+  document.querySelectorAll("#heat-seg button").forEach((b) =>
+    b.addEventListener("click", () => {
+      document.querySelectorAll("#heat-seg button").forEach((x) => x.classList.toggle("on", x === b));
+      state.heatMetric = b.dataset.heat;
+      if (map && map.getLayer("counties-fill"))
+        map.setPaintProperty("counties-fill", "fill-color", HEAT_EXPR[state.heatMetric]);
+    }));
+
   const mkv = document.getElementById("min-kv");
   mkv.addEventListener("input", () => {
     const kvs = [69, 115, 138, 230, 345];
@@ -561,6 +583,19 @@ function watchForUpdates() {
   }, 5 * 60 * 1000);
 }
 
+/* ---------------- intro ---------------- */
+function initIntro() {
+  const el = document.getElementById("intro");
+  const show = () => el.classList.add("show");
+  const hide = () => { el.classList.remove("show"); try { localStorage.setItem("steradian_intro_seen", "1"); } catch {} };
+  document.getElementById("intro-close").addEventListener("click", hide);
+  el.addEventListener("click", (e) => { if (e.target === el) hide(); });
+  document.getElementById("help-btn").addEventListener("click", show);
+  let seen = null;
+  try { seen = localStorage.getItem("steradian_intro_seen"); } catch {}
+  if (!seen) show();
+}
+
 /* ---------------- boot ---------------- */
 (async function boot() {
   await loadData();
@@ -575,4 +610,5 @@ function watchForUpdates() {
   }
   renderList();
   initControls();
+  initIntro();
 })();

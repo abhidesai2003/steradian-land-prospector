@@ -6,6 +6,7 @@
 - PeeringDB internet exchanges in TX metros.
 """
 import sys
+import time
 
 sys.path.insert(0, "pipeline")
 from common import RAW, http_json, save_json
@@ -14,7 +15,8 @@ from common import RAW, http_json, save_json
 def main():
     print("== PeeringDB facilities (coverage states) ==", flush=True)
     facs = []
-    for st in ("TX", "LA", "MS", "AR", "AZ", "TN"):
+    for st in ("TX", "LA", "MS", "AR", "AZ", "NM", "OK", "TN"):
+        time.sleep(6)  # PeeringDB anonymous rate limit is unforgiving
         d = http_json("https://www.peeringdb.com/api/fac", {"state": st, "limit": 500})
         facs += [
         {

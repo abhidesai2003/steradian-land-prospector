@@ -93,7 +93,11 @@
       "Bash(git fetch *)",
       "Bash(git rebase *)",
       "Bash(git -c core.editor=true rebase --continue)",
-      "Bash(git commit -q -m 'fix: 7-state FIPS map in build \\(NM/OK\\) + full rebuild — the missing piece behind KeyError 35 *)"
+      "Bash(git commit -q -m 'fix: 7-state FIPS map in build \\(NM/OK\\) + full rebuild — the missing piece behind KeyError 35 *)",
+      "Bash(git commit -q -m 'feat: outreach ledger — public contacts per site, draft-only email pipeline *)",
+      "mcp__claude_ai_Gmail__list_drafts",
+      "Bash(git commit -q -m 'docs: outreach loop \\(drafts, never sends\\) *)",
+      "Bash(git commit -q -m 'fix: restore lost NM/OK+heat+intro commit from reflog; add all-state Blend heat \\(default\\), county activity in scoring, 7-state fetchers re-applied, 429 backoff *)"
     ]
   }
 }

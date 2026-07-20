@@ -14,7 +14,7 @@
 <aside id="panel">
   <div id="brand">
     <h1>Steradian Land Prospector</h1>
-    <div class="sub">5 MW+ powered land · TX · LA · MS · AR · AZ — grid, gas, fiber &amp; deal intelligence from public data</div>
+    <div class="sub">5 MW+ powered land · TX · LA · MS · AR · AZ · NM · OK — grid, gas, fiber &amp; deal intelligence from public data</div>
     <div class="sub" id="stamp" style="margin-top:2px;color:#6f9d6f"></div>
   </div>
   <div id="stats"></div>
@@ -33,6 +33,15 @@
       <label>Substation kV ≥</label>
       <input id="min-kv" type="range" min="0" max="4" step="1" value="2">
       <output id="min-kv-out">138 kV</output>
+    </div>
+    <div class="frow">
+      <label>County heat</label>
+      <div class="seg" id="heat-seg">
+        <button class="on" data-heat="heat">Blend</button>
+        <button data-heat="queue_mw">ERCOT queue</button>
+        <button data-heat="plants_mw">Installed gen</button>
+        <button data-heat="hv_subs">HV subs</button>
+      </div>
     </div>
     <div class="frow">
       <label>Show</label>
@@ -58,6 +67,8 @@
   <div class="lchip" data-layer="plants"><span class="dot" style="background:#e9722e"></span>Power plants</div>
 </div>
 
+<button id="help-btn" title="How to use this map">?</button>
+
 <div id="legend">
   <div class="lg-h">Legend</div>
   <div class="lg-r"><span class="sw" style="background:#c98500;border:2px solid #ffd583;width:12px;height:12px"></span>For-sale powered land</div>
@@ -73,6 +84,18 @@
   <div class="lg-r"><span class="sw" style="background:#12855d;border:1.5px solid #2fbf8a"></span>Colo / carrier hotel</div>
   <div class="lg-r"><span class="sw" style="background:#da5c92"></span>Queue project (county-level)</div>
   <div class="lg-r"><span class="sw" style="background:#b64a1f"></span>Power plant (size = MW)</div>
+</div>
+
+<div id="intro">
+  <div id="intro-card">
+    <h2>Steradian Land Prospector</h2>
+    <p class="tagline">A living map of powered land — sites with the electricity, gas, and fiber to host 5&nbsp;MW+ across TX, LA, MS, AR, AZ, NM &amp; OK. It refreshes itself every 6 hours, and a research agent hunts for new deals daily.</p>
+    <div class="tip"><span class="ic" style="background:#c98500;border:2px solid #ffd583;border-radius:50%"></span><div><b>Gold dots</b> are land marketed for sale with power; hollow rings are market signals &amp; comps; steel squares are dead industrial assets holding infrastructure. A <b style="color:#2fbf8a">green ring</b> = added in the last 14 days.</div></div>
+    <div class="tip"><span class="ic" style="background:repeating-linear-gradient(90deg,#e9722e 0 4px,transparent 4px 7px);height:4px;border-radius:2px;align-self:center"></span><div><b>Hover anything</b> — transmission lines, gas pipelines, substations, counties — for details. <b>Click a site or substation</b> for its full dossier: scores, nearest substation / pipeline / fiber, and the source listing.</div></div>
+    <div class="tip"><span class="ic" style="background:#4a8ce2;border-radius:50%"></span><div><b>Chips up top</b> toggle layers. County shading shows market heat — switch its metric (ERCOT queue / installed generation / HV substations) in the left panel, where you can also search, filter, and open <b>Market analytics</b>.</div></div>
+    <p class="fine">All data is compiled from public sources (HIFLD, EIA, ERCOT, PeeringDB, broker pages &amp; press). Verify independently before underwriting.</p>
+    <button id="intro-close">Start exploring</button>
+  </div>
 </div>
 
 <div id="drawer">

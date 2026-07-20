@@ -1,6 +1,6 @@
 # Steradian Land Prospector
 
-A **living** prospecting tool for powered land across **TX · LA · MS · AR · AZ** — 5 MW-and-up
+A **living** prospecting tool for powered land across **TX · LA · MS · AR · AZ · NM · OK** — 5 MW-and-up
 sites with power, gas, and fiber that are (or may soon be) for sale. Public grid, pipeline,
 queue, fiber, and listing data are combined into one scored, explorable map that **updates
 itself**.

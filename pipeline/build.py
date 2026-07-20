@@ -302,6 +302,13 @@ def main():
             best = min(best, dist_to_line_mi(lon, lat, f, cutoff=best))
         return best
 
+    # county activity: 0..1 blend usable in every state (ERCOT queue exists
+    # only in TX, so take the max of queue, installed-gen, and HV-sub density)
+    for c in county.values():
+        c["activity"] = min(1.0, max(c["queue_mw"] / 3000,
+                                     c["plants_mw"] / 8000,
+                                     c["hv_subs"] / 40))
+
     # ---- substation opportunity scores ----
     print("scoring substations...", flush=True)
     hv_subs = [s for s in subs if (s["kv"] or 0) >= 69 or s["kv"] is None]
@@ -311,12 +318,13 @@ def main():
         near_plant_mw = sum(p["mw"] for p in plants
                             if abs(p["lon"] - s["lon"]) < 0.25 and abs(p["lat"] - s["lat"]) < 0.2
                             and haversine_mi(s["lon"], s["lat"], p["lon"], p["lat"]) <= 10)
-        cq = county.get(s["cfips"], {}).get("queue_mw", 0)
+        cc = county.get(s["cfips"], {})
+        cq = cc.get("queue_mw", 0)
         score = (volt_points(s["kv"])
                  + min(s["lines"], 8) / 8 * 15
                  + prox_score(fd, 1, 120, 15)
                  + min(near_plant_mw / 1000, 1) * 15
-                 + min(cq / 3000, 1) * 15)
+                 + cc.get("activity", 0) * 15)
         s["fiber_mi"] = round(fd, 1)
         s["near_plant_mw"] = round(near_plant_mw)
         s["county_queue_mw"] = round(cq)
@@ -368,7 +376,8 @@ def main():
             scale = min(100, L["power_mw"] / 10)
         else:
             scale = 40
-        momentum = min(100, min(cq / 4000, 1) * 60
+        cact = max((county[c]["activity"] for c in cfs), default=0)
+        momentum = min(100, max(min(cq / 4000, 1), cact) * 60
                        + (25 if L["kind"] == "signal" else 0)
                        + (15 if "construction" in (L.get("status") or "").lower()
                           or "development" in (L.get("status") or "").lower() else 0))
@@ -483,6 +492,7 @@ def main():
         c = county[p["STATE"] + p["COUNTY"]]
         cf.append({"type": "Feature", "geometry": f["geometry"], "properties": {
             "name": c["name"], "st": c["st"], "fips": c["fips"],
+            "heat": round(c["activity"] * 100),
             "queue_mw": round(c["queue_mw"]), "queue_n": c["queue_n"],
             "queue_solar": round(c["queue_solar"]), "queue_wind": round(c["queue_wind"]),
             "queue_gas": round(c["queue_gas"]), "queue_battery": round(c["queue_battery"]),

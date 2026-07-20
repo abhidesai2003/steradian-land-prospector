@@ -15,10 +15,11 @@ TX_BBOX = (-107.0, 25.4, -93.2, 36.8)
 
 # Coverage corridor: TX + LA/MS/AR (Baton Rouge–Memphis) + AZ
 CORRIDOR_BBOX = (-115.0, 25.4, -88.7, 37.05)
-STATES = ("TX", "LA", "MS", "AR", "AZ")
+STATES = ("TX", "LA", "MS", "AR", "AZ", "NM", "OK")
 STATE_NAMES = {"Texas": "TX", "Louisiana": "LA", "Mississippi": "MS",
-               "Arkansas": "AR", "Arizona": "AZ"}
-COUNTY_FIPS_PREFIXES = ("48", "22", "28", "05", "04")
+               "Arkansas": "AR", "Arizona": "AZ", "New Mexico": "NM",
+               "Oklahoma": "OK"}
+COUNTY_FIPS_PREFIXES = ("48", "22", "28", "05", "04", "35", "40")
 
 
 def http_json(url, params=None, retries=3, timeout=90):
@@ -32,7 +33,7 @@ def http_json(url, params=None, retries=3, timeout=90):
                 return json.loads(r.read().decode("utf-8", "replace"))
         except Exception as e:  # noqa: BLE001
             last = e
-            time.sleep(2 * (i + 1))
+            time.sleep(45 if "429" in str(e) else 2 * (i + 1))
     raise RuntimeError(f"failed after {retries} tries: {url}: {last}")
 
 
