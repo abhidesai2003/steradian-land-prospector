@@ -23,9 +23,9 @@
       "to_name": "Watco terminal sales",
       "to": "sales@watco.com",
       "phone": null,
-      "status": "new",
-      "drafted_at": null,
-      "subject": null,
+      "status": "drafted",
+      "drafted_at": "2026-07-21",
+      "subject": "Inquiry: West Memphis Rail Port — powered-land interest",
       "notes": "Rail-served port terminal land near Memphis fiber corridor; Play 4."
     },
     {
@@ -45,9 +45,9 @@
       "to_name": "Heather Dawn",
       "to": "Heather@texashuntingland.com",
       "phone": "325-232-4670",
-      "status": "new",
-      "drafted_at": null,
-      "subject": null,
+      "status": "drafted",
+      "drafted_at": "2026-07-21",
+      "subject": "Inquiry: North Abilene 1,630-acre tract — on-site substation",
       "notes": "1,630ac tract with on-site substation in the Abilene/Stargate corridor. Published business email found on her brokerage's own site (texashuntingland.com agent profile), consistent across repeated lookups — direct fetch of the page was blocked by bot protection (403) but the domain-restricted lookup confirms it's her own firm's listing, not a third-party scrape."
     },
     {
@@ -59,7 +59,7 @@
       "status": "needs-email",
       "drafted_at": null,
       "subject": null,
-      "notes": "Play 4 river port; checked madisonparishport.com/contact and /personnel — site only offers a contact form, no published email address found; direct fetch blocked by bot protection (403). Executive Director is Patrick (Terry) Murphy. Follow up by phone (318-574-2181) or web contact form."
+      "notes": "Play 4 river port; checked madisonparishport.com/contact and /personnel — site only offers a contact form, no published email address found; direct fetch blocked by bot protection (403). Executive Director is Patrick (Terry) Murphy. Follow up by phone (318-574-2181) or web contact form. Re-checked 2026-07-21 (root + /contact): still 403, no email found."
     },
     {
       "site_id": "kiowa-243ac-ok",
@@ -81,7 +81,7 @@
       "status": "needs-email",
       "drafted_at": null,
       "subject": null,
-      "notes": "5201 Three Forks Rd, Fort Gibson OK; ~115ac available across multiple tracts; McClellan-Kerr river navigation + BNSF rail. Play 4. Checked portmuskogee.com/about/team/ (direct fetch blocked, 403); indirect lookups returned inconsistent/unconfirmed staff addresses, so not recorded — call main line (918-682-7886) to get a verified contact."
+      "notes": "5201 Three Forks Rd, Fort Gibson OK; ~115ac available across multiple tracts; McClellan-Kerr river navigation + BNSF rail. Play 4. Checked portmuskogee.com/about/team/ (direct fetch blocked, 403); indirect lookups returned inconsistent/unconfirmed staff addresses, so not recorded — call main line (918-682-7886) to get a verified contact. Re-checked 2026-07-21 (root + /about/team/): still 403, no email found."
     },
     {
       "site_id": "gallup-energy-logistics-park-nm",
@@ -89,9 +89,9 @@
       "to_name": "Patricia (Patty) Lundstrom",
       "to": "patty@gallupedc.com",
       "phone": "505-722-2980",
-      "status": "new",
-      "drafted_at": null,
-      "subject": null,
+      "status": "drafted",
+      "drafted_at": "2026-07-21",
+      "subject": "Inquiry: Gallup Energy Logistics Park — powered-land interest",
       "notes": "2,500ac park w/ 365ac BNSF-certified rail site; NM Gas Co pipeline expansion noted; existing crude-oil transload facility on-site."
     },
     {
@@ -114,7 +114,7 @@
       "status": "needs-email",
       "drafted_at": null,
       "subject": null,
-      "notes": "4,000ac park, on-site 800psi gas line, barge dock; find published contact on helenaharbor.com."
+      "notes": "4,000ac park, on-site 800psi gas line, barge dock. Checked helenaharbor.com (root + /?page_id=26) 2026-07-21: blocked by bot protection (403), no published email found. Follow up by phone or web contact form once a number/form is confirmed."
     }
   ]
 }
