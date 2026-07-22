@@ -59,7 +59,7 @@
       "status": "needs-email",
       "drafted_at": null,
       "subject": null,
-      "notes": "Play 4 river port; checked madisonparishport.com/contact and /personnel — site only offers a contact form, no published email address found; direct fetch blocked by bot protection (403). Executive Director is Patrick (Terry) Murphy. Follow up by phone (318-574-2181) or web contact form. Re-checked 2026-07-21 (root + /contact): still 403, no email found."
+      "notes": "Play 4 river port; checked madisonparishport.com/contact and /personnel — site only offers a contact form, no published email address found; direct fetch blocked by bot protection (403). Executive Director is Patrick (Terry) Murphy. Follow up by phone (318-574-2181) or web contact form. Re-checked 2026-07-21 and 2026-07-22 (root + /contact): still 403, no email found."
     },
     {
       "site_id": "kiowa-243ac-ok",
@@ -81,7 +81,7 @@
       "status": "needs-email",
       "drafted_at": null,
       "subject": null,
-      "notes": "5201 Three Forks Rd, Fort Gibson OK; ~115ac available across multiple tracts; McClellan-Kerr river navigation + BNSF rail. Play 4. Checked portmuskogee.com/about/team/ (direct fetch blocked, 403); indirect lookups returned inconsistent/unconfirmed staff addresses, so not recorded — call main line (918-682-7886) to get a verified contact. Re-checked 2026-07-21 (root + /about/team/): still 403, no email found."
+      "notes": "5201 Three Forks Rd, Fort Gibson OK; ~115ac available across multiple tracts; McClellan-Kerr river navigation + BNSF rail. Play 4. Checked portmuskogee.com/about/team/ (direct fetch blocked, 403); indirect lookups returned inconsistent/unconfirmed staff addresses, so not recorded — call main line (918-682-7886) to get a verified contact. Re-checked 2026-07-21 and 2026-07-22 (root + /about/team/): still 403, no email found."
     },
     {
       "site_id": "gallup-energy-logistics-park-nm",
@@ -114,7 +114,7 @@
       "status": "needs-email",
       "drafted_at": null,
       "subject": null,
-      "notes": "4,000ac park, on-site 800psi gas line, barge dock. Checked helenaharbor.com (root + /?page_id=26) 2026-07-21: blocked by bot protection (403), no published email found. Follow up by phone or web contact form once a number/form is confirmed."
+      "notes": "4,000ac park, on-site 800psi gas line, barge dock. Checked helenaharbor.com (root + /?page_id=26) 2026-07-21 and 2026-07-22: blocked by bot protection (403), no published email found. Follow up by phone or web contact form once a number/form is confirmed."
     },
     {
       "site_id": "grenada-bizpark-mesh2",
@@ -122,9 +122,9 @@
       "to_name": "Matthew Harrison, Executive Director",
       "to": "info@grenadameansbusiness.com",
       "phone": "662-229-9502",
-      "status": "new",
-      "drafted_at": null,
-      "subject": null,
+      "status": "drafted",
+      "drafted_at": "2026-07-22",
+      "subject": "Inquiry: Grenada Business & Technology Park — powered-land interest",
       "notes": "450ac Tier IV-2N-marketed site; dual Entergy (115kV/231kV) + TVA (161kV) feed; ~2.4GW gas plant planned, Atmos gas service; same corridor as the idling Domtar Grenada newsprint mill. Play 1/2/3."
     },
     {
@@ -133,9 +133,9 @@
       "to_name": "Mark Stringer, Director of Economic Development",
       "to": "mstringer@cooperativeenergy.com",
       "phone": "601-705-1349",
-      "status": "new",
-      "drafted_at": null,
-      "subject": null,
+      "status": "drafted",
+      "drafted_at": "2026-07-22",
+      "subject": "Inquiry: Greenpointe Industrial Park (Greenville, MS) — powered-land interest",
       "notes": "800ac heavy-industrial site near Greenville, GAP Incentive Zone (100% sales-tax exemption on gas/electric for manufacturing). Play 3/4."
     },
     {
@@ -144,9 +144,9 @@
       "to_name": "Richard Word, Port Director",
       "to": "info@portofgreenville.com",
       "phone": "662-335-2683",
-      "status": "new",
-      "drafted_at": null,
-      "subject": null,
+      "status": "drafted",
+      "drafted_at": "2026-07-22",
+      "subject": "Inquiry: Port of Greenville waterfront/industrial sites — powered-land interest",
       "notes": "~200ac waterfront on Lake Ferguson + separate 54ac industrial-zoned parcel; Columbus & Greenville Railway rail switching. Play 4."
     }
   ]
