@@ -115,6 +115,39 @@
       "drafted_at": null,
       "subject": null,
       "notes": "4,000ac park, on-site 800psi gas line, barge dock. Checked helenaharbor.com (root + /?page_id=26) 2026-07-21: blocked by bot protection (403), no published email found. Follow up by phone or web contact form once a number/form is confirmed."
+    },
+    {
+      "site_id": "grenada-bizpark-mesh2",
+      "org": "Greater Grenada Partnership",
+      "to_name": "Matthew Harrison, Executive Director",
+      "to": "info@grenadameansbusiness.com",
+      "phone": "662-229-9502",
+      "status": "new",
+      "drafted_at": null,
+      "subject": null,
+      "notes": "450ac Tier IV-2N-marketed site; dual Entergy (115kV/231kV) + TVA (161kV) feed; ~2.4GW gas plant planned, Atmos gas service; same corridor as the idling Domtar Grenada newsprint mill. Play 1/2/3."
+    },
+    {
+      "site_id": "greenpointe-industrial-park-ms",
+      "org": "Cooperative Energy (economic development)",
+      "to_name": "Mark Stringer, Director of Economic Development",
+      "to": "mstringer@cooperativeenergy.com",
+      "phone": "601-705-1349",
+      "status": "new",
+      "drafted_at": null,
+      "subject": null,
+      "notes": "800ac heavy-industrial site near Greenville, GAP Incentive Zone (100% sales-tax exemption on gas/electric for manufacturing). Play 3/4."
+    },
+    {
+      "site_id": "port-of-greenville-ms",
+      "org": "Port of Greenville Mississippi",
+      "to_name": "Richard Word, Port Director",
+      "to": "info@portofgreenville.com",
+      "phone": "662-335-2683",
+      "status": "new",
+      "drafted_at": null,
+      "subject": null,
+      "notes": "~200ac waterfront on Lake Ferguson + separate 54ac industrial-zoned parcel; Columbus & Greenville Railway rail switching. Play 4."
     }
   ]
 }
