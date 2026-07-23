@@ -148,6 +148,60 @@
       "drafted_at": "2026-07-22",
       "subject": "Inquiry: Port of Greenville waterfront/industrial sites — powered-land interest",
       "notes": "~200ac waterfront on Lake Ferguson + separate 54ac industrial-zoned parcel; Columbus & Greenville Railway rail switching. Play 4."
+    },
+    {
+      "site_id": "brownrealty-richland360-la",
+      "org": "Brown Realty Co. of Rayville",
+      "to_name": "Jerry Brown, Owner/Broker",
+      "to": "jbrown@brownrealtyco.com",
+      "phone": "318-614-9400",
+      "status": "new",
+      "notes": "360ac tract <7mi from Meta Hyperion, Richland Parish LA; $15M asking; electricity/water already on-site, rail-adjacent. Play 3 (regional broker, not a national DC team)."
+    },
+    {
+      "site_id": "natchez-mre-complex-ms",
+      "org": "Natchez Inc. (economic development)",
+      "to_name": "Chandler Russ",
+      "to": "cruss@natchezinc.com",
+      "phone": "601-445-0288",
+      "status": "new",
+      "notes": "Former International Paper site, ~270ac (acreage unconfirmed across sources), new substation at site entrance, on-site rail spur, <1mi from Natchez-Adams County Port. Alt contact: Port Director Anthony Hauer, director@natchezport.org, 601-442-2561. Play 4."
+    },
+    {
+      "site_id": "england-airpark-w1-la",
+      "org": "England Airpark",
+      "to_name": "David H. Broussard Jr., Deputy Director",
+      "to": null,
+      "phone": "318-427-6407",
+      "status": "needs-email",
+      "notes": "700ac Cleco Smartsite-certified tract on former England AFB, Rapides Parish LA. Also Shannon Hines, Facilities Manager (leasing), 318-427-6438. No published email found for either — phone only. Play 3."
+    },
+    {
+      "site_id": "vidalia-industrial-park-la",
+      "org": "Concordia Parish Economic Development",
+      "to_name": null,
+      "to": null,
+      "phone": "318-336-3635",
+      "status": "needs-email",
+      "notes": "160ac (395 max divisible) municipal power+gas site, Vidalia LA, adjacent to the port. No named contact/email found on site — general office line only. Play 4."
+    },
+    {
+      "site_id": "chicotdesha-yellowbend-port-ar",
+      "org": "Chicot-Desha Metropolitan Port Authority",
+      "to_name": "Robert Allen Evans, Director",
+      "to": null,
+      "phone": "870-222-8410",
+      "status": "needs-email",
+      "notes": "600ac flood-protected Mississippi River port site (Mile 554) near McGehee/Arkansas City AR; BNSF rail. Email found in search results appeared malformed/unreliable — not recording; follow up by phone. Play 4."
+    },
+    {
+      "site_id": "westsource-alamogordo-nm",
+      "org": "Westsource Corp",
+      "to_name": "Michael Shyne, President",
+      "to": null,
+      "phone": "575-437-0220",
+      "status": "needs-email",
+      "notes": "1,330ac Alamogordo NM site; 175psi/580psi gas transmission lines adjoin property, three 115kV lines. Regional single-market broker (not a national DC team); email not found in public search, phone only. Play 3."
     }
   ]
 }
