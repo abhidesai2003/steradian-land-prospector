@@ -59,7 +59,7 @@
       "status": "needs-email",
       "drafted_at": null,
       "subject": null,
-      "notes": "Play 4 river port; checked madisonparishport.com/contact and /personnel — site only offers a contact form, no published email address found; direct fetch blocked by bot protection (403). Executive Director is Patrick (Terry) Murphy. Follow up by phone (318-574-2181) or web contact form. Re-checked 2026-07-21 and 2026-07-22 (root + /contact): still 403, no email found."
+      "notes": "Play 4 river port; checked madisonparishport.com/contact and /personnel — site only offers a contact form, no published email address found; direct fetch blocked by bot protection (403). Executive Director is Patrick (Terry) Murphy. Follow up by phone (318-574-2181) or web contact form. Re-checked 2026-07-21, 2026-07-22, and 2026-07-23 (root + /contact): still 403, no email found."
     },
     {
       "site_id": "kiowa-243ac-ok",
@@ -81,7 +81,7 @@
       "status": "needs-email",
       "drafted_at": null,
       "subject": null,
-      "notes": "5201 Three Forks Rd, Fort Gibson OK; ~115ac available across multiple tracts; McClellan-Kerr river navigation + BNSF rail. Play 4. Checked portmuskogee.com/about/team/ (direct fetch blocked, 403); indirect lookups returned inconsistent/unconfirmed staff addresses, so not recorded — call main line (918-682-7886) to get a verified contact. Re-checked 2026-07-21 and 2026-07-22 (root + /about/team/): still 403, no email found."
+      "notes": "5201 Three Forks Rd, Fort Gibson OK; ~115ac available across multiple tracts; McClellan-Kerr river navigation + BNSF rail. Play 4. Checked portmuskogee.com/about/team/ (direct fetch blocked, 403); indirect lookups returned inconsistent/unconfirmed staff addresses, so not recorded — call main line (918-682-7886) to get a verified contact. Re-checked 2026-07-21, 2026-07-22, and 2026-07-23 (root + /about/team/): still 403, no email found."
     },
     {
       "site_id": "gallup-energy-logistics-park-nm",
@@ -114,7 +114,7 @@
       "status": "needs-email",
       "drafted_at": null,
       "subject": null,
-      "notes": "4,000ac park, on-site 800psi gas line, barge dock. Checked helenaharbor.com (root + /?page_id=26) 2026-07-21 and 2026-07-22: blocked by bot protection (403), no published email found. Follow up by phone or web contact form once a number/form is confirmed."
+      "notes": "4,000ac park, on-site 800psi gas line, barge dock. Checked helenaharbor.com (root + /?page_id=26) 2026-07-21, 2026-07-22, and 2026-07-23: blocked by bot protection (403), no published email found. Follow up by phone or web contact form once a number/form is confirmed."
     },
     {
       "site_id": "grenada-bizpark-mesh2",
@@ -155,7 +155,9 @@
       "to_name": "Jerry Brown, Owner/Broker",
       "to": "jbrown@brownrealtyco.com",
       "phone": "318-614-9400",
-      "status": "new",
+      "status": "drafted",
+      "drafted_at": "2026-07-23",
+      "subject": "Inquiry: 360-acre Richland Parish tract near Meta Hyperion — powered-land interest",
       "notes": "360ac tract <7mi from Meta Hyperion, Richland Parish LA; $15M asking; electricity/water already on-site, rail-adjacent. Play 3 (regional broker, not a national DC team)."
     },
     {
@@ -164,7 +166,9 @@
       "to_name": "Chandler Russ",
       "to": "cruss@natchezinc.com",
       "phone": "601-445-0288",
-      "status": "new",
+      "status": "drafted",
+      "drafted_at": "2026-07-23",
+      "subject": "Inquiry: Natchez former International Paper site — powered-land interest",
       "notes": "Former International Paper site, ~270ac (acreage unconfirmed across sources), new substation at site entrance, on-site rail spur, <1mi from Natchez-Adams County Port. Alt contact: Port Director Anthony Hauer, director@natchezport.org, 601-442-2561. Play 4."
     },
     {
@@ -174,7 +178,7 @@
       "to": null,
       "phone": "318-427-6407",
       "status": "needs-email",
-      "notes": "700ac Cleco Smartsite-certified tract on former England AFB, Rapides Parish LA. Also Shannon Hines, Facilities Manager (leasing), 318-427-6438. No published email found for either — phone only. Play 3."
+      "notes": "700ac Cleco Smartsite-certified tract on former England AFB, Rapides Parish LA. Also Shannon Hines, Facilities Manager (leasing), 318-427-6438; Ralph Hennessy, Executive Director, main line 318-449-3504. No published email found for any of the three — official site englandairpark.org/business/make-a-connection/ blocked by bot protection (403) as of 2026-07-23; no email displayed in public search results. Phone only. Play 3."
     },
     {
       "site_id": "vidalia-industrial-park-la",
@@ -183,7 +187,7 @@
       "to": null,
       "phone": "318-336-3635",
       "status": "needs-email",
-      "notes": "160ac (395 max divisible) municipal power+gas site, Vidalia LA, adjacent to the port. No named contact/email found on site — general office line only. Play 4."
+      "notes": "160ac (395 max divisible) municipal power+gas site, Vidalia LA, adjacent to the port. No named contact/email found on site — general office line only. Checked official site concordiaed.com/about_us/contact_us/ 2026-07-23: blocked by bot protection (403), no email found. Play 4."
     },
     {
       "site_id": "chicotdesha-yellowbend-port-ar",
@@ -192,7 +196,7 @@
       "to": null,
       "phone": "870-222-8410",
       "status": "needs-email",
-      "notes": "600ac flood-protected Mississippi River port site (Mile 554) near McGehee/Arkansas City AR; BNSF rail. Email found in search results appeared malformed/unreliable — not recording; follow up by phone. Play 4."
+      "notes": "600ac flood-protected Mississippi River port site (Mile 554) near McGehee/Arkansas City AR; BNSF rail. Email found in search results appeared malformed/unreliable — not recording; follow up by phone. Re-checked 2026-07-23: no official port website found (only third-party directories/registries), so no site to fetch a published address from. Play 4."
     },
     {
       "site_id": "westsource-alamogordo-nm",
@@ -201,7 +205,7 @@
       "to": null,
       "phone": "575-437-0220",
       "status": "needs-email",
-      "notes": "1,330ac Alamogordo NM site; 175psi/580psi gas transmission lines adjoin property, three 115kV lines. Regional single-market broker (not a national DC team); email not found in public search, phone only. Play 3."
+      "notes": "1,330ac Alamogordo NM site; 175psi/580psi gas transmission lines adjoin property, three 115kV lines. Regional single-market broker (not a national DC team); email not found in public search. Checked official site alamogordodevelopment.com/contact/ 2026-07-23: blocked by bot protection (403), no email found. Phone only. Play 3."
     }
   ]
 }
