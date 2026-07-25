@@ -206,6 +206,24 @@
       "phone": "575-437-0220",
       "status": "needs-email",
       "notes": "1,330ac Alamogordo NM site; 175psi/580psi gas transmission lines adjoin property, three 115kV lines. Regional single-market broker (not a national DC team); email not found in public search. Checked official site alamogordodevelopment.com/contact/ 2026-07-23: blocked by bot protection (403), no email found. Phone only. Play 3."
+    },
+    {
+      "site_id": "lakeprovidence-port-la",
+      "org": "Lake Providence Port Commission",
+      "to_name": "Bryant Killen, Port Director",
+      "to": "bryantkillen@gmail.com",
+      "phone": "318-559-2365",
+      "status": "new",
+      "notes": "Mississippi River inland port, East Carroll Parish LA; several small parcels (14.5ac, 30ac, 47ac) per LED site-selection database. Email is a personal gmail address but is published on the official Louisiana state Boards & Commissions contact directory (primary government source), so treated as a public business contact. Play 4."
+    },
+    {
+      "site_id": "yazoocounty-port-ms",
+      "org": "Yazoo County Port Commission",
+      "to_name": "Donna Kraft, Port Director",
+      "to": "admin@yazoocountyms.gov",
+      "phone": "662-746-8668",
+      "status": "new",
+      "notes": "Yazoo River port ~10mi north of Vicksburg, connects to Mississippi River waterway system; CN rail spur. Acreage/power not yet published — inquiry should ask about available acreage and utility infrastructure directly. Play 4."
     }
   ]
 }
