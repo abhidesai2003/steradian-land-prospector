@@ -59,7 +59,7 @@
       "status": "needs-email",
       "drafted_at": null,
       "subject": null,
-      "notes": "Play 4 river port; checked madisonparishport.com/contact and /personnel — site only offers a contact form, no published email address found; direct fetch blocked by bot protection (403). Executive Director is Patrick (Terry) Murphy. Follow up by phone (318-574-2181) or web contact form. Re-checked 2026-07-21, 2026-07-22, and 2026-07-23 (root + /contact): still 403, no email found."
+      "notes": "Play 4 river port; checked madisonparishport.com/contact and /personnel — site only offers a contact form, no published email address found; direct fetch blocked by bot protection (403). Executive Director is Patrick (Terry) Murphy. Follow up by phone (318-574-2181) or web contact form. Re-checked 2026-07-21, 2026-07-22, 2026-07-23, and 2026-07-25 (root + /contact): still 403, no email found."
     },
     {
       "site_id": "kiowa-243ac-ok",
@@ -81,7 +81,7 @@
       "status": "needs-email",
       "drafted_at": null,
       "subject": null,
-      "notes": "5201 Three Forks Rd, Fort Gibson OK; ~115ac available across multiple tracts; McClellan-Kerr river navigation + BNSF rail. Play 4. Checked portmuskogee.com/about/team/ (direct fetch blocked, 403); indirect lookups returned inconsistent/unconfirmed staff addresses, so not recorded — call main line (918-682-7886) to get a verified contact. Re-checked 2026-07-21, 2026-07-22, and 2026-07-23 (root + /about/team/): still 403, no email found."
+      "notes": "5201 Three Forks Rd, Fort Gibson OK; ~115ac available across multiple tracts; McClellan-Kerr river navigation + BNSF rail. Play 4. Checked portmuskogee.com/about/team/ (direct fetch blocked, 403); indirect lookups returned inconsistent/unconfirmed staff addresses, so not recorded — call main line (918-682-7886) to get a verified contact. Re-checked 2026-07-21, 2026-07-22, 2026-07-23, and 2026-07-25 (root + /about/team/): still 403, no email found."
     },
     {
       "site_id": "gallup-energy-logistics-park-nm",
@@ -114,7 +114,7 @@
       "status": "needs-email",
       "drafted_at": null,
       "subject": null,
-      "notes": "4,000ac park, on-site 800psi gas line, barge dock. Checked helenaharbor.com (root + /?page_id=26) 2026-07-21, 2026-07-22, and 2026-07-23: blocked by bot protection (403), no published email found. Follow up by phone or web contact form once a number/form is confirmed."
+      "notes": "4,000ac park, on-site 800psi gas line, barge dock. Checked helenaharbor.com (root + /?page_id=26) 2026-07-21, 2026-07-22, 2026-07-23, and 2026-07-25: blocked by bot protection (403), no published email found. Follow up by phone or web contact form once a number/form is confirmed."
     },
     {
       "site_id": "grenada-bizpark-mesh2",
@@ -178,7 +178,7 @@
       "to": null,
       "phone": "318-427-6407",
       "status": "needs-email",
-      "notes": "700ac Cleco Smartsite-certified tract on former England AFB, Rapides Parish LA. Also Shannon Hines, Facilities Manager (leasing), 318-427-6438; Ralph Hennessy, Executive Director, main line 318-449-3504. No published email found for any of the three — official site englandairpark.org/business/make-a-connection/ blocked by bot protection (403) as of 2026-07-23; no email displayed in public search results. Phone only. Play 3."
+      "notes": "700ac Cleco Smartsite-certified tract on former England AFB, Rapides Parish LA. Also Shannon Hines, Facilities Manager (leasing), 318-427-6438; Ralph Hennessy, Executive Director, main line 318-449-3504. No published email found for any of the three — official site englandairpark.org/business/make-a-connection/ blocked by bot protection (403) as of 2026-07-23 and re-confirmed 2026-07-25; no email displayed in public search results. Phone only. Play 3."
     },
     {
       "site_id": "vidalia-industrial-park-la",
@@ -187,7 +187,7 @@
       "to": null,
       "phone": "318-336-3635",
       "status": "needs-email",
-      "notes": "160ac (395 max divisible) municipal power+gas site, Vidalia LA, adjacent to the port. No named contact/email found on site — general office line only. Checked official site concordiaed.com/about_us/contact_us/ 2026-07-23: blocked by bot protection (403), no email found. Play 4."
+      "notes": "160ac (395 max divisible) municipal power+gas site, Vidalia LA, adjacent to the port. No named contact/email found on site — general office line only. Checked official site concordiaed.com/about_us/contact_us/ 2026-07-23 and re-checked 2026-07-25: blocked by bot protection (403), no email found. Play 4."
     },
     {
       "site_id": "chicotdesha-yellowbend-port-ar",
@@ -205,7 +205,7 @@
       "to": null,
       "phone": "575-437-0220",
       "status": "needs-email",
-      "notes": "1,330ac Alamogordo NM site; 175psi/580psi gas transmission lines adjoin property, three 115kV lines. Regional single-market broker (not a national DC team); email not found in public search. Checked official site alamogordodevelopment.com/contact/ 2026-07-23: blocked by bot protection (403), no email found. Phone only. Play 3."
+      "notes": "1,330ac Alamogordo NM site; 175psi/580psi gas transmission lines adjoin property, three 115kV lines. Regional single-market broker (not a national DC team); email not found in public search. Checked official site alamogordodevelopment.com/contact/ 2026-07-23 and re-checked 2026-07-25: blocked by bot protection (403), no email found. Phone only. Play 3."
     },
     {
       "site_id": "lakeprovidence-port-la",
@@ -213,7 +213,9 @@
       "to_name": "Bryant Killen, Port Director",
       "to": "bryantkillen@gmail.com",
       "phone": "318-559-2365",
-      "status": "new",
+      "status": "drafted",
+      "drafted_at": "2026-07-25",
+      "subject": "Inquiry: Lake Providence Port industrial parcels — powered-land interest",
       "notes": "Mississippi River inland port, East Carroll Parish LA; several small parcels (14.5ac, 30ac, 47ac) per LED site-selection database. Email is a personal gmail address but is published on the official Louisiana state Boards & Commissions contact directory (primary government source), so treated as a public business contact. Play 4."
     },
     {
@@ -222,7 +224,9 @@
       "to_name": "Donna Kraft, Port Director",
       "to": "admin@yazoocountyms.gov",
       "phone": "662-746-8668",
-      "status": "new",
+      "status": "drafted",
+      "drafted_at": "2026-07-25",
+      "subject": "Inquiry: Yazoo County Port — powered-land interest",
       "notes": "Yazoo River port ~10mi north of Vicksburg, connects to Mississippi River waterway system; CN rail spur. Acreage/power not yet published — inquiry should ask about available acreage and utility infrastructure directly. Play 4."
     }
   ]
