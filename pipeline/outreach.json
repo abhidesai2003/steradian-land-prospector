@@ -228,6 +228,42 @@
       "drafted_at": "2026-07-25",
       "subject": "Inquiry: Yazoo County Port — powered-land interest",
       "notes": "Yazoo River port ~10mi north of Vicksburg, connects to Mississippi River waterway system; CN rail spur. Acreage/power not yet published — inquiry should ask about available acreage and utility infrastructure directly. Play 4."
+    },
+    {
+      "site_id": "harbor-industrial-district-pinebluff-ar",
+      "org": "Economic Development Alliance for Jefferson County",
+      "to_name": "Allison J.H. Thompson, President & CEO",
+      "to": "allison@jeffersoncountyalliance.com",
+      "phone": "870-535-0110 (office) / 870-510-2674 (cell)",
+      "status": "new",
+      "notes": "375ac Harbor Industrial District at Port of Pine Bluff, Arkansas River; Watco-operated public terminal; FTZ 14J + Opportunity Zone. New port authority added to the database this run. Play 4."
+    },
+    {
+      "site_id": "lascruces-innovation-park-nm",
+      "org": "Mesilla Valley Economic Development Alliance",
+      "to_name": "Brian Garcia, VP Business Development",
+      "to": "brian@mveda.com",
+      "phone": "575-525-2852 (office) / 575-800-7728 (direct)",
+      "status": "new",
+      "notes": "333ac Las Cruces Innovation & Industrial Park, NM Site Readiness Program Platinum REDI Sites designation; served by El Paso Electric. Brian Garcia is already a drafted contact for santateresa-gateway-railpark-nm — reference existing correspondence when drafting to avoid duplicate cold outreach. Play 3."
+    },
+    {
+      "site_id": "ms-river-inland-port-complex-vicksburg-ms",
+      "org": "Warren County Port Commission / Vicksburg-Warren Economic Development Partnership",
+      "to_name": "Pablo Diaz, Executive Director",
+      "to": null,
+      "phone": "601-636-1012 (office) / 662-417-9111 (mobile)",
+      "status": "needs-email",
+      "notes": "1,238ac Mississippi River port megasite; Entergy MS power + Boardwalk Gulf South gas named. Phone/mobile found via search but no public email confirmed — call to get a verified address. Play 4."
+    },
+    {
+      "site_id": "osceola-denso-riverport-ar",
+      "org": "Osceola Riverport Authority",
+      "to_name": "Jeff Worsham, Director",
+      "to": null,
+      "phone": "870-622-0204",
+      "status": "needs-email",
+      "notes": "480ac former Denso Manufacturing Arkansas plant (closed Feb 2024), $22,500/acre, Mississippi County steel corridor. No public email found for the Riverport Authority — phone only. Play 2/4."
     }
   ]
 }
