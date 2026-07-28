@@ -59,7 +59,7 @@
       "status": "needs-email",
       "drafted_at": null,
       "subject": null,
-      "notes": "Play 4 river port; checked madisonparishport.com/contact and /personnel — site only offers a contact form, no published email address found; direct fetch blocked by bot protection (403). Executive Director is Patrick (Terry) Murphy. Follow up by phone (318-574-2181) or web contact form. Re-checked 2026-07-21, 2026-07-22, 2026-07-23, and 2026-07-25 (root + /contact): still 403, no email found."
+      "notes": "Play 4 river port; checked madisonparishport.com/contact and /personnel — site only offers a contact form, no published email address found; direct fetch blocked by bot protection (403). Executive Director is Patrick (Terry) Murphy. Follow up by phone (318-574-2181) or web contact form. Re-checked 2026-07-21, 2026-07-22, 2026-07-23, 2026-07-25, and 2026-07-28 (root + /contact): still 403, no email found."
     },
     {
       "site_id": "kiowa-243ac-ok",
@@ -81,7 +81,7 @@
       "status": "needs-email",
       "drafted_at": null,
       "subject": null,
-      "notes": "5201 Three Forks Rd, Fort Gibson OK; ~115ac available across multiple tracts; McClellan-Kerr river navigation + BNSF rail. Play 4. Checked portmuskogee.com/about/team/ (direct fetch blocked, 403); indirect lookups returned inconsistent/unconfirmed staff addresses, so not recorded — call main line (918-682-7886) to get a verified contact. Re-checked 2026-07-21, 2026-07-22, 2026-07-23, and 2026-07-25 (root + /about/team/): still 403, no email found."
+      "notes": "5201 Three Forks Rd, Fort Gibson OK; ~115ac available across multiple tracts; McClellan-Kerr river navigation + BNSF rail. Play 4. Checked portmuskogee.com/about/team/ (direct fetch blocked, 403); indirect lookups returned inconsistent/unconfirmed staff addresses, so not recorded — call main line (918-682-7886) to get a verified contact. Re-checked 2026-07-21, 2026-07-22, 2026-07-23, 2026-07-25, and 2026-07-28 (root + /about/team/): still 403, no email found."
     },
     {
       "site_id": "gallup-energy-logistics-park-nm",
@@ -114,7 +114,7 @@
       "status": "needs-email",
       "drafted_at": null,
       "subject": null,
-      "notes": "4,000ac park, on-site 800psi gas line, barge dock. Checked helenaharbor.com (root + /?page_id=26) 2026-07-21, 2026-07-22, 2026-07-23, and 2026-07-25: blocked by bot protection (403), no published email found. Follow up by phone or web contact form once a number/form is confirmed."
+      "notes": "4,000ac park, on-site 800psi gas line, barge dock. Checked helenaharbor.com (root + /?page_id=26) 2026-07-21, 2026-07-22, 2026-07-23, 2026-07-25, and 2026-07-28: blocked by bot protection (403), no published email found. Follow up by phone or web contact form once a number/form is confirmed."
     },
     {
       "site_id": "grenada-bizpark-mesh2",
@@ -178,7 +178,7 @@
       "to": null,
       "phone": "318-427-6407",
       "status": "needs-email",
-      "notes": "700ac Cleco Smartsite-certified tract on former England AFB, Rapides Parish LA. Also Shannon Hines, Facilities Manager (leasing), 318-427-6438; Ralph Hennessy, Executive Director, main line 318-449-3504. No published email found for any of the three — official site englandairpark.org/business/make-a-connection/ blocked by bot protection (403) as of 2026-07-23 and re-confirmed 2026-07-25; no email displayed in public search results. Phone only. Play 3."
+      "notes": "700ac Cleco Smartsite-certified tract on former England AFB, Rapides Parish LA. Also Shannon Hines, Facilities Manager (leasing), 318-427-6438; Ralph Hennessy, Executive Director, main line 318-449-3504. No published email found for any of the three — official site englandairpark.org/business/make-a-connection/ blocked by bot protection (403) as of 2026-07-23, re-confirmed 2026-07-25 and 2026-07-28; no email displayed in public search results. Phone only. Play 3."
     },
     {
       "site_id": "vidalia-industrial-park-la",
@@ -187,7 +187,7 @@
       "to": null,
       "phone": "318-336-3635",
       "status": "needs-email",
-      "notes": "160ac (395 max divisible) municipal power+gas site, Vidalia LA, adjacent to the port. No named contact/email found on site — general office line only. Checked official site concordiaed.com/about_us/contact_us/ 2026-07-23 and re-checked 2026-07-25: blocked by bot protection (403), no email found. Play 4."
+      "notes": "160ac (395 max divisible) municipal power+gas site, Vidalia LA, adjacent to the port. No named contact/email found on site — general office line only. Checked official site concordiaed.com/about_us/contact_us/ 2026-07-23 and re-checked 2026-07-25 and 2026-07-28: blocked by bot protection (403), no email found. Play 4."
     },
     {
       "site_id": "chicotdesha-yellowbend-port-ar",
@@ -205,7 +205,7 @@
       "to": null,
       "phone": "575-437-0220",
       "status": "needs-email",
-      "notes": "1,330ac Alamogordo NM site; 175psi/580psi gas transmission lines adjoin property, three 115kV lines. Regional single-market broker (not a national DC team); email not found in public search. Checked official site alamogordodevelopment.com/contact/ 2026-07-23 and re-checked 2026-07-25: blocked by bot protection (403), no email found. Phone only. Play 3."
+      "notes": "1,330ac Alamogordo NM site; 175psi/580psi gas transmission lines adjoin property, three 115kV lines. Regional single-market broker (not a national DC team); email not found in public search. Checked official site alamogordodevelopment.com/contact/ 2026-07-23 and re-checked 2026-07-25 and 2026-07-28: blocked by bot protection (403), no email found. Phone only. Play 3."
     },
     {
       "site_id": "lakeprovidence-port-la",
@@ -235,7 +235,9 @@
       "to_name": "Allison J.H. Thompson, President & CEO",
       "to": "allison@jeffersoncountyalliance.com",
       "phone": "870-535-0110 (office) / 870-510-2674 (cell)",
-      "status": "new",
+      "status": "drafted",
+      "drafted_at": "2026-07-28",
+      "subject": "Inquiry: Harbor Industrial District, Port of Pine Bluff — powered-land interest",
       "notes": "375ac Harbor Industrial District at Port of Pine Bluff, Arkansas River; Watco-operated public terminal; FTZ 14J + Opportunity Zone. New port authority added to the database this run. Play 4."
     },
     {
@@ -244,17 +246,21 @@
       "to_name": "Brian Garcia, VP Business Development",
       "to": "brian@mveda.com",
       "phone": "575-525-2852 (office) / 575-800-7728 (direct)",
-      "status": "new",
-      "notes": "333ac Las Cruces Innovation & Industrial Park, NM Site Readiness Program Platinum REDI Sites designation; served by El Paso Electric. Brian Garcia is already a drafted contact for santateresa-gateway-railpark-nm — reference existing correspondence when drafting to avoid duplicate cold outreach. Play 3."
+      "status": "drafted",
+      "drafted_at": "2026-07-28",
+      "subject": "Inquiry: Las Cruces Innovation & Industrial Park — powered-land interest",
+      "notes": "333ac Las Cruces Innovation & Industrial Park, NM Site Readiness Program Platinum REDI Sites designation; served by El Paso Electric. Brian Garcia is already a drafted contact for santateresa-gateway-railpark-nm (that draft is still unsent as of 2026-07-28, so this is a fresh, distinct inquiry rather than a follow-up). Play 3."
     },
     {
       "site_id": "ms-river-inland-port-complex-vicksburg-ms",
       "org": "Warren County Port Commission / Vicksburg-Warren Economic Development Partnership",
       "to_name": "Pablo Diaz, Executive Director",
-      "to": null,
+      "to": "pablo@vicksburgchamber.org",
       "phone": "601-636-1012 (office) / 662-417-9111 (mobile)",
-      "status": "needs-email",
-      "notes": "1,238ac Mississippi River port megasite; Entergy MS power + Boardwalk Gulf South gas named. Phone/mobile found via search but no public email confirmed — call to get a verified address. Play 4."
+      "status": "drafted",
+      "drafted_at": "2026-07-28",
+      "subject": "Inquiry: Mississippi River Inland Port Complex — powered-land interest",
+      "notes": "1,238ac Mississippi River port megasite; Entergy MS power + Boardwalk Gulf South gas named. Direct fetch of vicksburgusa.com/staff/ blocked by bot protection (403), but two independent search queries against the official staff directory (vicksburgusa.com/staff/) both surfaced pablo@vicksburgchamber.org as Pablo Diaz's published address — recorded as a confirmed org-published contact, not a third-party scrape. Play 4."
     },
     {
       "site_id": "osceola-denso-riverport-ar",
@@ -263,7 +269,7 @@
       "to": null,
       "phone": "870-622-0204",
       "status": "needs-email",
-      "notes": "480ac former Denso Manufacturing Arkansas plant (closed Feb 2024), $22,500/acre, Mississippi County steel corridor. No public email found for the Riverport Authority — phone only. Play 2/4."
+      "notes": "480ac former Denso Manufacturing Arkansas plant (closed Feb 2024), $22,500/acre, Mississippi County steel corridor. No public email found for the Riverport Authority — phone only. No official Riverport Authority website found (only third-party directories and ZoomInfo-style scrapes, which are excluded); checked 2026-07-28. Play 2/4."
     }
   ]
 }
