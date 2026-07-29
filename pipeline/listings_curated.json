@@ -1,5 +1,5 @@
 {
-  "compiled": "2026-07-28",
+  "compiled": "2026-07-29",
   "note": "Publicly marketed powered-land listings and market signals compiled from broker pages, press releases, and news coverage. Coordinates are approximate (city/county-level) unless precision says 'exact'. Prices shown only where publicly stated.",
   "sites": [
     {
@@ -1995,6 +1995,44 @@
       "status": "OKC portion (295.5 ac: 111.5ac at 3025 N. Frisco Rd + 184ac at 13921 NW 23rd St) rezoned Jan 2026 (planning commission voted 7-0); Yukon portion (184.5 ac Yukon Municipal Authority land) pending finalized purchase-sale agreement as of mid-2026; project has become locally contentious, tied to a Yukon vice-mayor recall effort; $15B total investment cited across two independent economic-impact studies.",
       "broker": null,
       "source": "https://www.okenergytoday.com/2026/01/data-center-wins-rezoning-approval-from-okc-planning-board/ ; https://childrenshealthdefense.org/defender/15-billion-ai-data-center-oklahoma-town-developer-water-use-pollution/ ; https://www.news9.com/story/68dc6593b59e144c5aa9c263/yukon-weighs-data-center-deal-amid-water-power-and-resident-concern",
+      "state": "OK"
+    },
+    {
+      "id": "xai-macrohardrr-southaven-ms",
+      "kind": "signal",
+      "name": "xAI \"MACROHARDRR\" — Southaven Power Plant & Data Center Campus",
+      "county": "DeSoto",
+      "city": "Southaven",
+      "lat": 34.9889,
+      "lon": -90.0126,
+      "precision": "city",
+      "acres": 114,
+      "power_mw": 1200,
+      "power_notes": "Asset-stack reactivation: MZX Tech LLC (xAI-linked entity) purchased the former Duke Energy natural-gas power plant site at 2875 Stanton Road S, Southaven, MS 38671 (~114 ac, built 2003, originally rated 640MW) in Jul 2025, plus separate adjoining 47-ac and 58-ac parcels. xAI is building a 1.2GW simple-cycle gas-turbine plant there; MDEQ approved an air permit for 41 turbines on Mar 10, 2026, though independent reporting (Memphis Flyer) counted 57 turbines already installed/running on-site as of early 2026 — permit/turbine-count discrepancy is the subject of an Earthjustice Clean Air Act notice-of-intent-to-sue (Feb 2026). This power campus feeds an separate 810,000 sq ft warehouse at 2400 Stateline Road, Southaven, which xAI is retrofitting into the \"MACROHARDRR\" AI data center (target: nearly 2GW of compute).",
+      "fiber_notes": null,
+      "price": null,
+      "status": "Publicly announced Dec 30, 2025 (Musk) / confirmed by MS Governor Tate Reeves as \"the largest economic development project in Mississippi's history\" (>$20B pledged investment); under active construction and regulatory scrutiny — MDEQ permit only partially covers turbines reportedly operating; community/environmental opposition ongoing as of mid-2026. Not marketed for sale — developer-owned; tracked as a market signal demonstrating precedent for reactivating idle gas-fired power-plant sites for hyperscale compute in the MS River corridor (Play 1/2 template).",
+      "broker": null,
+      "source": "https://governorreeves.ms.gov/tech-leader-xai-investing-more-than-20-billion-in-southaven/ ; https://www.datacenterdynamics.com/en/news/elon-musks-xai-buys-former-gas-power-plant-site-in-southaven-mississippi/ ; https://www.memphisflyer.com/xai-adds-additional-turbines-to-southaven-site/ ; https://earthjustice.org/wp-content/uploads/2026/02/2026.02.13-final-xai-southaven-noi-with-exhibit-a.pdf",
+      "state": "MS"
+    },
+    {
+      "id": "google-stillwater-payne-ok",
+      "kind": "signal",
+      "name": "Google — Stillwater AI/Cloud Data Center Campus (fka Project Rohan / Kipper LLC)",
+      "county": "Payne",
+      "city": "Stillwater",
+      "lat": 36.1156,
+      "lon": -97.0584,
+      "precision": "region",
+      "acres": 400,
+      "power_mw": null,
+      "power_notes": "400-ac site at the intersection of Perkins Rd and Richmond Rd, north of the former Armstrong facility; six planned data-center buildings (~300,000 sq ft each). OG&E announced electric service agreements (~Apr 30, 2026) to power three new Google Oklahoma data centers together — this Stillwater campus plus the separately-tracked Muskogee (google-summithill-muskogee-ok) and Sand Springs (google-projectspring-sandsprings-ok) sites; combined OG&E-served load across all three ramps toward 1GW over 5 years, peaking ~1.2GW by 2036 (aggregate figure, not Stillwater-specific). Google is paying 100% of grid-interconnection costs; deal includes >700MW of solar PPA capacity from Leeward Energy plus two solar facilities under construction.",
+      "fiber_notes": null,
+      "price": null,
+      "status": "Google's involvement publicly confirmed Mar 2025 (previously code-named \"Project Rohan\"/subsidiary \"Kipper LLC\"); all local taxing jurisdictions approved a 25-year tax-incentive agreement; multi-phase, multi-decade build, first phase targeted operational ~2027. OG&E power agreement (Apr 2026) is the newest development. Not marketed for sale — tracked as a market/power-infrastructure signal for the OG&E-served OKC/Stillwater corridor.",
+      "broker": null,
+      "source": "https://www.kgou.org/science-technology-and-environment/2026-05-01/google-og-e-reach-agreement-to-power-planned-data-centers-in-stillwater-muskogee ; https://www.kosu.org/local-news/2025-03-12/stillwater-announces-google-is-company-behind-massive-data-center-development ; https://www.oge.com/web/portal/-/200-press-release",
       "state": "OK"
     }
   ]
