@@ -59,7 +59,7 @@
       "status": "needs-email",
       "drafted_at": null,
       "subject": null,
-      "notes": "Play 4 river port; checked madisonparishport.com/contact and /personnel — site only offers a contact form, no published email address found; direct fetch blocked by bot protection (403). Executive Director is Patrick (Terry) Murphy. Follow up by phone (318-574-2181) or web contact form. Re-checked 2026-07-21, 2026-07-22, 2026-07-23, 2026-07-25, and 2026-07-28 (root + /contact): still 403, no email found."
+      "notes": "Play 4 river port; checked madisonparishport.com/contact and /personnel — site only offers a contact form, no published email address found; direct fetch blocked by bot protection (403). Executive Director is Patrick (Terry) Murphy. Follow up by phone (318-574-2181) or web contact form. Re-checked 2026-07-21, 2026-07-22, 2026-07-23, 2026-07-25, 2026-07-28, and 2026-07-30 (root + /contact): still 403, no email found."
     },
     {
       "site_id": "kiowa-243ac-ok",
@@ -81,7 +81,7 @@
       "status": "needs-email",
       "drafted_at": null,
       "subject": null,
-      "notes": "5201 Three Forks Rd, Fort Gibson OK; ~115ac available across multiple tracts; McClellan-Kerr river navigation + BNSF rail. Play 4. Checked portmuskogee.com/about/team/ (direct fetch blocked, 403); indirect lookups returned inconsistent/unconfirmed staff addresses, so not recorded — call main line (918-682-7886) to get a verified contact. Re-checked 2026-07-21, 2026-07-22, 2026-07-23, 2026-07-25, and 2026-07-28 (root + /about/team/): still 403, no email found."
+      "notes": "5201 Three Forks Rd, Fort Gibson OK; ~115ac available across multiple tracts; McClellan-Kerr river navigation + BNSF rail. Play 4. Checked portmuskogee.com/about/team/ (direct fetch blocked, 403); indirect lookups returned inconsistent/unconfirmed staff addresses, so not recorded — call main line (918-682-7886) to get a verified contact. Re-checked 2026-07-21, 2026-07-22, 2026-07-23, 2026-07-25, 2026-07-28, and 2026-07-30 (root + /about/team/): still 403, no email found."
     },
     {
       "site_id": "gallup-energy-logistics-park-nm",
@@ -114,7 +114,7 @@
       "status": "needs-email",
       "drafted_at": null,
       "subject": null,
-      "notes": "4,000ac park, on-site 800psi gas line, barge dock. Checked helenaharbor.com (root + /?page_id=26) 2026-07-21, 2026-07-22, 2026-07-23, 2026-07-25, and 2026-07-28: blocked by bot protection (403), no published email found. Follow up by phone or web contact form once a number/form is confirmed."
+      "notes": "4,000ac park, on-site 800psi gas line, barge dock. Checked helenaharbor.com (root + /?page_id=26) 2026-07-21, 2026-07-22, 2026-07-23, 2026-07-25, 2026-07-28, and 2026-07-30: blocked by bot protection (403), no published email found. Follow up by phone or web contact form once a number/form is confirmed."
     },
     {
       "site_id": "grenada-bizpark-mesh2",
@@ -178,7 +178,7 @@
       "to": null,
       "phone": "318-427-6407",
       "status": "needs-email",
-      "notes": "700ac Cleco Smartsite-certified tract on former England AFB, Rapides Parish LA. Also Shannon Hines, Facilities Manager (leasing), 318-427-6438; Ralph Hennessy, Executive Director, main line 318-449-3504. No published email found for any of the three — official site englandairpark.org/business/make-a-connection/ blocked by bot protection (403) as of 2026-07-23, re-confirmed 2026-07-25 and 2026-07-28; no email displayed in public search results. Phone only. Play 3."
+      "notes": "700ac Cleco Smartsite-certified tract on former England AFB, Rapides Parish LA. Also Shannon Hines, Facilities Manager (leasing), 318-427-6438; Ralph Hennessy, Executive Director, main line 318-449-3504. No published email found for any of the three — official site englandairpark.org/business/make-a-connection/ blocked by bot protection (403) as of 2026-07-23, re-confirmed 2026-07-25, 2026-07-28, and 2026-07-30; no email displayed in public search results. Phone only. Play 3."
     },
     {
       "site_id": "vidalia-industrial-park-la",
@@ -187,7 +187,7 @@
       "to": null,
       "phone": "318-336-3635",
       "status": "needs-email",
-      "notes": "160ac (395 max divisible) municipal power+gas site, Vidalia LA, adjacent to the port. No named contact/email found on site — general office line only. Checked official site concordiaed.com/about_us/contact_us/ 2026-07-23 and re-checked 2026-07-25 and 2026-07-28: blocked by bot protection (403), no email found. Play 4."
+      "notes": "160ac (395 max divisible) municipal power+gas site, Vidalia LA, adjacent to the port. No named contact/email found on site — general office line only. Checked official site concordiaed.com/about_us/contact_us/ 2026-07-23 and re-checked 2026-07-25, 2026-07-28, and 2026-07-30: blocked by bot protection (403), no email found. Play 4."
     },
     {
       "site_id": "chicotdesha-yellowbend-port-ar",
@@ -205,7 +205,7 @@
       "to": null,
       "phone": "575-437-0220",
       "status": "needs-email",
-      "notes": "1,330ac Alamogordo NM site; 175psi/580psi gas transmission lines adjoin property, three 115kV lines. Regional single-market broker (not a national DC team); email not found in public search. Checked official site alamogordodevelopment.com/contact/ 2026-07-23 and re-checked 2026-07-25 and 2026-07-28: blocked by bot protection (403), no email found. Phone only. Play 3."
+      "notes": "1,330ac Alamogordo NM site; 175psi/580psi gas transmission lines adjoin property, three 115kV lines. Regional single-market broker (not a national DC team); email not found in public search. Checked official site alamogordodevelopment.com/contact/ 2026-07-23 and re-checked 2026-07-25, 2026-07-28, and 2026-07-30: blocked by bot protection (403), no email found. Phone only. Play 3."
     },
     {
       "site_id": "lakeprovidence-port-la",
@@ -295,7 +295,9 @@
       "to_name": "Charles D. Tillotson, Executive Director",
       "to": "info@gatewayport.com",
       "phone": "504-682-7920",
-      "status": "new",
+      "status": "drafted",
+      "drafted_at": "2026-07-30",
+      "subject": "Inquiry: Louisiana Gateway Port — deep-draft Mississippi River acreage",
       "notes": "1,691.8ac deep-draft Mississippi River port site, Plaquemines Parish; 50-ft channel depth. Play 4."
     },
     {
@@ -305,7 +307,7 @@
       "to": null,
       "phone": "504-277-8418",
       "status": "needs-email",
-      "notes": "8 sites (1-934ac) incl. 216ac Industrial Business Park; Mississippi River/MR-Gulf Outlet/Norfolk Southern rail access. No published email found for the Executive Director — phone only. Play 4."
+      "notes": "8 sites (1-934ac) incl. 216ac Industrial Business Park; Mississippi River/MR-Gulf Outlet/Norfolk Southern rail access. No published email found for the Executive Director — phone only. Checked official site stbernardport.com 2026-07-30: blocked by bot protection (403), no email found. Play 4."
     },
     {
       "site_id": "riverplex-megapark-ascension-la",
@@ -331,7 +333,9 @@
       "to_name": null,
       "to": "miltonchambliss@ccmsgov.us",
       "phone": null,
-      "status": "new",
+      "status": "drafted",
+      "drafted_at": "2026-07-30",
+      "subject": "Inquiry: Port of Claiborne County — riverside FTZ site near Grand Gulf",
       "notes": "600ac FTZ riverside site adjacent to Entergy's Grand Gulf Nuclear Station (1.44GW) — strong grid-adjacency signal. Play 1/4."
     },
     {
@@ -340,7 +344,9 @@
       "to_name": "Shane/Blaine LaFontaine, Port Director",
       "to": "blafontaine@hcphc.ms",
       "phone": "228-533-7788",
-      "status": "new",
+      "status": "drafted",
+      "drafted_at": "2026-07-30",
+      "subject": "Inquiry: Port Bienville Industrial Park — Project Ready certified sites",
       "notes": "3,600+ac park; Sites 6 & 11 are Mississippi Power \"Project Ready\" certified. Play 3/4."
     },
     {
@@ -350,7 +356,7 @@
       "to": null,
       "phone": "800-801-8003",
       "status": "needs-email",
-      "notes": "Former Seatrium/Keppel LeTourneau plant, Vicksburg MS, 213ac/5 parcels, closed 2024. Cycled through multiple stale auction/for-sale listings since 2020 — motivated seller. No published email for the auction house found; phone only. Play 2."
+      "notes": "Former Seatrium/Keppel LeTourneau plant, Vicksburg MS, 213ac/5 parcels, closed 2024. Cycled through multiple stale auction/for-sale listings since 2020 — motivated seller. No published email for the auction house found; phone only. Checked williamsauction.com/contact-us 2026-07-30: blocked by bot protection (403), no email found. Play 2."
     },
     {
       "site_id": "osceola-entergy-industrialpark-ar",
@@ -359,7 +365,7 @@
       "to": null,
       "phone": null,
       "status": "needs-email",
-      "notes": "1,300ac Entergy Arkansas industrial park, Osceola, adjacent to Entergy's new 250MW Driver Solar project. No public email or phone surfaced for GREDF — follow up via cottontosteel.com contact form. Play 3."
+      "notes": "1,300ac Entergy Arkansas industrial park, Osceola, adjacent to Entergy's new 250MW Driver Solar project. No public email or phone surfaced for GREDF — follow up via cottontosteel.com contact form. Checked cottontosteel.com/contact 2026-07-30: blocked by bot protection (403), no email found. Play 3."
     }
   ]
 }
