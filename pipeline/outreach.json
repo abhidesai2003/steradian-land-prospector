@@ -270,6 +270,96 @@
       "phone": "870-622-0204",
       "status": "needs-email",
       "notes": "480ac former Denso Manufacturing Arkansas plant (closed Feb 2024), $22,500/acre, Mississippi County steel corridor. No public email found for the Riverport Authority — phone only. No official Riverport Authority website found (only third-party directories and ZoomInfo-style scrapes, which are excluded); checked 2026-07-28. Play 2/4."
+    },
+    {
+      "site_id": "portlakecharles-industrialsites-la",
+      "org": "Port of Lake Charles",
+      "to_name": "Richert L. Self, Executive Director",
+      "to": "rlself@portlc.com",
+      "phone": "337-493-3501",
+      "status": "new",
+      "notes": "Multiple heavy-industrial tracts (Industrial Park East, Lincoln Rd, former Proman/G2X, Tract 475) within FTZ 87 on the Calcasieu Ship Channel. Play 3/4."
+    },
+    {
+      "site_id": "portcaddobossier-la",
+      "org": "Port of Caddo-Bossier",
+      "to_name": "Director of Economic Development",
+      "to": "zazelld@portcb.com",
+      "phone": "318-550-0439",
+      "status": "new",
+      "notes": "2,600-4,000ac inland multimodal park at head of Red River Waterway navigation near Shreveport; FTZ + US Customs Port of Entry. Play 4."
+    },
+    {
+      "site_id": "louisianagatewayport-plaquemines-la",
+      "org": "Louisiana Gateway Port",
+      "to_name": "Charles D. Tillotson, Executive Director",
+      "to": "info@gatewayport.com",
+      "phone": "504-682-7920",
+      "status": "new",
+      "notes": "1,691.8ac deep-draft Mississippi River port site, Plaquemines Parish; 50-ft channel depth. Play 4."
+    },
+    {
+      "site_id": "stbernardport-la",
+      "org": "St. Bernard Port, Harbor & Terminal District",
+      "to_name": "Drew Heaphy, Executive Director",
+      "to": null,
+      "phone": "504-277-8418",
+      "status": "needs-email",
+      "notes": "8 sites (1-934ac) incl. 216ac Industrial Business Park; Mississippi River/MR-Gulf Outlet/Norfolk Southern rail access. No published email found for the Executive Director — phone only. Play 4."
+    },
+    {
+      "site_id": "riverplex-megapark-ascension-la",
+      "org": "Ascension Economic Development Corp",
+      "to_name": "Kate MacArthur",
+      "to": "kmacarthur@ascensionedc.com",
+      "phone": null,
+      "status": "new",
+      "notes": "17,000ac megasite on the Baton Rouge Mississippi River industrial corridor, adjacent to BASF/Honeywell/CF Industries/Air Products. Play 1/3/4."
+    },
+    {
+      "site_id": "pointesunshine-ascension-la",
+      "org": "Ascension Economic Development Corp",
+      "to_name": "Kate MacArthur",
+      "to": "kmacarthur@ascensionedc.com",
+      "phone": null,
+      "status": "new",
+      "notes": "975ac + adjacent 400ac, dual electrical feeds, <1mi from existing substation/transmission. Same contact as riverplex-megapark-ascension-la — distinct site, separate inquiry. Play 3/4."
+    },
+    {
+      "site_id": "portofclaibornecounty-ms",
+      "org": "Claiborne County Economic Development District",
+      "to_name": null,
+      "to": "miltonchambliss@ccmsgov.us",
+      "phone": null,
+      "status": "new",
+      "notes": "600ac FTZ riverside site adjacent to Entergy's Grand Gulf Nuclear Station (1.44GW) — strong grid-adjacency signal. Play 1/4."
+    },
+    {
+      "site_id": "portbienville-hancockcounty-ms",
+      "org": "Port Bienville Industrial Park / Hancock County Port and Harbor Commission",
+      "to_name": "Shane/Blaine LaFontaine, Port Director",
+      "to": "blafontaine@hcphc.ms",
+      "phone": "228-533-7788",
+      "status": "new",
+      "notes": "3,600+ac park; Sites 6 & 11 are Mississippi Power \"Project Ready\" certified. Play 3/4."
+    },
+    {
+      "site_id": "letourneau-vicksburg-ms",
+      "org": "Williams & Williams Real Estate Auctions",
+      "to_name": null,
+      "to": null,
+      "phone": "800-801-8003",
+      "status": "needs-email",
+      "notes": "Former Seatrium/Keppel LeTourneau plant, Vicksburg MS, 213ac/5 parcels, closed 2024. Cycled through multiple stale auction/for-sale listings since 2020 — motivated seller. No published email for the auction house found; phone only. Play 2."
+    },
+    {
+      "site_id": "osceola-entergy-industrialpark-ar",
+      "org": "Great River Economic Development Foundation (GREDF)",
+      "to_name": "Clif Chitwood, CEO",
+      "to": null,
+      "phone": null,
+      "status": "needs-email",
+      "notes": "1,300ac Entergy Arkansas industrial park, Osceola, adjacent to Entergy's new 250MW Driver Solar project. No public email or phone surfaced for GREDF — follow up via cottontosteel.com contact form. Play 3."
     }
   ]
 }
