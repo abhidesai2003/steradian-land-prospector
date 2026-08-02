@@ -374,6 +374,15 @@
       "phone": null,
       "status": "needs-email",
       "notes": "1,300ac Entergy Arkansas industrial park, Osceola, adjacent to Entergy's new 250MW Driver Solar project. No public email or phone surfaced for GREDF — follow up via cottontosteel.com contact form. Checked cottontosteel.com/contact 2026-07-30 and re-checked 2026-07-31 and 2026-08-01: blocked by bot protection (403), no email found. Play 3."
+    },
+    {
+      "site_id": "freeland-site-acadia-la",
+      "org": "Freeland Site (owner-direct)",
+      "to_name": "Joseph Freeland",
+      "to": "josephfrlnd@aol.com",
+      "phone": null,
+      "status": "new",
+      "notes": "536.94ac Acadia Parish LA site crossed by 4 named gas pipeline R/Ws incl. a Williams/Transco 24in 910psi line; $9.4M asking (~$17,500/ac), divisible min 50ac. Email published directly on the Louisiana Economic Development certified-site application (louisianasiteselection.com/Property/Detail/5036/Freeland-Site) — a government-hosted primary source, treated as a public business contact per the same precedent as lakeprovidence-port-la. Play 1."
     }
   ]
 }
