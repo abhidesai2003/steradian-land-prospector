@@ -1,5 +1,5 @@
 {
-  "compiled": "2026-08-03",
+  "compiled": "2026-08-04",
   "note": "Publicly marketed powered-land listings and market signals compiled from broker pages, press releases, and news coverage. Coordinates are approximate (city/county-level) unless precision says 'exact'. Prices shown only where publicly stated.",
   "sites": [
     {
@@ -396,9 +396,9 @@
       "power_notes": "Powered industrial site with 17MW operational power today, expandable to 111MW grid power pending ERCOT validation. On-site natural gas pipelines (two 12-inch, one 20-inch) allow behind-the-meter generation for a buildout to up to 311MW total. 30,000+ sq ft of existing structures to be repurposed for AI data center use.",
       "fiber_notes": null,
       "price": null,
-      "status": "50/50 JV + signed letter of intent to acquire (Jul 6, 2026)",
+      "status": "Acquisition completed Jul 20, 2026 (50/50 JV; LOI signed Jul 6, 2026, closing confirmed Jul 20, 2026); site planning/engineering and customer engagement underway, no anchor tenant yet as of this update.",
       "broker": null,
-      "source": "https://www.globenewswire.com/news-release/2026/07/06/3322404/0/en/big-digital-energy-announces-partnership-with-10netzero-to-acquire-power-ready-hood-county-texas-site-for-ai-datacenter-development.html",
+      "source": "https://www.globenewswire.com/news-release/2026/07/06/3322404/0/en/big-digital-energy-announces-partnership-with-10netzero-to-acquire-power-ready-hood-county-texas-site-for-ai-datacenter-development.html ; https://www.globenewswire.com/news-release/2026/07/20/3329715/0/en/big-digital-energy-and-10netzero-complete-acquisition-of-hood-county-texas-site.html",
       "state": "TX"
     },
     {
@@ -2679,6 +2679,25 @@
       "status": "Idled/placed into care-and-maintenance mode mid-2016 (~300 jobs cut) due to potash oversupply and foreign-competition price pressure. Confirmed still idled per Intrepid Potash's FY2024 technical report summary (SEC filing, Feb 2025), alongside the separately-shuttered North Mine (idled since the early 1980s); company's active NM production continues only at the East Underground and HB Solar Solution mines. No sale/redevelopment announced; Intrepid retains ownership and mineral rights across ~143,000 acres in the Carlsbad Potash District (owns ~4,700 ac outright, remainder leased BLM/state/private) — no public sale process identified, flagging for follow-up.",
       "broker": null,
       "source": "https://www.mining.com/intrepid-potash-idles-us-mine-lays-off-hundreds/",
+      "state": "NM"
+    },
+    {
+      "id": "sanjuancounty-industrialpark-nm",
+      "kind": "listing",
+      "name": "San Juan County Industrial Park (La Plata) — Gas Pipeline Extension",
+      "county": "San Juan",
+      "city": "La Plata (unincorporated, ~9 mi N of Farmington)",
+      "lat": 36.89,
+      "lon": -108.21,
+      "precision": "city",
+      "acres": 45,
+      "power_mw": null,
+      "power_notes": "New Mexico Gas Company completed a 13-mile natural gas distribution-pipeline extension to the county-owned park (completed ~May 2026), funded via a $3.9M NM Local Economic Development Act (LEDA) investment through Economic Development New Mexico, atop earlier $1.8M state and $1.6M federal EDA ARPA grants (2022). This is a distribution main from NM Gas Co., not a direct tap on a named transmission pipeline (El Paso Natural Gas/Transwestern not cited). Electrical service reported in county materials as 13.8kV three-phase; a specific MW capacity figure could not be independently confirmed this session. Existing tenant PESCO (oilfield/frac-water treatment equipment manufacturer) already connected; PESCO's leased acreage is reported inconsistently across sources (45/90 ac) — reconfirm on inquiry.",
+      "fiber_notes": "Broadband extension to the facility cited among recent county infrastructure upgrades; no specific provider or capacity named.",
+      "price": null,
+      "status": "45 acres reported available for industrial development as of 2025-2026 coverage (total park ~190 ac; remainder occupied by PESCO lease/park facilities); county actively marketing remaining acreage. Pipeline extension complete.",
+      "broker": "San Juan County Economic Development / Four Corners Economic Development, (505) 566-3702",
+      "source": "https://www.edd.newmexico.gov/press-releases/pipeline-extension-to-bring-80-jobs-new-development-to-san-juan-county/ ; https://www.biz.nm.gov/newsroom/state-s-infrastructure-investment-brings-natural-gas-service-to-san-ju-1743 ; https://www.sjcounty.net/government/economic-development/industrial-park",
       "state": "NM"
     }
   ]
