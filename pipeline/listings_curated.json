@@ -1,5 +1,5 @@
 {
-  "compiled": "2026-08-04",
+  "compiled": "2026-08-05",
   "note": "Publicly marketed powered-land listings and market signals compiled from broker pages, press releases, and news coverage. Coordinates are approximate (city/county-level) unless precision says 'exact'. Prices shown only where publicly stated.",
   "sites": [
     {
@@ -2699,6 +2699,63 @@
       "broker": "San Juan County Economic Development / Four Corners Economic Development, (505) 566-3702",
       "source": "https://www.edd.newmexico.gov/press-releases/pipeline-extension-to-bring-80-jobs-new-development-to-san-juan-county/ ; https://www.biz.nm.gov/newsroom/state-s-infrastructure-investment-brings-natural-gas-service-to-san-ju-1743 ; https://www.sjcounty.net/government/economic-development/industrial-park",
       "state": "NM"
+    },
+    {
+      "id": "hut8-beaconpoint-nueces-tx",
+      "kind": "signal",
+      "name": "Hut 8 — Beacon Point AI Campus (Nueces County)",
+      "county": "Nueces",
+      "city": "Unincorporated Nueces County, just outside Robstown/Calallen",
+      "lat": 27.82,
+      "lon": -97.68,
+      "precision": "region",
+      "acres": 525,
+      "power_mw": 1000,
+      "power_notes": "Secured by a 1,000MW utility interconnection agreement with AEP Texas; dedicated on-site substation funded through $4.25B in secured construction financing (closed Jun 2026). Two IT leases now signed (352MW Phase 1 + a second 352MW lease with an investment-grade tenant, reportedly Nvidia per FT) totaling 704MW of contracted IT capacity against the 1,000MW power base, base-term contract value $19.6B combined (up to $50.2B with renewal options).",
+      "fiber_notes": null,
+      "price": null,
+      "status": "Fully contracted for Phase 1+2 as of Jul 21, 2026; initial energization targeted Q1 2027, Phase 1 preliminary delivery Q3 2027, Phase 2 complete Q2 2028.",
+      "broker": null,
+      "source": "https://www.prnewswire.com/news-releases/hut-8-commercializes-first-phase-of-1-gw-beacon-point-ai-data-center-campus-with-15-year-352-mw-it-lease-with-base-term-contract-value-of-9-8-billion-302763484.html ; https://www.techtimes.com/articles/321209/20260721/former-bitcoin-miner-hut-8-fully-contracts-beacon-point-ai-campus-196b.htm ; https://www.kristv.com/news/local-news/in-your-neighborhood/corpus-christi/calallen/beacon-point-ai-massive-data-center-planned-for-nueces-county",
+      "state": "TX"
+    },
+    {
+      "id": "cawley-southcreekranch-ferris-tx",
+      "kind": "signal",
+      "name": "Cawley Partners — South Creek Ranch (Ferris, 5,200 ac)",
+      "county": "Ellis",
+      "city": "Ferris",
+      "lat": 32.534,
+      "lon": -96.666,
+      "precision": "city",
+      "acres": 5200,
+      "power_mw": null,
+      "power_notes": "No MW figure disclosed; developer cites proximity to existing transmission (\"power lines\") and the Oncor \"Water Mill\" switch/substation area as a key siting driver. No pipeline/gas details reported.",
+      "fiber_notes": null,
+      "price": null,
+      "status": "Acquisition closed (announced Apr 2025); ~2,000 acres in the northern section master-planned for a digital-commerce/data-center park, remainder for logistics, manufacturing, and residential; site work targeted to begin 2025 with first buildings 2-3 years out.",
+      "broker": null,
+      "source": "https://www.datacenterdynamics.com/en/news/cawley-partners-acquires-5200-acres-outside-dallas-plans-data-center-park/ ; https://www.cawleypartners.com/post/press-release-cawley-partners-acquires-south-creek-ranch-honoring-a-legacy-and-shaping-the ; https://therealdeal.com/texas/dallas/2025/04/29/cawley-partners-buys-5200-acres-south-of-dallas/",
+      "state": "TX"
+    },
+    {
+      "id": "poolside-projecthorizon-pecos-tx",
+      "kind": "signal",
+      "name": "Poolside \"Project Horizon\" — Longfellow Ranch (Pecos County, seeking new anchor tenant)",
+      "county": "Pecos",
+      "city": "Fort Stockton",
+      "lat": 30.894,
+      "lon": -102.879,
+      "precision": "region",
+      "acres": 568,
+      "power_mw": null,
+      "power_notes": "568-ac site on the Mitchell family's ~500,000-ac Longfellow Ranch in the Permian Basin; behind-the-meter/self-powered concept using on-site-produced natural gas to avoid grid interconnection queues, no named pipeline/tap. Originally planned 2GW campus (250MW Phase 1, expandable to 500MW).",
+      "fiber_notes": null,
+      "price": null,
+      "status": "CoreWeave (anchor tenant, 15-yr/250MW lease) terminated its agreement in late Mar/early Apr 2026 after Poolside's $2B Series C failed to close; site reported sitting idle as of Jul 2026 while Poolside seeks a new anchor tenant for a scaled-down ~400MW revival — no confirmed partner yet. Land itself remains developer-controlled, not publicly for sale, but flagged here as a de-risked/available Permian gas-power site worth tracking for BTM-gas plays.",
+      "broker": null,
+      "source": "https://www.datacenterdynamics.com/en/news/ai-startup-poolside-teams-up-with-coreweave-on-2gw-data-center-in-texas/ ; https://www.datacenterdynamics.com/en/news/poolside-seeks-partners-for-data-center-in-texas-after-coreweave-deal-falls-apart/ ; https://poolside.ai/blog/announcing-project-horizon",
+      "state": "TX"
     }
   ]
 }
