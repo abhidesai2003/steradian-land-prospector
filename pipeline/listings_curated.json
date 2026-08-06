@@ -1,5 +1,5 @@
 {
-  "compiled": "2026-08-05",
+  "compiled": "2026-08-06",
   "note": "Publicly marketed powered-land listings and market signals compiled from broker pages, press releases, and news coverage. Coordinates are approximate (city/county-level) unless precision says 'exact'. Prices shown only where publicly stated.",
   "sites": [
     {
@@ -849,12 +849,12 @@
       "precision": "region",
       "acres": 1500,
       "power_mw": null,
-      "power_notes": "~9,000 ac park (8th-largest industrial park worldwide); over 1,500 available acres, configurable half-acre to 250-acre sites; served by Grand River Dam Authority (GRDA); existing tenants include a Google data center, American Castings, and Pryor Chemical Company — proven powered-land precedent.",
+      "power_notes": "~9,000 ac park (8th-largest industrial park worldwide); over 1,500 available acres, configurable half-acre to 250-acre sites; served by Grand River Dam Authority (GRDA); existing tenants include a Google data center, American Castings, and Pryor Chemical Company — proven powered-land precedent. UPDATE: GRDA and MAIP issued an RFP for a dedicated 125-acre parcel adjacent to GRDA's Grand River Energy Center (which sits on MidAmerica's southern edge and supplies much of the park's electricity) as part of a larger 375-acre development area reserved for a new data center partner/operator — direct on-site generation adjacency (GRDA's Grand River Energy Center comprises gas-fired combined-cycle and coal units).",
       "fiber_notes": null,
       "price": null,
       "status": "Available; actively marketed",
       "broker": "MidAmerica Industrial Park Administration / Pryor Area Chamber of Commerce",
-      "source": "https://maip.com/site-selection/properties/",
+      "source": "https://maip.com/site-selection/properties/ ; https://www.publicpower.org/periodical/article/grda-industrial-park-working-bring-data-center-development-oklahoma ; https://maip.com/news/article/midamerica-and-the-grand-river-dam-authority (org's own site returned 403 to automated fetch; corroborated via search-indexed content)",
       "state": "OK"
     },
     {
@@ -2755,6 +2755,44 @@
       "status": "CoreWeave (anchor tenant, 15-yr/250MW lease) terminated its agreement in late Mar/early Apr 2026 after Poolside's $2B Series C failed to close; site reported sitting idle as of Jul 2026 while Poolside seeks a new anchor tenant for a scaled-down ~400MW revival — no confirmed partner yet. Land itself remains developer-controlled, not publicly for sale, but flagged here as a de-risked/available Permian gas-power site worth tracking for BTM-gas plays.",
       "broker": null,
       "source": "https://www.datacenterdynamics.com/en/news/ai-startup-poolside-teams-up-with-coreweave-on-2gw-data-center-in-texas/ ; https://www.datacenterdynamics.com/en/news/poolside-seeks-partners-for-data-center-in-texas-after-coreweave-deal-falls-apart/ ; https://poolside.ai/blog/announcing-project-horizon",
+      "state": "TX"
+    },
+    {
+      "id": "lockhart-92ac-fm2720-tx",
+      "kind": "listing",
+      "name": "1286 FM 2720 Data Center/Industrial Site (92.8 ac, Lockhart)",
+      "county": "Caldwell",
+      "city": "Lockhart",
+      "lat": 29.8828,
+      "lon": -97.67,
+      "precision": "city",
+      "acres": 92.8,
+      "power_mw": null,
+      "power_notes": "Three separate natural gas lines cross the site (operators/pressure not stated in listing). Bluebonnet Electric Cooperative already serves the property.",
+      "fiber_notes": null,
+      "price": "Contact broker",
+      "status": "Active listing; located in the Lockhart ETJ just west of the SH 130 tollway, next to the Related Cold Storage project, in an area with several data center/industrial projects underway (adjacent to Tract's Caldwell Valley Technology Park corridor). TxDOT's planned FM 2720 realignment will take ~13.59 ac off the SW corner. No floodplain; Opportunity Zone designation. City water on-site; city wastewater available just south on FM 2720.",
+      "broker": "Listed on LoopNet (broker unnamed in listing summary)",
+      "source": "https://www.loopnet.com/Listing/1286-FM-2720-Lockhart-TX/38409644/",
+      "state": "TX"
+    },
+    {
+      "id": "energyranch-atascosa-tx",
+      "kind": "signal",
+      "name": "Energy Ranch — HC Capital Partners / Herrmann Family Companies (1,500+ ac)",
+      "county": "Atascosa",
+      "city": "Near Pleasanton (~60 mi S of San Antonio)",
+      "lat": 28.9678,
+      "lon": -98.4794,
+      "precision": "county",
+      "acres": 1500,
+      "power_mw": null,
+      "power_notes": "\"Power-linked\" private-grid campus on Herrmann Family Companies ranchland, developed via Wrangler Infrastructure (HC Infrastructure Partners' midstream/power platform). Access to multiple large-volume natural gas transmission pipelines (not individually named) plus Wrangler's own midstream systems, two existing sources of purchased power, and a planned 765kV transmission line; on-site natural gas generation planned to bypass ERCOT interconnection-queue delays. Water strategy repurposes produced water from nearby oil/gas operations for thermal cooling.",
+      "fiber_notes": null,
+      "price": null,
+      "status": "Announced Jan 6, 2026; Phase 1 capital estimated $2-4B, first power/data capacity targeted 24-30 months after construction start; commercial/offtake details not yet disclosed.",
+      "broker": null,
+      "source": "https://www.prnewswire.com/news-releases/hc-capital-partners-and-herrmann-family-companies-launch-energy-ranch-a-1-500-acre-power-and-data-infrastructure-campus-in-south-texas-302653431.html ; https://www.datacenterdynamics.com/en/news/oil-gas-investors-plan-1500-acre-data-center-and-energy-campus-outside-san-antonio-texas/",
       "state": "TX"
     }
   ]
