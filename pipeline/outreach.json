@@ -394,6 +394,15 @@
       "phone": "505-566-3702",
       "status": "needs-email",
       "notes": "45ac available at the county-owned San Juan County Industrial Park (La Plata, near Farmington); NM Gas Co completed a 13-mile pipeline extension to the park in 2026 ($3.9M LEDA-funded). No named director or published email found in search results — only the org's main office phone. Play 1 (NM under-covered state)."
+    },
+    {
+      "site_id": "frontiergen-liveoak-mcmullen-tx",
+      "org": "FrontierGen",
+      "to_name": "Jason Jennaro, Co-Founder & CEO",
+      "to": "media@frontiergen.com",
+      "phone": null,
+      "status": "new",
+      "notes": "South Texas powered-land marketer (Live Oak/McMullen counties, Eagle Ford corridor), two campuses totaling 1,000+ ac. Only a media-inquiry address (media@frontiergen.com) found published on the official site; frontiergen.com/contact/ and /team/ pages exist but direct fetch was blocked, so no dedicated business-development email confirmed — drafter should consider routing through the media inbox or the site contact form. Play 3/5."
     }
   ]
 }
