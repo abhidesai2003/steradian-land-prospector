@@ -54,12 +54,12 @@
       "site_id": "madison-parish-port-la",
       "org": "Madison Parish Port Commission",
       "to_name": "Port Commission",
-      "to": null,
+      "to": "madisonport@bayou.com",
       "phone": "318-574-2181",
-      "status": "needs-email",
-      "drafted_at": null,
-      "subject": null,
-      "notes": "Play 4 river port; checked madisonparishport.com/contact and /personnel — site only offers a contact form, no published email address found; direct fetch blocked by bot protection (403). Executive Director is Patrick (Terry) Murphy. Follow up by phone (318-574-2181) or web contact form. Re-checked 2026-07-21, 2026-07-22, 2026-07-23, 2026-07-25, 2026-07-28, 2026-07-30, 2026-07-31, 2026-08-01, and 2026-08-02 (root + /contact): still 403, no email found."
+      "status": "drafted",
+      "drafted_at": "2026-08-07",
+      "subject": "Inquiry: Madison Parish Port 500-acre tract — powered-land interest",
+      "notes": "Play 4 river port; direct WebFetch of madisonparishport.com/contact blocked at the network egress-proxy level (EGRESS_BLOCKED, not the site's own bot protection) on 2026-08-07. Email madisonport@bayou.com confirmed via two independent WebSearch queries citing the official contact page, consistent with the ledger's existing address/phone (1603 Felicia Ave, Tallulah, 318-574-2181). Note: search also surfaced Kimmeka Sterling as current Executive Director, differing from the previously recorded Patrick (Terry) Murphy — unconfirmed which is current, so to_name kept generic. Drafted 2026-08-07 citing the ~500ac tract, 266ac core port site's 400-ft T-dock, and the 35ac warehouse sub-parcel."
     },
     {
       "site_id": "kiowa-243ac-ok",
@@ -75,13 +75,13 @@
     {
       "site_id": "port-muskogee-ok",
       "org": "Port Muskogee",
-      "to_name": "Port Muskogee (main line)",
-      "to": null,
+      "to_name": "Kimbra Scott, Port Director",
+      "to": "kimbra@portmuskogee.com",
       "phone": "918-682-7886",
-      "status": "needs-email",
-      "drafted_at": null,
-      "subject": null,
-      "notes": "5201 Three Forks Rd, Fort Gibson OK; ~115ac available across multiple tracts; McClellan-Kerr river navigation + BNSF rail. Play 4. Checked portmuskogee.com/about/team/ (direct fetch blocked, 403); indirect lookups returned inconsistent/unconfirmed staff addresses, so not recorded — call main line (918-682-7886) to get a verified contact. Re-checked 2026-07-21, 2026-07-22, 2026-07-23, 2026-07-25, 2026-07-28, 2026-07-30, 2026-07-31, 2026-08-01, and 2026-08-02 (root + /about/team/): still 403, no email found."
+      "status": "drafted",
+      "drafted_at": "2026-08-07",
+      "subject": "Inquiry: Port Muskogee industrial tracts — powered-land interest",
+      "notes": "5201 Three Forks Rd, Fort Gibson OK; ~115ac available across multiple tracts; McClellan-Kerr river navigation + BNSF rail; Core Scientific/CoreWeave HPC campus on-site scaling toward 1.5GW. Play 4. Direct WebFetch of portmuskogee.com/about/team/ blocked at the network egress-proxy level (EGRESS_BLOCKED) on 2026-08-07. Email kimbra@portmuskogee.com (Port Director Kimbra Scott) confirmed via two independent WebSearch queries both citing the official Team page. Drafted 2026-08-07."
     },
     {
       "site_id": "gallup-energy-logistics-park-nm",
@@ -114,7 +114,7 @@
       "status": "needs-email",
       "drafted_at": null,
       "subject": null,
-      "notes": "4,000ac park, on-site 800psi gas line, barge dock. Checked helenaharbor.com (root + /?page_id=26) 2026-07-21, 2026-07-22, 2026-07-23, 2026-07-25, 2026-07-28, 2026-07-30, 2026-07-31, 2026-08-01, and 2026-08-02: blocked by bot protection (403), no published email found. Follow up by phone or web contact form once a number/form is confirmed."
+      "notes": "4,000ac park, on-site 800psi gas line, barge dock. Checked helenaharbor.com (root + /?page_id=26) 2026-07-21 through 2026-08-02: blocked by bot protection (403), no published email found. Re-checked 2026-08-07: direct WebFetch now blocked at the network egress-proxy level (EGRESS_BLOCKED) rather than the site's own bot protection. WebSearch surfaced johnedwardsoffice@gmail.com for John Edwards, Economic Development Director — but the only source citing that address was RocketReach (a third-party contact-scraping directory), not the official helenaharbor.com site or a primary/government source, so per the published-only rule it is NOT recorded. Follow up by phone or web contact form once a number/form is confirmed."
     },
     {
       "site_id": "grenada-bizpark-mesh2",
@@ -178,7 +178,7 @@
       "to": null,
       "phone": "318-427-6407",
       "status": "needs-email",
-      "notes": "700ac Cleco Smartsite-certified tract on former England AFB, Rapides Parish LA. Also Shannon Hines, Facilities Manager (leasing), 318-427-6438; Ralph Hennessy, Executive Director, main line 318-449-3504. No published email found for any of the three — official site englandairpark.org/business/make-a-connection/ blocked by bot protection (403) as of 2026-07-23, re-confirmed 2026-07-25, 2026-07-28, 2026-07-30, 2026-07-31, 2026-08-01, and 2026-08-02; no email displayed in public search results. Phone only. Play 3."
+      "notes": "700ac Cleco Smartsite-certified tract on former England AFB, Rapides Parish LA. Also Shannon Hines, Facilities Manager (leasing), 318-427-6438; Ralph Hennessy, Executive Director, main line 318-449-3504. No published email found for any of the three — official site englandairpark.org/business/make-a-connection/ blocked by bot protection (403) 2026-07-23 through 2026-08-02. Re-checked 2026-08-07: direct WebFetch now blocked at the network egress-proxy level (EGRESS_BLOCKED). WebSearch explicitly returned pattern-guessed addresses (e.g. dbroussard@englandairpark.org) flagged by the search tool itself as inferred from a likely naming convention, not published — excluded per the no-guessing rule. Phone only. Play 3."
     },
     {
       "site_id": "vidalia-industrial-park-la",
@@ -187,7 +187,7 @@
       "to": null,
       "phone": "318-336-3635",
       "status": "needs-email",
-      "notes": "160ac (395 max divisible) municipal power+gas site, Vidalia LA, adjacent to the port. No named contact/email found on site — general office line only. Checked official site concordiaed.com/about_us/contact_us/ 2026-07-23 and re-checked 2026-07-25, 2026-07-28, 2026-07-30, 2026-07-31, 2026-08-01, and 2026-08-02: blocked by bot protection (403), no email found. Play 4."
+      "notes": "160ac (395 max divisible) municipal power+gas site, Vidalia LA, adjacent to the port. No named contact/email found on site — general office line only. Checked official site concordiaed.com/about_us/contact_us/ 2026-07-23 through 2026-08-02: blocked by bot protection (403), no email found. Re-checked 2026-08-07: direct WebFetch now blocked at the network egress-proxy level (EGRESS_BLOCKED). WebSearch returned only an obfuscated '[email protected]' placeholder string, not a real address — not recorded. Play 4."
     },
     {
       "site_id": "chicotdesha-yellowbend-port-ar",
@@ -196,7 +196,7 @@
       "to": null,
       "phone": "870-222-8410",
       "status": "needs-email",
-      "notes": "600ac flood-protected Mississippi River port site (Mile 554) near McGehee/Arkansas City AR; BNSF rail. Email found in search results appeared malformed/unreliable — not recording; follow up by phone. Re-checked 2026-07-23 and 2026-08-01: no official port website found (only third-party directories/registries like unisco.com and govtribe.com), so no site to fetch a published address from. Re-checked 2026-08-02: search surfaced a separate 'Chicot-Desha Intermodal Authority' manager (Joe Roberts) with an obfuscated '[email protected]' placeholder on a directory site — not a real address and not from an official source, so not recorded; still no official port authority website found. Play 4."
+      "notes": "600ac flood-protected Mississippi River port site (Mile 554) near McGehee/Arkansas City AR; BNSF rail. Email found in search results appeared malformed/unreliable — not recording; follow up by phone. Re-checked 2026-07-23, 2026-08-01, 2026-08-02: no official port website found (only third-party directories/registries), so no site to fetch a published address from. Re-checked 2026-08-07: WebSearch again returned only an obfuscated '[email protected]' placeholder for Robert Allen Evans, sourced from directory sites, not an official source — not recorded; still no official port authority website found. Play 4."
     },
     {
       "site_id": "westsource-alamogordo-nm",
@@ -205,7 +205,7 @@
       "to": null,
       "phone": "575-437-0220",
       "status": "needs-email",
-      "notes": "1,330ac Alamogordo NM site; 175psi/580psi gas transmission lines adjoin property, three 115kV lines. Regional single-market broker (not a national DC team); email not found in public search. Checked official site alamogordodevelopment.com/contact/ 2026-07-23 and re-checked 2026-07-25, 2026-07-28, 2026-07-30, 2026-07-31, 2026-08-01, and 2026-08-02: blocked by bot protection (403), no email found. Phone only. Play 3."
+      "notes": "1,330ac Alamogordo NM site; 175psi/580psi gas transmission lines adjoin property, three 115kV lines. Regional single-market broker (not a national DC team); email not found in public search. Checked official site alamogordodevelopment.com/contact/ 2026-07-23 through 2026-08-02: blocked by bot protection (403), no email found. Re-checked 2026-08-07: direct WebFetch now blocked at the network egress-proxy level (EGRESS_BLOCKED). WebSearch returned only explicitly-labeled 'possible' guessed addresses (e.g. c3@netmdc.com) — not published, excluded. Phone only. Play 3."
     },
     {
       "site_id": "lakeprovidence-port-la",
@@ -269,7 +269,7 @@
       "to": null,
       "phone": "870-622-0204",
       "status": "needs-email",
-      "notes": "480ac former Denso Manufacturing Arkansas plant (closed Feb 2024), $22,500/acre, Mississippi County steel corridor. No public email found for the Riverport Authority — phone only. No official Riverport Authority website found (only third-party directories and ZoomInfo-style scrapes, which are excluded); checked 2026-07-28. Re-checked 2026-08-01: unisco.com (third-party directory) shows an obfuscated/placeholder '[email protected]' string, not a real address — not usable and not from an official source, so not recorded. Re-checked 2026-08-02 via web search: still no dedicated official Riverport Authority website, only news coverage and third-party port directories. Play 2/4."
+      "notes": "480ac former Denso Manufacturing Arkansas plant (closed Feb 2024), $22,500/acre, Mississippi County steel corridor. No public email found for the Riverport Authority — phone only. No official Riverport Authority website found (only third-party directories and ZoomInfo-style scrapes, which are excluded); checked 2026-07-28, 2026-08-01, 2026-08-02. Re-checked 2026-08-07: WebSearch again returned only an obfuscated '[email protected]' placeholder for Jeff Worsham, not from an official source — not recorded; still no official Riverport Authority website. Play 2/4."
     },
     {
       "site_id": "portlakecharles-industrialsites-la",
@@ -311,7 +311,7 @@
       "to": null,
       "phone": "504-277-8418",
       "status": "needs-email",
-      "notes": "8 sites (1-934ac) incl. 216ac Industrial Business Park; Mississippi River/MR-Gulf Outlet/Norfolk Southern rail access. No published email found for the Executive Director — phone only. Checked official site stbernardport.com 2026-07-30 and re-checked 2026-07-31, 2026-08-01, and 2026-08-02: blocked by bot protection (403), no email found. Play 4."
+      "notes": "8 sites (1-934ac) incl. 216ac Industrial Business Park; Mississippi River/MR-Gulf Outlet/Norfolk Southern rail access. No published email found for the Executive Director — phone only. Checked official site stbernardport.com 2026-07-30 through 2026-08-02: blocked by bot protection (403), no email found. Re-checked 2026-08-07: direct WebFetch now blocked at the network egress-proxy level (EGRESS_BLOCKED). WebSearch found only a partially-masked ZoomInfo address (d***@stbernardport.com) for Drew Heaphy — not fully published/confirmed, not recorded. Play 4."
     },
     {
       "site_id": "riverplex-megapark-ascension-la",
@@ -364,7 +364,7 @@
       "to": null,
       "phone": "800-801-8003",
       "status": "needs-email",
-      "notes": "Former Seatrium/Keppel LeTourneau plant, Vicksburg MS, 213ac/5 parcels, closed 2024. Cycled through multiple stale auction/for-sale listings since 2020 — motivated seller. No published email for the auction house found; phone only. Checked williamsauction.com/contact-us 2026-07-30 and re-checked 2026-07-31, 2026-08-01, and 2026-08-02: blocked by bot protection (403), no email found. Play 2."
+      "notes": "Former Seatrium/Keppel LeTourneau plant, Vicksburg MS, 213ac/5 parcels, closed 2024. Cycled through multiple stale auction/for-sale listings since 2020 — motivated seller. No published email for the auction house found; phone only. Checked williamsauction.com/contact-us 2026-07-30 through 2026-08-02: blocked by bot protection (403), no email found. Re-checked 2026-08-07: direct WebFetch now blocked at the network egress-proxy level (EGRESS_BLOCKED); WebSearch also surfaced no specific email, only the general phone line. Play 2."
     },
     {
       "site_id": "osceola-entergy-industrialpark-ar",
@@ -373,7 +373,7 @@
       "to": null,
       "phone": null,
       "status": "needs-email",
-      "notes": "1,300ac Entergy Arkansas industrial park, Osceola, adjacent to Entergy's new 250MW Driver Solar project. No public email or phone surfaced for GREDF — follow up via cottontosteel.com contact form. Checked cottontosteel.com/contact 2026-07-30 and re-checked 2026-07-31, 2026-08-01, and 2026-08-02: blocked by bot protection (403), no email found. Play 3."
+      "notes": "1,300ac Entergy Arkansas industrial park, Osceola, adjacent to Entergy's new 250MW Driver Solar project. No public email or phone surfaced for GREDF — follow up via cottontosteel.com contact form. Checked cottontosteel.com/contact 2026-07-30 through 2026-08-02: blocked by bot protection (403), no email found. Re-checked 2026-08-07: direct WebFetch blocked at network egress-proxy level (EGRESS_BLOCKED). WebSearch found GREDF also operates under gredf.org (Contact Us page at gredf.org/about/contact-us/, not yet fetched) and returned only a 'likely' guessed address for Clif Chitwood (chitwodc@gredf.org) — not published, excluded. Worth trying gredf.org/about/contact-us/ directly next run. Play 3."
     },
     {
       "site_id": "freeland-site-acadia-la",
@@ -393,7 +393,7 @@
       "to": null,
       "phone": "505-566-3702",
       "status": "needs-email",
-      "notes": "45ac available at the county-owned San Juan County Industrial Park (La Plata, near Farmington); NM Gas Co completed a 13-mile pipeline extension to the park in 2026 ($3.9M LEDA-funded). No named director or published email found in search results — only the org's main office phone. Play 1 (NM under-covered state)."
+      "notes": "45ac available at the county-owned San Juan County Industrial Park (La Plata, near Farmington); NM Gas Co completed a 13-mile pipeline extension to the park in 2026 ($3.9M LEDA-funded). No named director or published email found in search results — only the org's main office phone. Re-checked 2026-08-07 (Four Corners Economic Development, 4cornersed.com): WebSearch still found no named director or email, only a general office phone for a partner city. Play 1 (NM under-covered state)."
     },
     {
       "site_id": "frontiergen-liveoak-mcmullen-tx",
@@ -401,8 +401,10 @@
       "to_name": "Jason Jennaro, Co-Founder & CEO",
       "to": "media@frontiergen.com",
       "phone": null,
-      "status": "new",
-      "notes": "South Texas powered-land marketer (Live Oak/McMullen counties, Eagle Ford corridor), two campuses totaling 1,000+ ac. Only a media-inquiry address (media@frontiergen.com) found published on the official site; frontiergen.com/contact/ and /team/ pages exist but direct fetch was blocked, so no dedicated business-development email confirmed — drafter should consider routing through the media inbox or the site contact form. Play 3/5."
+      "status": "drafted",
+      "drafted_at": "2026-08-07",
+      "subject": "Inquiry: FrontierGen South Texas Infrastructure Nexus — powered-land interest",
+      "notes": "South Texas powered-land marketer (Live Oak/McMullen counties, Eagle Ford corridor), two campuses totaling 1,000+ ac. Only a media-inquiry address (media@frontiergen.com) found published on the official site; frontiergen.com/contact/ and /team/ pages exist but direct fetch was blocked, so no dedicated business-development email confirmed. Drafted 2026-08-07 to the media inbox given no other published contact exists. Play 3/5."
     }
   ]
 }
