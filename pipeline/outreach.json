@@ -396,6 +396,15 @@
       "notes": "45ac available at the county-owned San Juan County Industrial Park (La Plata, near Farmington); NM Gas Co completed a 13-mile pipeline extension to the park in 2026 ($3.9M LEDA-funded). No named director or published email found in search results — only the org's main office phone. Re-checked 2026-08-07 (Four Corners Economic Development, 4cornersed.com): WebSearch still found no named director or email, only a general office phone for a partner city. Play 1 (NM under-covered state)."
     },
     {
+      "site_id": "viskase-osceola-ar",
+      "org": "Great River Economic Development Foundation (GREDF) / Mississippi County, AR Economic Development",
+      "to_name": "Clif Chitwood, CEO",
+      "to": null,
+      "phone": "870-532-6084",
+      "status": "needs-email",
+      "notes": "Former Viskase cellulose-casing plant, Osceola AR (Mississippi County), closed May 2025, now listed as available manufacturing space on the AEDC site-selection database. Same org/contact already tracked as needs-email for osceola-entergy-industrialpark-ar (GREDF is the lead recruiter for all of Mississippi County) — no email found there either after repeated checks; adding this site under the same contact rather than duplicating the search. AEDC's own listing page (arkansassiteselection.com) also blocked to direct fetch (EGRESS_BLOCKED); no dedicated listing-broker contact found. Play 2/3."
+    },
+    {
       "site_id": "frontiergen-liveoak-mcmullen-tx",
       "org": "FrontierGen",
       "to_name": "Jason Jennaro, Co-Founder & CEO",

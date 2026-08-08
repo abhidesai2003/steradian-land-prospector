@@ -1,5 +1,5 @@
 {
-  "compiled": "2026-08-07",
+  "compiled": "2026-08-08",
   "note": "Publicly marketed powered-land listings and market signals compiled from broker pages, press releases, and news coverage. Coordinates are approximate (city/county-level) unless precision says 'exact'. Prices shown only where publicly stated.",
   "sites": [
     {
@@ -2869,6 +2869,44 @@
       "status": "Debuted/announced via PR Newswire (2026); Transwestern made a strategic investment in FrontierGen to accelerate development; early-stage, more site-level detail expected.",
       "broker": "FrontierGen (Jason Jennaro, Co-Founder/CEO)",
       "source": "https://www.prnewswire.com/news-releases/frontiergen-debuts-1-000-acre-infrastructure-nexus-campuses-in-south-texas-302500415.html ; https://www.southtexasnews.com/the_progress/live-oak-mcmullen-counties-on-frontier-of-ai-data-center-development/article_e1f2c29a-5cb1-4661-ba84-5a57ca509817.html ; https://transwestern.com/news-detail/transwestern-makes-strategic-investment-in-frontiergen-to-accelerate-data-center",
+      "state": "TX"
+    },
+    {
+      "id": "viskase-osceola-ar",
+      "kind": "industrial",
+      "name": "Viskase Osceola Plant (former cellulose-casing manufacturing)",
+      "county": "Mississippi",
+      "city": "Osceola",
+      "lat": 35.7051,
+      "lon": -89.9698,
+      "precision": "city",
+      "acres": null,
+      "power_mw": null,
+      "power_notes": "Former cellulose/fibrous meat-casing extrusion plant (49 years in operation); no gas-tap, substation, or rail specifics published in sources reviewed. Address inconsistency across sources: EPA TRI/ADEQ permit records cite 2221 E State Hwy 198, Osceola, while the Arkansas Economic Development Commission's own site-selection listing describes the property as 'directly off State Highway 61, 5 miles south of Osceola' — unresolved discrepancy, reconfirm exact parcel before outreach. Sits in the Mississippi County steel/industrial corridor alongside other tracked closures (osceola-denso-riverport-ar) and active heavy industry (Nucor/Big River Steel) — not independently confirmed as sharing infrastructure.",
+      "fiber_notes": null,
+      "price": null,
+      "status": "Production ceased effective Apr/May 2025 (closure announced Mar 26, 2025; ~220 jobs affected after 49 years); consolidated into Viskase's Loudon, TN plant. Property now listed as available manufacturing space on the Arkansas Economic Development Commission's site-selection database (arkansassiteselection.com) — no sale/lease terms published yet; no buyer announced.",
+      "broker": null,
+      "source": "https://www.osceolatimes.com/news/viskase-companies-announces-closure-of-osceola-plant-e781c96e ; https://arkansassiteselection.com/aedc/Property/Detail/23376/Viskase-Co-Inc-Manufacturing-Space ; https://www.adeq.state.ar.us/downloads/WebDatabases/PermitsOnline/NPDES/PN/AR0036544_PN%20of%20Renewal_20221030.pdf (AEDC and ADEQ pages returned EGRESS_BLOCKED to direct automated fetch; facts corroborated via multiple independent search-indexed outlets — recommend direct verification before outreach)",
+      "state": "AR"
+    },
+    {
+      "id": "powerhouse-caldwellvalley-uhland-tx",
+      "kind": "signal",
+      "name": "PowerHouse Data Centers (AREP) — Caldwell Valley Technology Park tenant project (500 ac)",
+      "county": "Caldwell",
+      "city": "Uhland",
+      "lat": 29.96,
+      "lon": -97.78,
+      "precision": "region",
+      "acres": 500,
+      "power_mw": null,
+      "power_notes": "PowerHouse Data Centers (a division of American Real Estate Partners) is planning a 500-acre data center project sited within the ~3,600-acre master-planned Caldwell Valley Technology Park — the same park backed by Tract and already tracked separately (see tract-caldwell, up to 4GW master plan). No power/MW figures published yet for PowerHouse's specific 500-ac footprint. PowerHouse has filed a petition to have its site released from the City of Uhland's jurisdiction to be regulated instead by Caldwell County, which under Texas law has substantially less zoning/moratorium authority over data centers than cities.",
+      "fiber_notes": null,
+      "price": null,
+      "status": "Proposed/in permitting as of late Jul 2026; Uhland City Administrator confirmed 'substantial pushback' from residents at a project open house; jurisdiction fight ongoing. Reporting does not clearly resolve whether this is a PowerHouse-led sub-development within Tract's park or a distinct competing claim on overlapping acreage — reconfirm relationship to tract-caldwell before outreach.",
+      "broker": null,
+      "source": "https://www.datacenterdynamics.com/en/news/powerhouse-looking-to-build-500-acre-data-center-near-austin-texas/ ; https://baxtel.com/news/500-acre-texas-data-center-project-eyed-by-powerhouse ; https://www.bisnow.com/austin/news/data-center-development/powerhouse-plans-austin-suburb-data-center-skirt-city-control-134437 (all three sources returned EGRESS_BLOCKED to direct automated fetch; facts corroborated across independent search-indexed summaries of each — recommend direct verification)",
       "state": "TX"
     }
   ]
