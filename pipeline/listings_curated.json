@@ -1,5 +1,5 @@
 {
-  "compiled": "2026-08-08",
+  "compiled": "2026-08-09",
   "note": "Publicly marketed powered-land listings and market signals compiled from broker pages, press releases, and news coverage. Coordinates are approximate (city/county-level) unless precision says 'exact'. Prices shown only where publicly stated.",
   "sites": [
     {
@@ -206,9 +206,9 @@
       "power_notes": "Four contiguous parcels under contract at ~$100k/acre (~14× appraisal) for proposed data center development.",
       "fiber_notes": null,
       "price": "$80,000,000 (offer, ~$100k/ac)",
-      "status": "Under contract; litigation resolved — RCM Hill filed a Stipulation of Dismissal with Prejudice Jul 9 2026, ending its $100M federal suit against Hill County after the county rescinded its data-center moratorium (Jun 4 2026). Next go/no-go signal: under ERCOT rules, transmission/distribution providers must forward Project Aquila interconnection info to ERCOT by Jul 24 2026, with a $61,750,000 deposit due the same date.",
+      "status": "Under contract; litigation resolved — RCM Hill filed a Stipulation of Dismissal with Prejudice Jul 9 2026, ending its $100M federal suit against Hill County after the county rescinded its data-center moratorium (Jun 4 2026). UPDATE Aug 2026: the ERCOT Batch Zero go/no-go signal referenced below has been superseded — on Aug 3 2026 Gov. Abbott directed the PUCT/ERCOT to audit all data-center projects in the interconnection queue before approving any further large-load interconnections; ERCOT suspended its Aug 7 2026 Batch Zero large-load classification notifications and is seeking a good-cause exception at the PUCT's Aug 20 2026 open meeting. This freezes the process Project Aquila was routing through statewide (ERCOT's queue cited at ~474GW, ~90% data centers) — status of the Jul 24 2026 $61,750,000 deposit/ERCOT-forwarding step for this specific project not yet confirmed post-freeze; reconfirm before outreach. Prior next-signal text retained below for reference: transmission/distribution providers were to forward Project Aquila interconnection info to ERCOT by Jul 24 2026, with a $61,750,000 deposit due the same date.",
       "broker": "RCM Hill (developer-buyer)",
-      "source": "https://www.kwtx.com/2026/06/30/80m-offer-values-hill-county-land-about-100k-an-acre-roughly-14-times-appraisal-proposed-data-center-site/ ; https://www.kwtx.com/2026/07/15/hill-county-dropped-its-data-center-ban-after-100-million-lawsuit-now-developer-has-dismissed-case/",
+      "source": "https://www.kwtx.com/2026/06/30/80m-offer-values-hill-county-land-about-100k-an-acre-roughly-14-times-appraisal-proposed-data-center-site/ ; https://www.kwtx.com/2026/07/15/hill-county-dropped-its-data-center-ban-after-100-million-lawsuit-now-developer-has-dismissed-case/ ; https://www.texastribune.org/2026/08/03/texas-data-center-project-audit-greg-abbott/ ; https://www.utilitydive.com/news/texas-hits-pause-data-center-interconnections/827046/",
       "state": "TX"
     },
     {
@@ -2908,6 +2908,25 @@
       "broker": null,
       "source": "https://www.datacenterdynamics.com/en/news/powerhouse-looking-to-build-500-acre-data-center-near-austin-texas/ ; https://baxtel.com/news/500-acre-texas-data-center-project-eyed-by-powerhouse ; https://www.bisnow.com/austin/news/data-center-development/powerhouse-plans-austin-suburb-data-center-skirt-city-control-134437 (all three sources returned EGRESS_BLOCKED to direct automated fetch; facts corroborated across independent search-indexed summaries of each — recommend direct verification)",
       "state": "TX"
+    },
+    {
+      "id": "natchitoches-parish-port-la",
+      "kind": "listing",
+      "name": "Natchitoches Parish Port (360-Acre SmartSite)",
+      "county": "Natchitoches",
+      "city": "Campti",
+      "lat": 31.8968,
+      "lon": -93.0994,
+      "precision": "city",
+      "acres": 360,
+      "power_mw": null,
+      "power_notes": "CLECO provides electricity and Atmos Energy provides natural gas to the site; certified 'project ready' by McCallum Sweeney Consulting under CLECO's SmartSites program (Nov 2011), meaning utility infrastructure to the site boundary has been mapped/confirmed. No specific substation voltage or gas-tap size published in sources reviewed — reconfirm with the port before outreach.",
+      "fiber_notes": null,
+      "price": "Lease price negotiable",
+      "status": "Available for lease; zoned Heavy Industrial, subdividable, flat terrain; 3,000+ ft frontage on LA Hwy 486 and 4,000+ ft frontage on the Kansas City Southern Railroad / US Hwy 71. Distinct, separately-owned parcel adjoining the closed International Paper Red River Mill site already tracked (see ip-redriver-campti-la).",
+      "broker": "Natchitoches Parish Port Commission (Travis Tyler, Executive Director), nat-port@cp-tel.net, 318-356-9686",
+      "source": "https://louisianasiteselection.com/led/Property/Detail/3363/Natchitoches-Parish-Port ; http://www.natchitochesparishport.com/contact.html",
+      "state": "LA"
     }
   ]
 }
