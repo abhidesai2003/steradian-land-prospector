@@ -1,5 +1,5 @@
 {
-  "compiled": "2026-08-09",
+  "compiled": "2026-08-10",
   "note": "Publicly marketed powered-land listings and market signals compiled from broker pages, press releases, and news coverage. Coordinates are approximate (city/county-level) unless precision says 'exact'. Prices shown only where publicly stated.",
   "sites": [
     {
@@ -2927,6 +2927,63 @@
       "broker": "Natchitoches Parish Port Commission (Travis Tyler, Executive Director), nat-port@cp-tel.net, 318-356-9686",
       "source": "https://louisianasiteselection.com/led/Property/Detail/3363/Natchitoches-Parish-Port ; http://www.natchitochesparishport.com/contact.html",
       "state": "LA"
+    },
+    {
+      "id": "databank-redoak-ellis-tx",
+      "kind": "signal",
+      "name": "DataBank Red Oak Campus (480MW, 8 buildings)",
+      "county": "Ellis",
+      "city": "Red Oak",
+      "lat": 32.5088,
+      "lon": -96.7836,
+      "precision": "city",
+      "acres": 292,
+      "power_mw": 480,
+      "power_notes": "400MW Oncor substation delivering up to 240MW of critical IT power for Phase 1 (four of eight planned buildings); full eight-building buildout (3.4M sq ft, 425,000 sq ft each) targets 480MW total. Site at Batchler Rd & Stainback Rd, Red Oak. Same Ellis County corridor as the already-tracked CBRE Waxahachie listing (waxahachie-cbre) and Cawley Partners' South Creek Ranch (cawley-southcreekranch-ferris-tx) — confirms Ellis County as an active Oncor-served powered-land submarket south of Dallas.",
+      "fiber_notes": null,
+      "price": null,
+      "status": "Construction underway on $2B+ financed Phase 1 as of mid-2026; first three/four buildings reported leased, multiple industry reports (unconfirmed by DataBank directly) name Oracle as anchor tenant. Largest campus in DataBank's portfolio by MW and acreage. Not marketed for third-party purchase — developer-owned; tracked as a market signal. Source pages (DCD, Dallas Express, Fort Worth-area outlets) returned EGRESS_BLOCKED to direct automated fetch; facts corroborated across DataBank's own press release plus DCD, CoStar, Dallas Innovates, and Construction Review Online coverage — recommend direct verification before outreach.",
+      "broker": null,
+      "source": "https://www.databank.com/resources/press-releases/databank-announces-development-of-480mw-data-center-campus-in-south-dallas/ ; https://www.datacenterdynamics.com/en/news/databank-announces-480mw-campus-in-dallas-texas/ ; https://dallasexpress.com/realestate/databank-to-expand-data-center-campus-in-red-oak/",
+      "state": "TX"
+    },
+    {
+      "id": "acs-fortworth-tarrant-tx",
+      "kind": "signal",
+      "name": "ACS Fort Worth Data Center Campus (Hicks Field Rd, 5 buildings)",
+      "county": "Tarrant",
+      "city": "Fort Worth (far north, near Hicks Field Rd)",
+      "lat": 32.8734,
+      "lon": -97.3475,
+      "precision": "region",
+      "acres": 107,
+      "power_mw": null,
+      "power_notes": "Privately-owned substation planned adjacent to the campus, tying into Oncor's grid; no MW figure disclosed in sources reviewed. Site at 10200 Hicks Field Rd — west of I-35W, north of I-820, east of Business 287. Water-loop cooling system planned to reduce consumption.",
+      "fiber_notes": null,
+      "price": null,
+      "status": "ACS (Grupo ACS) filed development plans; five-building campus in two phases (Phase I complete by 2031, Phase II by 2034); requesting up to 70% ad valorem tax grant against a minimum $240.8M Phase 1 investment; total planned capital investment $2B+. Not marketed for third-party purchase — developer-owned; tracked as a market signal. Source pages (DCD, Hoodline, Construction Owners, Commercial Property Executive) returned EGRESS_BLOCKED to direct automated fetch; facts corroborated across multiple independent search-indexed outlets — recommend direct verification before outreach.",
+      "broker": null,
+      "source": "https://www.datacenterdynamics.com/en/news/acs-files-to-develop-five-building-data-center-campus-in-fort-worth-texas/ ; https://hoodline.com/2026/02/far-north-fort-worth-braces-for-colossal-2-1-billion-data-hub/ ; https://www.commercialsearch.com/news/2b-data-center-project-moves-forward-in-fort-worth/",
+      "state": "TX"
+    },
+    {
+      "id": "alc-hassayampa-buckeye-az",
+      "kind": "signal",
+      "name": "Arizona Land Consulting — Hassayampa Ranch / Tonopah Data Center Land Assembly (up to 1.5GW)",
+      "county": "Maricopa",
+      "city": "Buckeye / Tonopah corridor",
+      "lat": 33.43,
+      "lon": -112.78,
+      "precision": "region",
+      "acres": 4000,
+      "power_mw": 1500,
+      "power_notes": "No specific substation, gas-tap, or transmission-line figures disclosed yet; CEO Anita Verma-Lallian and backer Chamath Palihapitiya (Social Capital) describe the core ~2,000-ac Hassayampa Ranch parcel (Buckeye) as able to 'accommodate over 1GW,' potentially up to 1.5GW at full buildout ($25B estimated cost). Separate, further-west Tonopah acreage (same company, ~4,000 ac total across three sites as of a May 20, 2026 956-ac/$25M add-on) is being rezoned for industrial/data-center use. Distinct developer/parcels from the already-tracked Westpark360 (westpark360-buckeye-az, Garrett Development Corp, adjacent to APS's planned TS35 substation) in the same broader Buckeye Tech Corridor — not confirmed adjacent or overlapping.",
+      "fiber_notes": null,
+      "price": "$51,000,000 (Hassayampa Ranch parcel resale to Hassayampa Ranch/Light Year Capital/DYA Capital, after ALC's initial $37.5M purchase); $25,000,000 for the separate 956-ac May 2026 Tonopah add-on",
+      "status": "Maricopa County approved rezoning for the ~$25B Hassayampa Ranch data center hub; company continuing to assemble adjacent Tonopah acreage (latest close May 20, 2026). Land held by developer/investor group, not marketed for third-party purchase — tracked as a market signal demonstrating land-banking activity in the Buckeye/Tonopah corridor (Play 5). Source pages (DCD, ABC15, Orion Investment) returned EGRESS_BLOCKED to direct automated fetch; facts corroborated across DCD, Hoodline, Berry Riddell, and Enerdatics coverage — recommend direct verification before outreach.",
+      "broker": null,
+      "source": "https://www.datacenterdynamics.com/en/news/arizona-land-consulting-buys-land-for-potential-15gw-data-center/ ; https://hoodline.com/2026/05/tonopah-desert-mega-deal-supercharges-data-center-land-grab/ ; https://www.abc15.com/news/business/arizona-landowner-scoops-up-more-acreage-to-expand-data-center-empire",
+      "state": "AZ"
     }
   ]
 }
