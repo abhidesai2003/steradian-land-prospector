@@ -1,5 +1,5 @@
 {
-  "compiled": "2026-08-10",
+  "compiled": "2026-08-11",
   "note": "Publicly marketed powered-land listings and market signals compiled from broker pages, press releases, and news coverage. Coordinates are approximate (city/county-level) unless precision says 'exact'. Prices shown only where publicly stated.",
   "sites": [
     {
@@ -2984,6 +2984,25 @@
       "broker": null,
       "source": "https://www.datacenterdynamics.com/en/news/arizona-land-consulting-buys-land-for-potential-15gw-data-center/ ; https://hoodline.com/2026/05/tonopah-desert-mega-deal-supercharges-data-center-land-grab/ ; https://www.abc15.com/news/business/arizona-landowner-scoops-up-more-acreage-to-expand-data-center-empire",
       "state": "AZ"
+    },
+    {
+      "id": "circle-t-data-center-westlake-tx",
+      "kind": "signal",
+      "name": "Circle T Data Center (PowerHouse Data Centers)",
+      "county": "Tarrant",
+      "city": "Westlake",
+      "lat": 32.966,
+      "lon": -97.201,
+      "precision": "city",
+      "acres": 87.9,
+      "power_mw": 300,
+      "power_notes": "Developer PowerHouse Data Centers to fund a dedicated ~350MW substation at no cost to the town/residents per reporting; up to four 300,000 sq ft buildings totaling ~1.1M sq ft, 300MW aggregate campus load. Distinct site from the already-tracked ACS Fort Worth campus (Hicks Field Rd) in the same county.",
+      "fiber_notes": null,
+      "price": null,
+      "status": "Site plan approved by Westlake Planning & Zoning Commission Aug 4, 2026 after ~4 hours of public testimony; town staff found the plan met all applicable requirements despite opposition from adjacent Keller, TX residents (proximity to homes/schools, ~54M gal/yr water-use figure cited). Pre-construction/entitlement stage, not yet broken ground. Developer-held land, not marketed for third-party purchase — tracked as a market signal. Source pages (DCD, CBS Texas, Community Impact, Westlake TX gov) returned EGRESS_BLOCKED to direct automated fetch this run; facts corroborated across DCD, CandysDirt, CBS News Texas, and Community Impact coverage — recommend direct verification before outreach.",
+      "broker": null,
+      "source": "https://www.datacenterdynamics.com/en/news/powerhouse-files-for-300mw-data-center-campus-outside-dallas-fort-worth/ ; https://candysdirt.com/2026/08/06/as-tensions-rise-over-texas-data-center-growth-westlake-advances-87-acre-project-as-keller-neighbors-protest/ ; https://www.cbsnews.com/texas/news/data-center-westlake-texas-keller-tarrant-county/ ; https://communityimpact.com/keller-roanoke-northeast-fort-worth/government/westlake-planning-zoning-commission-approves-data-center-site-plan-near-keller/ ; https://westlaketx.gov/m/newsflash/Home/Detail/822",
+      "state": "TX"
     }
   ]
 }
