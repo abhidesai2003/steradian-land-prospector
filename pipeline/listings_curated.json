@@ -1,5 +1,5 @@
 {
-  "compiled": "2026-08-11",
+  "compiled": "2026-08-12",
   "note": "Publicly marketed powered-land listings and market signals compiled from broker pages, press releases, and news coverage. Coordinates are approximate (city/county-level) unless precision says 'exact'. Prices shown only where publicly stated.",
   "sites": [
     {
@@ -2350,12 +2350,12 @@
       "precision": "region",
       "acres": 2700,
       "power_mw": null,
-      "power_notes": "Amazon Data Services TDLR filing for four data-center buildings (189,060 sq ft each, ~756,240 sq ft combined) on a ~2,700-ac site near FM 1301/FM 442; no MW figure disclosed in filings. If completed, expected to be the largest data-center campus in Texas; the four registered buildings occupy <1% of the site, leaving substantial room for future phases/infrastructure.",
+      "power_notes": "Amazon Data Services TDLR filing for four data-center buildings (189,060 sq ft each, ~756,240 sq ft combined) on a ~2,700-ac site near FM 1301/FM 442; no MW figure disclosed in filings. If completed, expected to be the largest data-center campus in Texas; the four registered buildings occupy <1% of the site, leaving substantial room for future phases/infrastructure. UPDATE Aug 5 2026: new TDLR filings expand the campus to 10 total buildings (six new, labeled E-K, each ~189,060 sq ft/~$300M), plus a separate ~$2M auxiliary water building filed Aug 4 2026; still no MW figure disclosed.",
       "fiber_notes": null,
-      "price": "$1,200,000,000 (~$300M per building, stated construction cost)",
-      "status": "TDLR permit filed (dated Jun 25 2026); construction expected to begin Aug 2026, three buildings targeted complete Jan 2027, fourth Aug 2027",
+      "price": "$1,200,000,000 (original 4 buildings, ~$300M/building) + ~$3,000,000,000 (six additional buildings filed Aug 5 2026) = ~$4,200,000,000 combined across 10 buildings",
+      "status": "TDLR permit filed (dated Jun 25 2026); construction expected to begin Aug 2026, three buildings targeted complete Jan 2027, fourth Aug 2027. UPDATE Aug 5 2026: TDLR filings expand campus from 4 to 10 buildings; no construction timeline yet announced for the six new buildings.",
       "broker": null,
-      "source": "https://www.datacenterdynamics.com/en/news/aws-files-for-12bn-data-center-campus-outside-houston-texas/ ; https://usdatacenterprojects.com/texas/aws-files-1-2-billion-permit-for-four-building-data-center-campus-in-wharton-county-texas ; https://www.crossroadstoday.com/news/local-news/amazon-data-center-campus-proposed-for-wharton-county/article_e3c4612b-5c4f-4324-8a44-1afd3b109c67.html",
+      "source": "https://www.datacenterdynamics.com/en/news/aws-files-for-12bn-data-center-campus-outside-houston-texas/ ; https://usdatacenterprojects.com/texas/aws-files-1-2-billion-permit-for-four-building-data-center-campus-in-wharton-county-texas ; https://www.crossroadstoday.com/news/local-news/amazon-data-center-campus-proposed-for-wharton-county/article_e3c4612b-5c4f-4324-8a44-1afd3b109c67.html ; https://www.crossroadstoday.com/news/local-news/boling-data-center-project-expands-to-10-proposed-buildings/article_63216037-881e-429b-a54e-cb6f791fb0a1.html",
       "state": "TX"
     },
     {
@@ -3003,6 +3003,63 @@
       "broker": null,
       "source": "https://www.datacenterdynamics.com/en/news/powerhouse-files-for-300mw-data-center-campus-outside-dallas-fort-worth/ ; https://candysdirt.com/2026/08/06/as-tensions-rise-over-texas-data-center-growth-westlake-advances-87-acre-project-as-keller-neighbors-protest/ ; https://www.cbsnews.com/texas/news/data-center-westlake-texas-keller-tarrant-county/ ; https://communityimpact.com/keller-roanoke-northeast-fort-worth/government/westlake-planning-zoning-commission-approves-data-center-site-plan-near-keller/ ; https://westlaketx.gov/m/newsflash/Home/Detail/822",
       "state": "TX"
+    },
+    {
+      "id": "houston-hyperscale-ardagh-glass-tx",
+      "kind": "industrial",
+      "name": "Houston Hyperscale (former Ardagh/Longhorn Glass Plant)",
+      "county": "Harris",
+      "city": "Houston",
+      "lat": 29.752,
+      "lon": -95.268,
+      "precision": "city",
+      "acres": 30,
+      "power_mw": 40,
+      "power_notes": "On-site, property-owned electrical substation fed by two dedicated 138kV transmission lines from four diverse nearby substations; currently supports 19 MVA with an open transformer position for expansion. Listing states 40MW deployable in 2026, with an expansion pathway to 79MW within 24 months. On-site natural gas infrastructure supports 4,400 MCF/d, stated to enable an additional 25-29MW of on-site generation. Zoned Heavy Industrial (permits on-site power generation). 425,720 sq ft building on 30 ac, built 1961.",
+      "fiber_notes": "Listing states proximity to seven long-haul/metro fiber providers",
+      "price": null,
+      "status": "Ardagh Glass Packaging ceased production Jul 2024 (220 jobs lost; company cited beer-market conditions); site now actively marketed by broker as \"Houston Hyperscale,\" a purpose-pitched AI/data-center powered-land opportunity. Crexi listing page returned EGRESS_BLOCKED to direct automated fetch this run; power/gas specs corroborated via WebSearch cache of the listing plus the closure reporting — recommend direct verification before outreach.",
+      "broker": "The Kramer Group / Marcus & Millichap (Crexi listing #2375364; specific agent name not confirmed)",
+      "source": "https://www.crexi.com/properties/2375364/texas-houston-hyperscale ; https://www.packagingdive.com/news/ardagh-glass-layoffs-houston-seattle-beer-wine/719625/ ; https://www.prnewswire.com/news-releases/parcrest-advises-anheuser-busch-on-the-sale-of-its-houston-based-longhorn-packaging-glass-operations-to-the-ardagh-group-301248709.html",
+      "state": "TX"
+    },
+    {
+      "id": "tokusen-conway-ar",
+      "kind": "industrial",
+      "name": "Former Tokusen USA Steel Tire-Cord Plant",
+      "county": "Faulkner",
+      "city": "Conway",
+      "lat": 35.05,
+      "lon": -92.42,
+      "precision": "city",
+      "acres": 45,
+      "power_mw": null,
+      "power_notes": "13.8kV primary feed supplied by the City of Conway; 5 transformers at 480V/1500kVA and 16 transformers at 208V/1500kVA (heavy power infrastructure built out for prior steel tire-cord/wire manufacturing use); 36 overhead cranes (3-5 ton) on-site. I-3 Heavy Industrial zoning. 400,000 sq ft building, expandable 45-ac site, I-40 frontage.",
+      "fiber_notes": null,
+      "price": null,
+      "status": "Closed mid-March 2025 (Tokusen USA, Japanese steel tire-cord/wire manufacturer; ~250 jobs lost, cited steel/aluminum tariffs); equipment liquidated via Blackmon Auctions; building actively marketed for sale by Binswanger (listing broker Holmes Davis) and also listed on Arkansas's state site-selection database. Binswanger listing page returned EGRESS_BLOCKED to direct automated fetch this run — recommend direct verification before outreach.",
+      "broker": "Binswanger (Holmes Davis); also listed via Arkansas Economic Development Commission site-selection database (arkansassiteselection.com/Property/Detail/22756)",
+      "source": "https://www.binswanger.com/who-we-are/featured-properties/?propertyId=Conway-AR-Sale ; https://www.commercialsearch.com/commercial-property/us/ar/conway/former-tokusen-usa-property/ ; https://www.arkansasbusiness.com/article/tokusen-usa-to-close-conway-manufacturing-plant-as-trade-pressures-mount/",
+      "state": "AR"
+    },
+    {
+      "id": "huntley-page-horseshoebend-az",
+      "kind": "signal",
+      "name": "Huntley LLC — Page Data Center Site (500 ac, near Horseshoe Bend)",
+      "county": "Coconino",
+      "city": "Page",
+      "lat": 36.915,
+      "lon": -111.456,
+      "precision": "region",
+      "acres": 500,
+      "power_mw": null,
+      "power_notes": "Sale agreement requires developer to secure its own water and power, including a closed-loop cooling system to reduce water consumption; a potential on-site energy project is referenced but no generation technology or MW figure has been confirmed. Site is in the same corridor as the retired Navajo Generating Station's transmission infrastructure (not confirmed as directly interconnected).",
+      "fiber_notes": null,
+      "price": "$7,000,000 ($14,000/acre)",
+      "status": "Page City Council voted 5-2 on Oct 22 2025 to sell 500 ac of city-owned land to Huntley LLC (linked in filings to UK firm Hollybrook/Rooskey; Arup Engineering also involved) for a proposed ~$10B, ~1GW data center campus; a feasibility study is required before the sale closes. Facing significant local/tribal opposition: Navajo Nation LeChee Chapter passed a resolution against the project (May 2026) and citizens filed a referendum petition to void the council's decision (filed Dec 2025); a Dec 2025 AZBEX report suggests the petition was rejected by the city, but the referendum/closing status should be reconfirmed before outreach.",
+      "broker": null,
+      "source": "https://www.datacenterdynamics.com/en/news/data-center-proposed-for-500-acre-site-in-page-arizona/ ; https://azcir.org/news/2025/11/21/did-page-az-city-council-approve-the-sale-of-500-acres-for-a-data-center-yes/ ; https://cornerpost.org/2025/12/10/page-ariz-citizens-file-referendum-to-veto-city-councils-decision-to-sell-500-acres-for-data-center-development/ ; https://azbex.com/planning-development/page-rejects-petition-opposing-10b-data-center/ ; https://www.change.org/p/protect-horseshoe-bend-stop-the-page-data-center-project",
+      "state": "AZ"
     }
   ]
 }

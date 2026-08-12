@@ -425,6 +425,24 @@
       "drafted_at": "2026-08-09",
       "subject": "Inquiry: Natchitoches Parish Port 360-acre SmartSite — powered-land interest",
       "notes": "360-acre CLECO SmartSite-certified heavy-industrial parcel, Campti LA; CLECO electric + Atmos gas; KCS rail + US-71 frontage. Email published on the port's own official contact page (natchitochesparishport.com/contact.html), corroborated by a second independent source. Distinct from the adjoining closed IP Red River Mill (ip-redriver-campti-la), already tracked. Play 4. Added 2026-08-09. Drafted 2026-08-09."
+    },
+    {
+      "site_id": "houston-hyperscale-ardagh-glass-tx",
+      "org": "The Kramer Group / Marcus & Millichap",
+      "to_name": null,
+      "to": null,
+      "phone": null,
+      "status": "needs-email",
+      "notes": "Former Ardagh/Longhorn Glass plant, Houston TX (30ac, dual 138kV substation, on-site gas); actively marketed as \"Houston Hyperscale\" on Crexi (#2375364). Listing names The Kramer Group of Marcus & Millichap but no specific agent name, email, or phone surfaced — direct fetch of crexi.com/properties/2375364 and kramerbrokerage.com both returned EGRESS_BLOCKED on 2026-08-12. Follow up once the Crexi listing or brokerage site is reachable. Play 2."
+    },
+    {
+      "site_id": "tokusen-conway-ar",
+      "org": "Binswanger",
+      "to_name": "Holmes Davis",
+      "to": null,
+      "phone": null,
+      "status": "needs-email",
+      "notes": "Former Tokusen USA steel tire-cord plant, Conway AR (45ac, 400,000sf, 13.8kV city feed, I-3 zoning); closed Mar 2025, actively marketed by Binswanger (listing broker Holmes Davis per WebSearch of the listing) and on arkansassiteselection.com. Direct fetch of binswanger.com/who-we-are/featured-properties/?propertyId=Conway-AR-Sale returned EGRESS_BLOCKED on 2026-08-12; no published email found via search. Play 2."
     }
   ]
 }
