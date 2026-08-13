@@ -443,6 +443,24 @@
       "phone": null,
       "status": "needs-email",
       "notes": "Former Tokusen USA steel tire-cord plant, Conway AR (45ac, 400,000sf, 13.8kV city feed, I-3 zoning); closed Mar 2025, actively marketed by Binswanger (listing broker Holmes Davis per WebSearch of the listing) and on arkansassiteselection.com. Direct fetch of binswanger.com/who-we-are/featured-properties/?propertyId=Conway-AR-Sale returned EGRESS_BLOCKED on 2026-08-12; no published email found via search. Play 2."
+    },
+    {
+      "site_id": "portgbr-intracoastal-parcel3-la",
+      "org": "Port of Greater Baton Rouge",
+      "to_name": "Scot Byrd, Director of Economic Development",
+      "to": null,
+      "phone": "225-342-1660",
+      "status": "needs-email",
+      "notes": "93ac Intracoastal Waterway Complex Parcel 3 (min divisible 45ac) + adjacent ~200ac GIWW-frontage tract, Port Allen/West Baton Rouge Parish. Direct fetch of portgbr.com/available-sites and buildingsandsites.com listing both returned EGRESS_BLOCKED 2026-08-13; WebSearch found Scot Byrd named as Director of Economic Development and the port's main line (225-342-1660) but no published individual or department email. Play 4."
+    },
+    {
+      "site_id": "portsl-globalplex-stjohn-la",
+      "org": "Port of South Louisiana",
+      "to_name": null,
+      "to": null,
+      "phone": "985-652-9278 (toll-free 888-752-7678)",
+      "status": "needs-email",
+      "notes": "130ac build-to-suit tract at the Globalplex Intermodal Terminal, LaPlace/St. John the Baptist Parish; Woodland Biofuels has separately proposed a $1.35B RNG+green-hydrogen plant at the same Globalplex site. Direct fetch of portsl.com/globalplex/ and portsl.com/business-development/ returned EGRESS_BLOCKED 2026-08-13; WebSearch confirmed a 'Director of Business Development' role exists with an @portsl.com address but the specific name/address was not visible in search snippets — not recorded per the no-guessing rule. Play 4."
     }
   ]
 }
