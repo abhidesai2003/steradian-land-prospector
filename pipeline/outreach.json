@@ -467,6 +467,28 @@
       "notes": "130ac build-to-suit tract at the Globalplex Intermodal Terminal, LaPlace/St. John the Baptist Parish; Woodland Biofuels has separately proposed a $1.35B RNG+green-hydrogen plant at the same Globalplex site. Direct fetch of portsl.com/globalplex/ and portsl.com/business-development/ returned EGRESS_BLOCKED 2026-08-13; WebSearch confirmed a 'Director of Business Development' role exists with an @portsl.com address but the specific name/address was not visible in search snippets \u2014 not recorded per the no-guessing rule. Play 4. Re-checked 2026-08-13: portsl.com direct fetch still EGRESS_BLOCKED. WebSearch located an official Port of South Louisiana press-release PDF hosted on portsl.com itself (2023 HQ dedication release) with a media-contact block: \"Micah Cormier, mcormier@portsl.com, 985-652-9278\" \u2014 a primary-source, org-authored document on the org's own domain, highest confidence of this run's finds. His title has since evolved (2022-23 releases: Director of Business Development & External Affairs; current portsl.com/staff, ~March 2026: Chief Commercial Officer / Deputy Port Director) but the email address is stable across that span. Recording as published contact.",
       "drafted_at": "2026-08-13",
       "subject": "Inquiry: Port of South Louisiana Globalplex 130-acre tract \u2014 powered-land interest"
+    },
+    {
+      "site_id": "broadway-southvalley-albuquerque-nm",
+      "org": "Colliers New Mexico (Ransom-With Office Team)",
+      "to_name": "John Ransom / Tim With",
+      "to": null,
+      "phone": "505-880-7063 (Colliers Albuquerque main office, 5051 Journal Center NE Suite 200)",
+      "status": "needs-email",
+      "notes": "New Mexico Strategic Site Readiness Program-designated 61ac industrial/rail site, South Valley Albuquerque. WebSearch found only a masked ZoomInfo address (j***@colliers.com) for John Ransom \u2014 not published/confirmed, not recorded per the no-guessing rule. Direct fetch of colliers.com expert profile pages EGRESS_BLOCKED 2026-08-14. Follow up via the Colliers Albuquerque main office line. Play 3.",
+      "drafted_at": null,
+      "subject": null
+    },
+    {
+      "site_id": "george-county-industrialpark-lucedale-ms",
+      "org": "George County Chamber of Commerce / Mississippi Power Project Ready program",
+      "to_name": null,
+      "to": null,
+      "phone": "601-947-2755 (George County Chamber of Commerce, 5177 Main St, Lucedale MS)",
+      "status": "needs-email",
+      "notes": "353ac Mississippi Power Project Ready-certified site within the 1,200ac George County Industrial Park, Lucedale; rail access via Mississippi Export Railroad. No named economic-development contact or published email surfaced via WebSearch; direct fetch of mserr.com, georgecountyms.com, and mississippipowered.com all EGRESS_BLOCKED 2026-08-14. Follow up via the Chamber phone line or the Mississippi Power Project Ready program inquiry form. Play 3.",
+      "drafted_at": null,
+      "subject": null
     }
   ]
 }

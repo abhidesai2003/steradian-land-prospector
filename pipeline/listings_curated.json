@@ -1,5 +1,5 @@
 {
-  "compiled": "2026-08-13",
+  "compiled": "2026-08-14",
   "note": "Publicly marketed powered-land listings and market signals compiled from broker pages, press releases, and news coverage. Coordinates are approximate (city/county-level) unless precision says 'exact'. Prices shown only where publicly stated.",
   "sites": [
     {
@@ -1783,9 +1783,9 @@
       "power_notes": "TCEQ air permit secured for up to 7,650MW of gas-fired generation (described by multiple outlets as the largest such permit issued in the US); design includes a dedicated high-capacity pipeline and dual gas connections linking directly to the Waha Hub, one of North America's most important natural-gas trading centers. Off-grid/private-grid model combining gas turbines and battery storage for a hyperscale AI data center customer (unnamed). Phased delivery: 1GW by 2028, 5GW+ by 2030/2031.",
       "fiber_notes": null,
       "price": null,
-      "status": "TCEQ air permit secured; site prep underway; first power targeted H1 2027. Developer-owned (Pacifico Energy), not marketed for third-party purchase. Source pages returned 403 to automated fetch; figures corroborated across DataCenterDynamics, Inside Climate News, and Big Bend Sentinel — recommend direct verification before outreach.",
+      "status": "UPDATE Aug 2026: Amazon has disclosed ownership/backing of the GW Ranch project — the previously unnamed hyperscale customer is Amazon. Amazon filed building permits in August 2026 for three 189,000-sq-ft data center buildings on the site; TCEQ air permit authorizes up to ~33M tons CO2/yr; satellite imagery from late July 2026 shows active land clearing; first power still targeted Q1 2027. Developer-owned (Pacifico Energy building the gas plant for Amazon), not marketed for third-party purchase. Source pages returned 403/EGRESS_BLOCKED to automated fetch; Amazon-ownership figures corroborated across Engineering News-Record, DataCenterDynamics, and multiple independent outlets citing the same ENR disclosure — recommend direct verification before outreach.",
       "broker": null,
-      "source": "https://www.datacenterdynamics.com/en/news/pacifico-energy-unveils-5gw-offgrid-natural-gas-project-in-texas-slated-to-serve-a-hyperscale-data-center/ ; https://insideclimatenews.org/news/29012026/developer-calls-gw-ranch-in-pecos-county-texas-the-largest-power-project-in-u-s/ ; https://bigbendsentinel.com/2026/02/04/massive-ai-data-center-coming-to-pecos-county/",
+      "source": "https://www.datacenterdynamics.com/en/news/pacifico-energy-unveils-5gw-offgrid-natural-gas-project-in-texas-slated-to-serve-a-hyperscale-data-center/ ; https://insideclimatenews.org/news/29012026/developer-calls-gw-ranch-in-pecos-county-texas-the-largest-power-project-in-u-s/ ; https://bigbendsentinel.com/2026/02/04/massive-ai-data-center-coming-to-pecos-county/ ; https://www.enr.com/articles/63464-amazon-discloses-ownership-of-gw-ranch-giant-texas-data-center-power-complex ; https://www.datacenterdynamics.com/en/news/amazon-acquires-8000-acre-site-in-pecos-texas-for-natural-gas-powered-behind-the-meter-data-center-report/",
       "state": "TX"
     },
     {
@@ -3135,6 +3135,44 @@
       "status": "Announced Jan 9, 2025; construction underway, first building targeted complete 2026; $10B total investment (incl. future tenant IT equipment); 10-year state income/franchise tax exemptions plus sales/use tax exemption; Lauderdale County/MS Legislature funded a combined site grant (~$4M+). Not marketed for third-party purchase — developer-owned; tracked as a market/power-infrastructure signal demonstrating the utility-invested-industrial-park template (Play 3).",
       "broker": null,
       "source": "https://mississippi.org/news/compass-datacenters-project-generates-10-billion-investment-in-lauderdale-county/ ; https://www.datacenterdynamics.com/en/news/compass-datacenters-breaks-ground-on-10bn-campus-in-meridian-mississippi/ ; https://meridianstar.com/2025/01/09/data-center-to-bring-10b-investment-to-lauderdale-county/",
+      "state": "MS"
+    },
+    {
+      "id": "broadway-southvalley-albuquerque-nm",
+      "kind": "listing",
+      "name": "9615 Broadway Blvd SE — Future Rail-Served Industrial Site",
+      "county": "Bernalillo",
+      "city": "Albuquerque (South Valley)",
+      "lat": 35.017,
+      "lon": -106.647,
+      "precision": "city",
+      "acres": 61,
+      "power_mw": null,
+      "power_notes": "No specific electric-utility voltage or gas-tap figures published in sources reviewed (PNM territory by location, unconfirmed) — flagging for direct follow-up. Special Use Industrial Park zoning suited to transloading/warehousing/distribution/light industrial.",
+      "fiber_notes": null,
+      "price": "$3,500,000 (asking)",
+      "status": "Designated under New Mexico's Strategic Site Readiness Program (EDD public notice, 2026); ~22 of the 61 acres are contiguous developable acreage; existing ±25,690 sq ft office/warehouse building on-site provides immediate-occupancy infrastructure. Direct WebFetch of colliers.com/cimls.com/loopnet.com listing pages EGRESS_BLOCKED 2026-08-14; details corroborated across the NM EDD public-notice page, Colliers listing metadata indexed via search, and zoomprospector/cimls aggregator listings citing the same figures.",
+      "broker": "Colliers New Mexico — Ransom-With Office Team (John Ransom, Tim With)",
+      "source": "https://www.edd.newmexico.gov/programs-and-services/strategic-site-readiness-program-public-notice/ ; https://www.colliers.com/en/properties/future-rail-served-industrial-site-construction-underway/usa-9615-broadway-blvd-se-albuquerque-nm-87105-usa/usa1124617",
+      "state": "NM"
+    },
+    {
+      "id": "george-county-industrialpark-lucedale-ms",
+      "kind": "listing",
+      "name": "South Mississippi Industrial Rail Site (George County Industrial Park)",
+      "county": "George",
+      "city": "Lucedale",
+      "lat": 30.9252,
+      "lon": -88.5892,
+      "precision": "city",
+      "acres": 353,
+      "power_mw": null,
+      "power_notes": "353-acre Mississippi Power Project Ready® certified site within the larger 1,200-acre George County Industrial Park; developable acreage owned by the Mississippi Export Railroad, giving the site direct rail access. No specific gas-pipeline tap or substation voltage published in sources reviewed — flagging for direct follow-up (Play 3 utility-certified-site template, ~40mi north of the Mississippi Gulf Coast).",
+      "fiber_notes": null,
+      "price": null,
+      "status": "Actively marketed as Mississippi Power Project Ready-certified; direct WebFetch of mserr.com, georgecountyms.com, and mississippipower.com site PDFs all EGRESS_BLOCKED 2026-08-14; acreage/certification corroborated across the Mississippi Export Railroad site page and Mississippi Power's Project Ready program listing via independent search results.",
+      "broker": "George County Chamber of Commerce, 601-947-2755 (Mississippi Power Project Ready program: mississippipowered.com)",
+      "source": "http://mserr.com/industrial-sites/south-mississippi-industrial-rail-site/ ; https://mississippipowered.com/sites-buildings/project-ready-sites ; http://www.georgecountyms.com/industrial_park.html",
       "state": "MS"
     }
   ]
