@@ -1,5 +1,5 @@
 {
-  "compiled": "2026-08-14",
+  "compiled": "2026-08-15",
   "note": "Publicly marketed powered-land listings and market signals compiled from broker pages, press releases, and news coverage. Coordinates are approximate (city/county-level) unless precision says 'exact'. Prices shown only where publicly stated.",
   "sites": [
     {
@@ -1362,7 +1362,7 @@
       "precision": "city",
       "acres": 270,
       "power_mw": null,
-      "power_notes": "New electric substation at the entrance to the site; served by Cooperative Energy. Former International Paper Company site, now vacant/idle industrial land marketed for redevelopment; on-site rail spur; less than 1 mile from the Natchez-Adams County Port (barge dock). Acreage is inconsistent across sources (80-400ac cited elsewhere) — needs reconfirmation. Distinct parcel from the separately-tracked Belwood Industrial Site (110ac, River Terminal Road).",
+      "power_notes": "New electric substation at the entrance to the site; served by Cooperative Energy. Former International Paper Company site, now vacant/idle industrial land marketed for redevelopment; on-site rail spur; less than 1 mile from the Natchez-Adams County Port (barge dock). Acreage is inconsistent across sources (80-400ac cited elsewhere) — needs reconfirmation. Distinct parcel from the separately-tracked Belwood Industrial Site (110ac, River Terminal Road). Site utilities (Cooperative Energy site flyer/map): two 22-inch natural gas lines plus a 17-mile interstate gas pipeline (6-inch diameter) serving the site; 138/115kV transmission line + 12.47kV distribution; 25MM GPD well water; 42 MGD wastewater treatment capacity.",
       "fiber_notes": null,
       "price": null,
       "status": "Available; publicly marketed for industrial/data-center reuse; qualifies for New Markets Tax Credits and GAP Incentives",
@@ -3174,6 +3174,44 @@
       "broker": "George County Chamber of Commerce, 601-947-2755 (Mississippi Power Project Ready program: mississippipowered.com)",
       "source": "http://mserr.com/industrial-sites/south-mississippi-industrial-rail-site/ ; https://mississippipowered.com/sites-buildings/project-ready-sites ; http://www.georgecountyms.com/industrial_park.html",
       "state": "MS"
+    },
+    {
+      "id": "bayou-steel-laplace-la",
+      "kind": "industrial",
+      "name": "Former Bayou Steel Mill (LaPlace)",
+      "county": "St. John the Baptist",
+      "city": "LaPlace",
+      "lat": 30.0827,
+      "lon": -90.4818,
+      "precision": "city",
+      "acres": 178,
+      "power_mw": null,
+      "power_notes": "178-acre former electric-arc-furnace (EAF) merchant bar steel mill (540,000 tpy capacity, built 1979) directly on the Mississippi River at 138 Highway 3217/River Road. EAF melting at this scale implies a substantial dedicated utility interconnect (capacity not publicly disclosed). River frontage historically used for barge-delivered scrap and product shipment.",
+      "fiber_notes": null,
+      "price": null,
+      "status": "Melt shop/steelmaking closed Sept-Nov 2019 (Bayou Steel Chapter 11 filing); scrap recycling activity resumed 2020 under new owner Liberty Steel Group/GFG Alliance, but full steelmaking never restarted. GFG Alliance has been in extended financial restructuring since the 2021 Greensill Capital collapse -- current ownership/availability status unconfirmed; verify before outreach.",
+      "broker": null,
+      "source": "https://www.nola.com/news/business/article_f3f6c7de-e3bd-11e9-8c1c-f39d79eaf382.html",
+      "state": "LA"
+    },
+    {
+      "id": "libbey-glass-shreveport-la",
+      "kind": "industrial",
+      "name": "Former Libbey Glass Manufacturing Site (Shreveport)",
+      "county": "Caddo",
+      "city": "Shreveport",
+      "lat": 32.4708,
+      "lon": -93.7976,
+      "precision": "city",
+      "acres": 54,
+      "power_mw": null,
+      "power_notes": "54-acre former Libbey Glass tableware plant at 4302 Jewella Ave (850,000 sq ft manufacturing/warehouse/office), rail-served, in SWEPCO/AEP Shreveport-Bossier utility territory. Specific substation/MW capacity not yet published by NLEP -- worth a direct inquiry.",
+      "fiber_notes": null,
+      "price": null,
+      "status": "Closed 2020 after ~100 years of glass manufacturing on site; purchased by North Louisiana Economic Partnership (NLEP) Sept 2025; active demolition (contractor Lloyd D. Nabors Demolition, began ~April 2026, ~12-month duration) and environmental remediation (Jones Environmental Inc.) underway toward a certified shovel-ready industrial site.",
+      "broker": null,
+      "source": "https://nlep.org/north-louisiana-economic-partnership-announces-next-phase-of-redevelopment-of-former-libbey-glass-manufacturing-site-in-shreveport/",
+      "state": "LA"
     }
   ]
 }
