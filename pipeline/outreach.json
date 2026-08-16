@@ -502,6 +502,42 @@
       "drafted_at": "2026-08-15",
       "subject": "Inquiry: Former Libbey Glass Site (Shreveport) — powered-land redevelopment interest",
       "notes": "Actively redeveloping the former Libbey Glass site into a certified shovel-ready industrial park (demolition/remediation underway 2026). No individual staff email confirmed at a primary source -- nlep.org/contact blocked by network egress proxy this session; only third-party directories (ZoomInfo) surfaced a staff name/email, not recorded per published-only rule. Phone number from nlep.org listing (Shreveport office). Play 2. Re-checked 2026-08-15: WebFetch still EGRESS_BLOCKED network-wide (control-domain test confirms). WebSearch located NLEP's own official Investor Directory page (nlep.org/about/investor-directory/) naming Angie White, CEcD, COO, with phone 318-677-2559 and email awhite@nlep.org — a primary source on the org's own domain, not a third-party scrape. Recorded and drafted 2026-08-15 citing the 54ac/850,000sqft rail-served site and SWEPCO/AEP utility territory."
+    },
+    {
+      "site_id": "dobson-techpark-florence-az",
+      "org": "CRE8 Advisors",
+      "to_name": "Kevin Smith / Rommie Mojahed",
+      "to": null,
+      "phone": "602-888-2738",
+      "status": "needs-email",
+      "notes": "Regional Phoenix-area broker (not a national DC team) marketing 240-1,140ac parcels within the 1,619ac Florence, AZ data-center corridor (Play 3). No published email found for either advisor on cre8advisors.com in this pass -- only the office phone. Same broker also lists the adjacent Sunhill Project (site_id sunhill-florence-az) -- reference that portfolio once contacted. Added 2026-08-16."
+    },
+    {
+      "site_id": "sunhill-florence-az",
+      "org": "CRE8 Advisors",
+      "to_name": "Kevin Smith / Rommie Mojahed",
+      "to": null,
+      "phone": "602-888-2738",
+      "status": "needs-email",
+      "notes": "Same CRE8 Advisors contact as dobson-techpark-florence-az -- 96ac PAD-approved parcel (Felix Rd & Judd Rd, Florence/San Tan Valley), SRP territory, rezonable to I-3 for data center/BESS. Added 2026-08-16."
+    },
+    {
+      "site_id": "avila-industrialpark-santateresa-nm",
+      "org": "Colliers New Mexico-El Paso",
+      "to_name": "Bob Feinberg / Tom Jones, CCIM",
+      "to": null,
+      "phone": null,
+      "status": "needs-email",
+      "notes": "272ac industrial-zoned FTZ parcel near the Santa Teresa Port of Entry, sold to Killam Development; Colliers acted as marketing agent on the closed sale, may have further inventory in the same park. No published email or phone surfaced for either broker in this pass (colliers.com expert profile pages not fetched directly). Play 3. Added 2026-08-16."
+    },
+    {
+      "site_id": "port-muskogee-south-ok",
+      "org": "Port Muskogee",
+      "to_name": "Kimbra Scott, Port Director",
+      "to": "kimbra@portmuskogee.com",
+      "phone": "918-682-7886",
+      "status": "new",
+      "notes": "New 125.49ac riverfront tract (4511 Callery Dr.), distinct from the port's general listing (port-muskogee-ok, already drafted 2026-08-07 to this same contact). Email previously confirmed via two independent WebSearch queries citing the official Team page. Play 4. Added 2026-08-16 -- reuse/reference the prior drafted email or send a short follow-up naming this specific tract."
     }
   ]
 }
