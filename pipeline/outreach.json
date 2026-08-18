@@ -548,7 +548,7 @@
       "to": null,
       "phone": "601-353-6056",
       "status": "needs-email",
-      "notes": "462ac industrial park (371ac available), Byram/Hinds County MS; gas/electric/water/sewer/fiber in-park, I-55 + CN rail adjacent, Entergy-featured site. Only email found for Kemsye Smith was a masked ZoomInfo entry (k***@selecthinds.com) pattern-completed with her name -- not a confirmed published address per the ledger's no-guessing rule. selecthinds.com/contact and /about-us/staff-and-board exist but were not directly fetchable this session (WebFetch EGRESS_BLOCKED network-wide). Follow up by phone or the HCEDA main line. Play 3. Added 2026-08-18."
+      "notes": "462ac industrial park (371ac available), Byram/Hinds County MS; gas/electric/water/sewer/fiber in-park, I-55 + CN rail adjacent, Entergy-featured site. Only email found for Kemsye Smith was a masked ZoomInfo entry (k***@selecthinds.com) pattern-completed with her name -- not a confirmed published address per the ledger's no-guessing rule. selecthinds.com/contact and /about-us/staff-and-board exist but were not directly fetchable this session (WebFetch EGRESS_BLOCKED network-wide). Follow up by phone or the HCEDA main line. Play 3. Added 2026-08-18. Re-checked 2026-08-18 (same day, second pass): WebSearch AI-summary asserted a generic 'info@selecthinds.com' address, but repeated queries -- including an exact-string search -- surfaced only masked ZoomInfo entries (individual staff, not an 'info' inbox) and no page snippet actually quoting that address; reads as unsourced assertion rather than a genuine indexed hit (contrast with the confirmed imtt-strose-la result same session). Not recorded."
     },
     {
       "site_id": "coldwater-site-tate-ms",
@@ -557,16 +557,18 @@
       "to": null,
       "phone": "662-562-8715",
       "status": "needs-email",
-      "notes": "300ac county-owned site, Coldwater/Tate County MS, direct I-55 access, $312,560 in state pre-development funding incl. fiber relocation. Previously-surfaced contact (Anna Cardona, anna.cardona@tatecountyms.com) is stale: WebSearch confirms she left/was released as Executive Director effective Dec 31 (per Tate Record's 'Cardona leaving Tate County EDF'), and ZoomInfo shows a conflicting domain (tatecountygov.com) for the same name -- not recording either address. No current named director surfaced. Follow up via the Foundation's general office line (135 N Front St, Senatobia MS) until a new director is confirmed. Play 3. Added 2026-08-18."
+      "notes": "300ac county-owned site, Coldwater/Tate County MS, direct I-55 access, $312,560 in state pre-development funding incl. fiber relocation. Previously-surfaced contact (Anna Cardona, anna.cardona@tatecountyms.com) is stale: WebSearch confirms she left/was released as Executive Director effective Dec 31 (per Tate Record's 'Cardona leaving Tate County EDF'), and ZoomInfo shows a conflicting domain (tatecountygov.com) for the same name -- not recording either address. No current named director surfaced. Follow up via the Foundation's general office line (135 N Front St, Senatobia MS) until a new director is confirmed. Play 3. Added 2026-08-18. Re-checked 2026-08-18 (same day, second pass): WebSearch again resurfaces only the Cardona appointment article and the same anna.cardona@tatecountyms.com address with no indication it reflects her departure -- treating as the same stale lead already rejected above, not re-recorded. No new director name found."
     },
     {
       "site_id": "imtt-strose-la",
       "org": "IMTT (International-Matex Tank Terminals)",
-      "to_name": "Matthew Courtney, SVP Commercial & Business Development",
-      "to": null,
+      "to_name": "Cameron Conolty, Commercial Director",
+      "to": "cameronconolty@imtt.com",
       "phone": "504-586-8300",
-      "status": "needs-email",
-      "notes": "407ac available for lease at IMTT's St. Rose, LA marine/pipeline terminal (Mississippi River mile 118.6, 5 deep-water berths, LOOP pipeline access, CN rail). Only email found for Matthew Courtney was a masked ZoomInfo/RocketReach entry (m***@imtt.com) pattern-completed with his name -- not recorded per the no-guessing rule, though IMTT's public email format (first.last@imtt.com) is noted for reference. imtt.com/contact-us and /our-company/commercial-team were not directly fetchable this session (EGRESS_BLOCKED). Follow up via the corporate HQ line or the Louisiana Economic Development site-selection contact form. Play 1 (multi-pipeline access at an active marine terminal). Added 2026-08-18."
+      "status": "drafted",
+      "drafted_at": "2026-08-18",
+      "subject": "Inquiry: IMTT St. Rose 407-acre site — powered-land interest",
+      "notes": "407ac available for lease at IMTT's St. Rose, LA marine/pipeline terminal (Mississippi River mile 118.6, 5 deep-water berths, LOOP pipeline access, CN rail). Re-checked 2026-08-18: WebFetch confirmed EGRESS_BLOCKED network-wide again (control-domain test also blocked). WebSearch for the exact literal string \"cameronconolty@imtt.com\" surfaced imtt.com/our-company/commercial-team/ directly in the result set, plus louisianasiteselection.com/led/Property/Detail/19862/Available-Land-With-Marine-Access-at-IMTTSt-Rose (the primary-source LED listing for this exact site) -- a genuine indexed-page hit, not a masked ZoomInfo pattern-completion (contrast with Matthew Courtney's still-masked m***@imtt.com). Recording as published contact; to_name/to updated accordingly. Play 1 (multi-pipeline access at an active marine terminal). Added 2026-08-18, email confirmed and drafted 2026-08-18."
     }
   ]
 }
