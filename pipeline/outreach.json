@@ -540,6 +540,33 @@
       "notes": "New 125.49ac riverfront tract (4511 Callery Dr.), distinct from the port's general listing (port-muskogee-ok, already drafted 2026-08-07 to this same contact). Email previously confirmed via two independent WebSearch queries citing the official Team page. Play 4. Added 2026-08-16 -- reuse/reference the prior drafted email or send a short follow-up naming this specific tract. Drafted 2026-08-16: short follow-up naming the specific 125.49ac Port Muskogee South tract (81 riverfront ac, BNSF rail + McClellan-Kerr navigation), distinct from the prior general port-muskogee-ok draft.",
       "drafted_at": "2026-08-16",
       "subject": "Inquiry: Port Muskogee South 125-acre riverfront tract — powered-land interest"
+    },
+    {
+      "site_id": "wynndale-industrialcenter-hinds-ms",
+      "org": "Hinds County Economic Development Authority (HCEDA)",
+      "to_name": "Kemsye Smith, Director of Workforce Development / Assistant Business Development",
+      "to": null,
+      "phone": "601-353-6056",
+      "status": "needs-email",
+      "notes": "462ac industrial park (371ac available), Byram/Hinds County MS; gas/electric/water/sewer/fiber in-park, I-55 + CN rail adjacent, Entergy-featured site. Only email found for Kemsye Smith was a masked ZoomInfo entry (k***@selecthinds.com) pattern-completed with her name -- not a confirmed published address per the ledger's no-guessing rule. selecthinds.com/contact and /about-us/staff-and-board exist but were not directly fetchable this session (WebFetch EGRESS_BLOCKED network-wide). Follow up by phone or the HCEDA main line. Play 3. Added 2026-08-18."
+    },
+    {
+      "site_id": "coldwater-site-tate-ms",
+      "org": "Tate County Economic Development Foundation",
+      "to_name": null,
+      "to": null,
+      "phone": "662-562-8715",
+      "status": "needs-email",
+      "notes": "300ac county-owned site, Coldwater/Tate County MS, direct I-55 access, $312,560 in state pre-development funding incl. fiber relocation. Previously-surfaced contact (Anna Cardona, anna.cardona@tatecountyms.com) is stale: WebSearch confirms she left/was released as Executive Director effective Dec 31 (per Tate Record's 'Cardona leaving Tate County EDF'), and ZoomInfo shows a conflicting domain (tatecountygov.com) for the same name -- not recording either address. No current named director surfaced. Follow up via the Foundation's general office line (135 N Front St, Senatobia MS) until a new director is confirmed. Play 3. Added 2026-08-18."
+    },
+    {
+      "site_id": "imtt-strose-la",
+      "org": "IMTT (International-Matex Tank Terminals)",
+      "to_name": "Matthew Courtney, SVP Commercial & Business Development",
+      "to": null,
+      "phone": "504-586-8300",
+      "status": "needs-email",
+      "notes": "407ac available for lease at IMTT's St. Rose, LA marine/pipeline terminal (Mississippi River mile 118.6, 5 deep-water berths, LOOP pipeline access, CN rail). Only email found for Matthew Courtney was a masked ZoomInfo/RocketReach entry (m***@imtt.com) pattern-completed with his name -- not recorded per the no-guessing rule, though IMTT's public email format (first.last@imtt.com) is noted for reference. imtt.com/contact-us and /our-company/commercial-team were not directly fetchable this session (EGRESS_BLOCKED). Follow up via the corporate HQ line or the Louisiana Economic Development site-selection contact form. Play 1 (multi-pipeline access at an active marine terminal). Added 2026-08-18."
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "compiled": "2026-08-16",
+  "compiled": "2026-08-18",
   "note": "Publicly marketed powered-land listings and market signals compiled from broker pages, press releases, and news coverage. Coordinates are approximate (city/county-level) unless precision says 'exact'. Prices shown only where publicly stated.",
   "sites": [
     {
@@ -3345,6 +3345,63 @@
       "broker": "Port Muskogee (public port authority) -- Kimbra Scott, Port Director",
       "source": "https://www.railwayage.com/intermodal/port-muskogee-expands-south-with-125-acre-site/",
       "state": "OK"
+    },
+    {
+      "id": "wynndale-industrialcenter-hinds-ms",
+      "kind": "listing",
+      "name": "Wynndale Industrial Center",
+      "county": "Hinds",
+      "city": "Byram (unincorporated Hinds County)",
+      "lat": 32.1729,
+      "lon": -90.2965,
+      "precision": "city",
+      "acres": 371,
+      "power_mw": null,
+      "power_notes": "Electricity, natural gas, water, sewer, and fiber all located in the park per the Mississippi Site Selection Center listing; Entergy has featured the site in its own business-development video series. No specific substation voltage or gas-tap size published yet -- flag for direct follow-up.",
+      "fiber_notes": "Fiber located in the park per state listing",
+      "price": "Negotiable lease/sale; HCEDA will work with businesses to lease land at minimal cost as an incentive",
+      "status": "Available; 462 total ac, 371 ac available, largest single tract 90 ac (min divisible not stated); solely owned by Hinds County Economic Development Authority (HCEDA); within 0.5mi of I-55, served by Canadian National Railroad, ~8mi south of Jackson MS, ~40mi from the Port of Vicksburg/Mississippi River",
+      "broker": "Hinds County Economic Development Authority (HCEDA)",
+      "source": "https://mississippisiteselection.com/Property/Detail/13086/Wynndale-Industrial-Center ; https://goentergy.com/videos/wynndale-industrial-center-hinds-county-mississippi/",
+      "state": "MS"
+    },
+    {
+      "id": "coldwater-site-tate-ms",
+      "kind": "listing",
+      "name": "Coldwater Site",
+      "county": "Tate",
+      "city": "Coldwater",
+      "lat": 34.6857,
+      "lon": -89.9834,
+      "precision": "city",
+      "acres": 300,
+      "power_mw": null,
+      "power_notes": "No gas-tap size, substation voltage, or specific electric provider published yet -- flag for direct follow-up. Site is within the DeSoto/Tate County corridor already tracked at the megasite level (nwms-megasite-desototunica-ms) and near the xAI Southaven campus (xai-macrohardrr-southaven-ms); state funding included relocating an on-site fiber line.",
+      "fiber_notes": "State funding relocated an existing fiber line on the site during pre-development",
+      "price": "Available for both lease and sale; pricing negotiable",
+      "status": "County-owned (Tate County) new industrial site; Mississippi has invested $212,560 (water/wastewater capacity study, pre-engineering, fiber relocation, clear/grub/grade/fill) plus $100,000 for due diligence; max divisible 300 ac, min divisible 10 ac; direct access to I-55 at 10155 US-51",
+      "broker": "Tate County Economic Development Foundation",
+      "source": "https://mississippisiteselection.com/Property/Detail/21321/Coldwater-Site ; https://www.taterecord.com/state-press-releases/mda-mississippi-investing-more-567-million-site-development-640120238ef94",
+      "state": "MS"
+    },
+    {
+      "id": "imtt-strose-la",
+      "kind": "listing",
+      "name": "IMTT-St. Rose Available Land (407 ac, marine + pipeline access)",
+      "county": "St. Charles",
+      "city": "St. Rose",
+      "lat": 29.9758,
+      "lon": -90.339,
+      "precision": "city",
+      "acres": 407,
+      "power_mw": null,
+      "power_notes": "Various pipeline connections to local refining/petrochemical facilities, plus access to the Louisiana Offshore Pipeline system (LOOP) with links to nearby refinery/petrochemical complexes, per the Louisiana Economic Development site listing. No specific gas-tap size, substation, or grid capacity published -- flag for direct follow-up.",
+      "fiber_notes": null,
+      "price": "Contact IMTT",
+      "status": "Available for lease and development; site is IMTT's existing bulk-liquid storage/handling terminal at Mississippi River mile marker 118.6 (east bank, ~15mi west of New Orleans) with five deep-water (~50ft) ship berths and 17 barge positions; rail service via Canadian National Railroad. Site pitched by LED for synergies with partners able to use existing terminal infrastructure.",
+      "broker": "IMTT (International-Matex Tank Terminals) -- corporate HQ (504) 586-8300",
+      "source": "https://louisianasiteselection.com/led/Property/Detail/19862/Available-Land-With-Marine-Access-at-IMTTSt-Rose ; https://imtt.com/terminals/st-rose-la/",
+      "state": "LA"
     }
   ]
 }
