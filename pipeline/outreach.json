@@ -569,6 +569,33 @@
       "drafted_at": "2026-08-18",
       "subject": "Inquiry: IMTT St. Rose 407-acre site — powered-land interest",
       "notes": "407ac available for lease at IMTT's St. Rose, LA marine/pipeline terminal (Mississippi River mile 118.6, 5 deep-water berths, LOOP pipeline access, CN rail). Re-checked 2026-08-18: WebFetch confirmed EGRESS_BLOCKED network-wide again (control-domain test also blocked). WebSearch for the exact literal string \"cameronconolty@imtt.com\" surfaced imtt.com/our-company/commercial-team/ directly in the result set, plus louisianasiteselection.com/led/Property/Detail/19862/Available-Land-With-Marine-Access-at-IMTTSt-Rose (the primary-source LED listing for this exact site) -- a genuine indexed-page hit, not a masked ZoomInfo pattern-completion (contrast with Matthew Courtney's still-masked m***@imtt.com). Recording as published contact; to_name/to updated accordingly. Play 1 (multi-pipeline access at an active marine terminal). Added 2026-08-18, email confirmed and drafted 2026-08-18."
+    },
+    {
+      "site_id": "clrport-industrialsite-alexandria-la",
+      "org": "Central Louisiana Regional Port",
+      "to_name": "Ben Russo, Executive Director",
+      "to": "brusso@clrport.com",
+      "phone": "318-473-1848",
+      "status": "new",
+      "notes": "75ac Red River-adjacent industrial site, Alexandria LA (45ac max divisible tract), Union Pacific rail spur + I-49 access. Email publicly listed on the port's own contact/business-directory presence (600 River Port Road, Alexandria, LA 71303) per WebSearch of clrport.com -- direct WebFetch not attempted this session by the sourcing agent. Play 4. Added 2026-08-19."
+    },
+    {
+      "site_id": "pecanland-industrialpark-monroe-la",
+      "org": "Grow NELA (Northeast Louisiana Economic Alliance)",
+      "to_name": "Rob Cleveland, President & CEO",
+      "to": null,
+      "phone": "318-206-5289",
+      "status": "needs-email",
+      "notes": "1,325ac Pecanland Industrial Park, Monroe LA (Ouachita Parish); subdividable, marketed via Grow NELA and the Greater Ouachita Port Commission. No public email located via search for Rob Cleveland this pass. Address: Clarke M. Williams Innovation Center, 100 Centurylink Drive, Monroe, LA 71203. Alt contact: Paul Trichel, Port Manager, Ouachita Terminals, 318-998-1271 (no email found; ouachitaterminals.com unreachable via network egress proxy this session). No power/substation capacity published yet -- verify before qualifying for 5MW+. Play 3/4. Added 2026-08-19."
+    },
+    {
+      "site_id": "usgpaper-formerip-orange-tx",
+      "org": "Orange County Texas Economic Development Corporation (OCEDC)",
+      "to_name": "Jessica Irvin, Business Development Manager",
+      "to": null,
+      "phone": "409-883-7770",
+      "status": "needs-email",
+      "notes": "556ac former International Paper containerboard mill (closed Dec 2023), now under a $715M USG Paper LLC/Otsego Paper Inc. redevelopment plan negotiated with OCEDC incentives -- site is NOT open/available land (active new-owner redevelopment in progress), so outreach here should frame this as a market-intel/relationship contact rather than a site-acquisition inquiry. Candidate email jirvin@orangecountyedc.com surfaced only via WebSearch synthesis of orangecountyedc.com/about-us/contact/, not a direct-fetch confirmation -- marking needs-email out of caution per the ledger's no-guessing precedent; a human should visually confirm orangecountyedc.com/about-us/contact/ before drafting. Alt/senior contact per the same source: Megan Romero Layne, Executive Director, mlayne@orangecountyedc.com (same caution applies). Play 2. Added 2026-08-19."
     }
   ]
 }
