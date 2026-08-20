@@ -600,6 +600,15 @@
       "phone": "409-883-7770",
       "status": "needs-email",
       "notes": "556ac former International Paper containerboard mill (closed Dec 2023), now under a $715M USG Paper LLC/Otsego Paper Inc. redevelopment plan negotiated with OCEDC incentives -- site is NOT open/available land (active new-owner redevelopment in progress), so outreach here should frame this as a market-intel/relationship contact rather than a site-acquisition inquiry. Candidate email jirvin@orangecountyedc.com surfaced only via WebSearch synthesis of orangecountyedc.com/about-us/contact/, not a direct-fetch confirmation -- marking needs-email out of caution per the ledger's no-guessing precedent; a human should visually confirm orangecountyedc.com/about-us/contact/ before drafting. Alt/senior contact per the same source: Megan Romero Layne, Executive Director, mlayne@orangecountyedc.com (same caution applies). Play 2. Added 2026-08-19. Re-checked 2026-08-19 (same day, second pass): WebFetch of orangecountyedc.com/about-us/contact/ confirmed EGRESS_BLOCKED network-wide. site: search of orangecountyedc.com for \"Jessica Irvin\" surfaced her name and title on the About Us page but no email address in any indexed snippet -- jirvin@orangecountyedc.com remains an unconfirmed synthesis, not recorded. Also note: site is under active third-party redevelopment, not available land -- treat as relationship contact only, not a site-acquisition draft, even once an email is confirmed."
+    },
+    {
+      "site_id": "yellowcreek-tristate-iuka-ms",
+      "org": "Tishomingo County Development Foundation",
+      "to_name": "Gary Matthews, Executive Director",
+      "to": null,
+      "phone": "662-423-9933",
+      "status": "needs-email",
+      "notes": "TVA-served Yellow Creek Port (~1,100ac state inland port) + Tri-State Commerce Park (~3,500ac former Yellow Creek TVA nuclear/NASA megasite) on a Pickwick Lake peninsula, Iuka MS; barge/rail/all-utilities. Play 4. Added 2026-08-20. WebFetch is EGRESS_BLOCKED network-wide this session (confirmed against control domains), so tishomingo.org could not be fetched. WebSearch surfaces Gary@Tishomingo.org for the Executive Director, but the only citation is a ZoomInfo entry that displays it masked (g***@tishomingo.org) with the AI summary pattern-completing his first name -- same masked-ZoomInfo risk rejected elsewhere in this ledger, so NOT recorded. Alt site contact: John Kain, Director of Iuka Site Operations, 662-423-7700. Follow up by phone or confirm the address directly on tishomingo.org's own contact page once fetch is available."
     }
   ]
 }
