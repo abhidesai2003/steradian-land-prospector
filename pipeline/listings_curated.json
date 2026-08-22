@@ -1,5 +1,5 @@
 {
-  "compiled": "2026-08-21",
+  "compiled": "2026-08-22",
   "note": "Publicly marketed powered-land listings and market signals compiled from broker pages, press releases, and news coverage. Coordinates are approximate (city/county-level) unless precision says 'exact'. Prices shown only where publicly stated.",
   "sites": [
     {
@@ -3535,6 +3535,25 @@
       "broker": "Bentaus (infrastructure developer) / Chadbourn Infrastructure Partners LLC (Michael \"Jacques\" Davison, sole corporate officer of both Fort Chadbourne Farm LLC and Chadbourn Infrastructure Partners LLC)",
       "source": "https://www.texarkanagazette.com/news/2026/aug/15/public-records-reveal-site-of-planned-ai-data/ ; https://www.arkansasonline.com/news/2026/aug/16/records-reveal-planned-data-center-site-in-miller/ ; https://www.nwaonline.com/news/2026/aug/16/records-reveal-planned-data-center-site-in-miller/",
       "state": "AR"
+    },
+    {
+      "id": "edgecore-mesa-eastmark-az",
+      "kind": "signal",
+      "name": "EdgeCore Mesa North Campus Expansion (Eastmark)",
+      "county": "Maricopa",
+      "city": "Mesa (Eastmark, SE corner of Elliot Rd & Everton Terrace)",
+      "lat": 33.353,
+      "lon": -111.632,
+      "precision": "city",
+      "acres": 44,
+      "power_mw": 450,
+      "power_notes": "Existing-operator land-price comp, not third-party marketed land: EdgeCore acquired ~43.87 ac (May 2025) from a Brookfield Properties-affiliated entity for ~$43.95M (~$1M/acre) to expand its adjoining Mesa data center campus. EdgeCore already operates 206MW on the original campus; expansion plan adds 3 buildings plus a new Salt River Project (SRP) substation for 250MW more, taking the combined campus to 450MW+ / 3.1M sq ft at full build-out.",
+      "fiber_notes": null,
+      "price": "$43,950,000 (~$1,000,000/acre)",
+      "status": "Acquisition closed May 2025; Mesa Planning & Zoning Commission recommended approval for the expanded plan in 2026 (exact hearing date varies by source, reconfirm); construction phasing not fully disclosed in sources reviewed.",
+      "broker": null,
+      "source": "https://www.datacenterdynamics.com/en/news/edgecore-expands-mesa-data-center-campus-in-arizona/ ; https://azbex.com/local-news/edgecore-44-acre-mesa-land-buy-sets-up-massive-expansion/ ; https://therealdeal.com/national/phoenix/2026/03/17/mesa-officials-greenlight-smaller-edgecore-data-center/",
+      "state": "AZ"
     }
   ]
 }
