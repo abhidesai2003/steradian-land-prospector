@@ -1,5 +1,5 @@
 {
-  "compiled": "2026-08-22",
+  "compiled": "2026-08-23",
   "note": "Publicly marketed powered-land listings and market signals compiled from broker pages, press releases, and news coverage. Coordinates are approximate (city/county-level) unless precision says 'exact'. Prices shown only where publicly stated.",
   "sites": [
     {
@@ -1647,12 +1647,12 @@
       "precision": "region",
       "acres": 823,
       "power_mw": 30,
-      "power_notes": "138kV and 345kV transmission lines on-site; PSO (AEP Oklahoma) can provide 30MW of capacity, reportedly developing a 345kV-to-138kV autotransformer substation on/near the site. New 4.4-mile Verdigris Southern Railroad connects to Union Pacific's mainline; existing barge slip on the McClellan-Kerr Arkansas River Navigation System; zoned I-4 Heavy Industrial. NOTE: Emirates Global Aluminium (EGA) took an exclusive option on 350+ acres here in May 2025 for a $4B aluminum smelter (construction expected late 2026) \u2014 current true availability is lower than the historical total/developable figures cited (1,108 total / 823 developable, largest contiguous parcel 286ac); needs fresh acreage confirmation.",
+      "power_notes": "138kV and 345kV transmission lines on-site; PSO (AEP Oklahoma) can provide 30MW of capacity, reportedly developing a 345kV-to-138kV autotransformer substation on/near the site. New 4.4-mile Verdigris Southern Railroad connects to Union Pacific's mainline; existing barge slip on the McClellan-Kerr Arkansas River Navigation System; zoned I-4 Heavy Industrial. NOTE: Emirates Global Aluminium (EGA) took an exclusive option on 350+ acres here in May 2025 for a $4B aluminum smelter (construction expected late 2026) \u2014 current true availability is lower than the historical total/developable figures cited (1,108 total / 823 developable, largest contiguous parcel 286ac); needs fresh acreage confirmation. UPDATE 2026-08-23: project now branded \"Oklahoma Primary Aluminum\" (OKPA), a JV of EGA (60%) and Century Aluminum (40%) \u2014 first new US primary aluminum smelter since 1980, targeting 750,000+ metric tons/yr, >1,000MW continuous power draw (PSO long-term supply arrangement still under negotiation). Smelter footprint reported as 633 ac (some coverage cites 440 ac) within the Port's ~2,200-ac industrial park. DOE Office of Clean Energy Demonstrations awarded a $500M grant (2025); Oklahoma committed ~$255M in direct funding/TIF.",
       "fiber_notes": null,
       "price": null,
-      "status": "Actively marketed by Tulsa Ports; major recent tenant win (EGA smelter, announced May 2025) validates power capacity and demand at the site \u2014 worth tracking for spillover/adjacent-parcel deals. Source pages (tulsaports.com, rogerscountydevelopment.com) returned 403 to automated fetch; figures corroborated across multiple secondary sources (Railway Age, Area Development) \u2014 recommend direct verification before outreach.",
+      "status": "Actively marketed by Tulsa Ports; major recent tenant win (EGA/Century smelter) validates power capacity and demand at the site \u2014 worth tracking for spillover/adjacent-parcel deals. UPDATE 2026-08-23: project under active legal/regulatory threat \u2014 OK AG Gentner Drummond filed a federal lawsuit and (Aug 11, 2026) a motion for preliminary injunction in the US District Court for the Northern District of Oklahoma seeking to block construction, citing CO/NOx/particulate/fluoride emissions concerns; filed ahead of the Town of Inola's construction moratorium expiring Aug 28, 2026; no ruling reported yet as of this update \u2014 material risk to reconfirm before any outreach. Source pages (tulsaports.com, rogerscountydevelopment.com) returned 403 to automated fetch; figures corroborated across multiple independent secondary sources (Railway Age, Area Development, DOE, Oklahoma Voice, Manufacturing Dive, KOSU, Century Aluminum) \u2014 recommend direct verification before outreach.",
       "broker": null,
-      "source": "https://tulsaports.com/locate-here/tulsa-port-of-inola/ ; https://www.railwayage.com/freight/class-i/ega-to-build-production-facility-at-tulsa-port-of-inola/ ; https://www.areadevelopment.com/manufacturing-industrial/q2-2026/betting-on-the-hub-how-oklahoma-landed-americas-first-new-aluminum-smelter-in-45-years-and-why-the-investment-structure-is-the-real-story.shtml",
+      "source": "https://tulsaports.com/locate-here/tulsa-port-of-inola/ ; https://www.railwayage.com/freight/class-i/ega-to-build-production-facility-at-tulsa-port-of-inola/ ; https://www.areadevelopment.com/manufacturing-industrial/q2-2026/betting-on-the-hub-how-oklahoma-landed-americas-first-new-aluminum-smelter-in-45-years-and-why-the-investment-structure-is-the-real-story.shtml ; https://www.energy.gov/articles/energy-department-awardee-build-first-american-aluminum-smelter-1980 ; https://oklahomavoice.com/2026/08/11/ag-asks-federal-court-to-halt-construction-of-oklahoma-aluminum-smelter/ ; https://centuryaluminum.com/locations/inola-ok/",
       "state": "OK"
     },
     {
@@ -3553,6 +3553,25 @@
       "status": "Acquisition closed May 2025; Mesa Planning & Zoning Commission recommended approval for the expanded plan in 2026 (exact hearing date varies by source, reconfirm); construction phasing not fully disclosed in sources reviewed.",
       "broker": null,
       "source": "https://www.datacenterdynamics.com/en/news/edgecore-expands-mesa-data-center-campus-in-arizona/ ; https://azbex.com/local-news/edgecore-44-acre-mesa-land-buy-sets-up-massive-expansion/ ; https://therealdeal.com/national/phoenix/2026/03/17/mesa-officials-greenlight-smaller-edgecore-data-center/",
+      "state": "AZ"
+    },
+    {
+      "id": "cholla-power-plant-josephcity-az",
+      "kind": "industrial",
+      "name": "Cholla Power Plant (retired coal-fired station)",
+      "county": "Navajo",
+      "city": "Joseph City",
+      "lat": 34.9463,
+      "lon": -110.3352,
+      "precision": "city",
+      "acres": 1100,
+      "power_mw": 1027,
+      "power_notes": "Former 1,027MW coal-fired generating station (Units 2 & 4 retired 2015/2020; Units 1 & 3 retired 2025, ending all generation as of March 2025) on 1,100 acres, ~0.5 mi from the Little Colorado River. Massive existing asset stack: on-site 500kV switchyard, two 345kV lines to Pinnacle Peak plus a 500kV line to Saguaro. Owned by Arizona Public Service (APS) with minority stakes historically held by Salt River Project (SRP)/UniSource Energy (TEP); some sourcing instead cites a PacifiCorp co-ownership — unresolved discrepancy, reconfirm before outreach. IMPORTANT CAVEAT: APS announced (Jul 2, 2026) plans to repower the site itself as a ~380MW natural-gas plant by 2029, reusing the existing transmission — this is APS's own retained redevelopment, not third-party marketed land, so near-term third-party site control is unlikely; flagging as a market signal / potential future behind-the-meter co-location opportunity once the gas conversion is built and if APS pursues a data-center offtake partnership (as other utilities in this dataset have).",
+      "fiber_notes": null,
+      "price": null,
+      "status": "Fully retired (last unit shut down Mar 2025); APS gas-repowering plan announced Jul 2 2026, subject to state permitting/planning approval — not yet under construction. No public sale or third-party site-control process identified; watch for APS partnership/offtake announcements or a future site divestiture.",
+      "broker": null,
+      "source": "https://www.aps.com/en/About/Our-Company/Newsroom/Articles/From-Legacy-to-Future-APS-Plans-to-Convert-Cholla-Power-Plant-to-Natural-Gas ; https://www.power-eng.com/gas/retired-arizona-coal-plant-to-be-converted-to-natural-gas-generation/ ; https://www.tribunenewsnow.com/articles/featured-stories/cholla-ends-power-generation-after-more-than-six-decades/ ; https://en.wikipedia.org/wiki/Cholla_Power_Plant",
       "state": "AZ"
     }
   ]
