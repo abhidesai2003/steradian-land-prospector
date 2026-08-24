@@ -1,5 +1,5 @@
 {
-  "compiled": "2026-08-23",
+  "compiled": "2026-08-24",
   "note": "Publicly marketed powered-land listings and market signals compiled from broker pages, press releases, and news coverage. Coordinates are approximate (city/county-level) unless precision says 'exact'. Prices shown only where publicly stated.",
   "sites": [
     {
@@ -3573,6 +3573,25 @@
       "broker": null,
       "source": "https://www.aps.com/en/About/Our-Company/Newsroom/Articles/From-Legacy-to-Future-APS-Plans-to-Convert-Cholla-Power-Plant-to-Natural-Gas ; https://www.power-eng.com/gas/retired-arizona-coal-plant-to-be-converted-to-natural-gas-generation/ ; https://www.tribunenewsnow.com/articles/featured-stories/cholla-ends-power-generation-after-more-than-six-decades/ ; https://en.wikipedia.org/wiki/Cholla_Power_Plant",
       "state": "AZ"
+    },
+    {
+      "id": "milan-industrial-park-cibola-nm",
+      "kind": "listing",
+      "name": "Milan Industrial Park",
+      "county": "Cibola",
+      "city": "Milan",
+      "lat": 35.1706,
+      "lon": -107.8918,
+      "precision": "city",
+      "acres": 493,
+      "power_mw": null,
+      "power_notes": "±493 acres publicly owned with 180 contiguous developable acres per the NM Economic Development Department's own Strategic Site Readiness Program listing (a separate NWNMCOG master-plan document cites 912.93 acres total for the full build-out envelope, and a distinct related holding, the 800-acre \"Milan Farm,\" is described elsewhere with water rights and a future rail-spur master plan — three different acreage figures across sources, unresolved, reconfirm before outreach). Continental Divide Electric Cooperative (CDEC, a Tri-State G&T member) serves Grants/San Rafael/parts of Milan; CDEC's own site describes a completed substation upgrade in the area (replacing a 1950s-era substation) that added reliability and \"additional capacity for future load growth\" — not site-specific MW, and no on-site gas tap or pipeline extension to this park was found (contrast with New Mexico Gas Co.'s confirmed 2025 pipeline extension to the San Juan County Industrial Park, a different NM site).",
+      "fiber_notes": null,
+      "price": null,
+      "status": "One of the first sites designated a Strategic Economic Development Site under NM's new Site Readiness Program (SB169); environmental due diligence complete. US EDA awarded a $2.7M grant (via Sen. Lujan's office) to the Village of Milan for roadway infrastructure improvements at the park. Rail-served (BNSF), I-40 adjacent, Qualified Opportunity Zone. Local reporting (Cibola Citizen) states the Village hopes to have the park fully tenanted within five years.",
+      "broker": "Northwest New Mexico Council of Governments (NWNMCOG) / NM Economic Development Dept. Strategic Site Readiness Program",
+      "source": "https://www.edd.newmexico.gov/programs-and-services/strategic-site-readiness-program-public-notice/ ; https://www.nwnmcog.org/milan-industrial-park.html ; https://www.lujan.senate.gov/?p=73382 ; https://www.cibolacitizen.com/news/milan-industrial-park-update",
+      "state": "NM"
     }
   ]
 }

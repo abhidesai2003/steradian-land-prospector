@@ -613,6 +613,17 @@
       "phone": "662-423-9933",
       "status": "needs-email",
       "notes": "TVA-served Yellow Creek Port (~1,100ac state inland port) + Tri-State Commerce Park (~3,500ac former Yellow Creek TVA nuclear/NASA megasite) on a Pickwick Lake peninsula, Iuka MS; barge/rail/all-utilities. Play 4. Added 2026-08-20. WebFetch is EGRESS_BLOCKED network-wide this session (confirmed against control domains), so tishomingo.org could not be fetched. WebSearch surfaces Gary@Tishomingo.org for the Executive Director, but the only citation is a ZoomInfo entry that displays it masked (g***@tishomingo.org) with the AI summary pattern-completing his first name -- same masked-ZoomInfo risk rejected elsewhere in this ledger, so NOT recorded. Alt site contact: John Kain, Director of Iuka Site Operations, 662-423-7700. Follow up by phone or confirm the address directly on tishomingo.org's own contact page once fetch is available. Re-checked 2026-08-20: WebFetch still EGRESS_BLOCKED network-wide. WebSearch again returns only the masked ZoomInfo entry (g***@tishomingo.org) as the sourced citation, with the plain address appearing only in an AI-summary pattern-completion -- not recorded."
+    },
+    {
+      "site_id": "milan-industrial-park-cibola-nm",
+      "org": "NM Economic Development Department (Strategic Site Readiness Program) — Northwest NM regional contact",
+      "to_name": "Rebecca Hansana",
+      "to": "Rebecca.Hansana@edd.nm.gov",
+      "phone": "505-487-0844",
+      "status": "new",
+      "drafted_at": null,
+      "subject": null,
+      "notes": "±493ac (180ac contiguous developable) publicly-owned, rail-served Strategic Site Readiness Program site in Milan, Cibola County NM. Address confirmed directly on the NM EDD's own contact-us page (edd.newmexico.gov/contact-us/) as the department's Northwest New Mexico regional representative -- a primary government source, not a masked ZoomInfo/RocketReach entry. NWNMCOG (which locally administers the park) has a general office line (505-722-4327, Gallup) but no staff email surfaced beyond a masked ZoomInfo entry for Executive Director Jeffrey Kiely -- not recorded. Play 3 (state EDC site-selection portal). Added 2026-08-24."
     }
   ]
 }
