@@ -624,6 +624,17 @@
       "drafted_at": "2026-08-24",
       "subject": "Inquiry: Milan Industrial Park, Cibola County — powered-land interest",
       "notes": "±493ac (180ac contiguous developable) publicly-owned, rail-served Strategic Site Readiness Program site in Milan, Cibola County NM. Address confirmed directly on the NM EDD's own contact-us page (edd.newmexico.gov/contact-us/) as the department's Northwest New Mexico regional representative -- a primary government source, not a masked ZoomInfo/RocketReach entry. NWNMCOG (which locally administers the park) has a general office line (505-722-4327, Gallup) but no staff email surfaced beyond a masked ZoomInfo entry for Executive Director Jeffrey Kiely -- not recorded. Play 3 (state EDC site-selection portal). Added 2026-08-24. Drafted 2026-08-24 citing the 493ac/180ac-developable footprint, BNSF rail + I-40 access, Qualified Opportunity Zone/Site Readiness Program designation, and the CDEC substation upgrade."
+    },
+    {
+      "site_id": "moore-site-webster-la",
+      "org": "North Louisiana Economic Partnership (NLEP)",
+      "to_name": null,
+      "to": "info@nlep.org",
+      "phone": null,
+      "status": "new",
+      "drafted_at": null,
+      "subject": null,
+      "notes": "84ac LED-certified I-20/US-80 site in Webster Parish, newly certified Aug 11 2026 with Entergy Louisiana participating in the certification review. Play 3. Added 2026-08-25. info@nlep.org confirmed on nlep.org's own domain (job-posting page listing it as the org's general inbox); no named staff contact found via WebFetch (EGRESS_BLOCKED network-wide this session) — WebSearch surfaced individual staff addresses (smartinez@nlep.org, awhite@nlep.org etc.) only via a third-party aggregator (LeadIQ), not confirmed on nlep.org itself, so not recorded per the masked/aggregator-address exclusion rule. Use the general inbox; reconfirm a named contact once WebFetch is available."
     }
   ]
 }

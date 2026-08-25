@@ -1,5 +1,5 @@
 {
-  "compiled": "2026-08-24",
+  "compiled": "2026-08-25",
   "note": "Publicly marketed powered-land listings and market signals compiled from broker pages, press releases, and news coverage. Coordinates are approximate (city/county-level) unless precision says 'exact'. Prices shown only where publicly stated.",
   "sites": [
     {
@@ -3592,6 +3592,44 @@
       "broker": "Northwest New Mexico Council of Governments (NWNMCOG) / NM Economic Development Dept. Strategic Site Readiness Program",
       "source": "https://www.edd.newmexico.gov/programs-and-services/strategic-site-readiness-program-public-notice/ ; https://www.nwnmcog.org/milan-industrial-park.html ; https://www.lujan.senate.gov/?p=73382 ; https://www.cibolacitizen.com/news/milan-industrial-park-update",
       "state": "NM"
+    },
+    {
+      "id": "moore-site-webster-la",
+      "kind": "listing",
+      "name": "Moore Site (I-20/US-80 Certified Industrial Site)",
+      "county": "Webster",
+      "city": "Webster Parish (I-20 & US-80 corridor)",
+      "lat": 32.7716,
+      "lon": -93.3235,
+      "precision": "county",
+      "acres": 84,
+      "power_mw": null,
+      "power_notes": "Entergy Louisiana participated directly in the LED certification review alongside NLEP and the Webster Parish Police Jury; no site-specific substation voltage, gas-tap, or MW figure published in sources reviewed — follow up directly with NLEP/Entergy before outreach.",
+      "fiber_notes": null,
+      "price": null,
+      "status": "Newly designated a Louisiana Economic Development (LED) Certified Industrial Site as of Aug 11, 2026; 84 contiguous acres with frontage on I-20 (north) and US-80 (south); site owned by Roy Moore of ELM Family Investments, LLC.",
+      "broker": "North Louisiana Economic Partnership (NLEP), info@nlep.org",
+      "source": "https://nlep.org/moore-site-earns-louisiana-economic-development-certified-industrial-site-designation-expanding-development-ready-industrial-opportunities-in-north-louisiana/ ; https://www.kedm.org/louisiana-news/2026-08-11/north-louisiana-site-now-led-certified ; https://bizmagsb.com/webster-parish-industrial-site-earns-led-certification/",
+      "state": "LA"
+    },
+    {
+      "id": "aligned-caprock-halecounty-tx",
+      "kind": "signal",
+      "name": "Aligned — Project Caprock (Hale County, 313 ac, 540MW)",
+      "county": "Hale",
+      "city": "Abernathy",
+      "lat": 33.8329,
+      "lon": -101.8407,
+      "precision": "city",
+      "acres": 313,
+      "power_mw": 540,
+      "power_notes": "Aligned is building and funding dedicated electrical infrastructure for the campus in partnership with Xcel Energy (SPP footprint); no specific substation voltage or gas-pipeline detail published in sources reviewed. Six planned facilities totaling 1.65M sq ft at full build-out; first building (LBB-01) targeted for service Q1 2027.",
+      "fiber_notes": null,
+      "price": null,
+      "status": "Groundbreaking announced Apr 9, 2026; ~$5B projected regional economic impact; distinct from the existing 8888CRE-marketed \"panhandle-5000\" listing (different developer/site, same general Hale County/Lubbock-area corridor).",
+      "broker": null,
+      "source": "https://aligneddc.com/press-release/aligned-breaks-ground-on-project-caprock/ ; https://www.datacenterdynamics.com/en/news/aligned-breaks-ground-on-540mw-data-center-campus-in-texas/ ; https://thejobwalk.com/p/aligned-data-centers-breaks-ground-on-540-mw-campus-in-hale-county-texas",
+      "state": "TX"
     }
   ]
 }
