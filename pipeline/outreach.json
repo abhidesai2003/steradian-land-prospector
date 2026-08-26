@@ -639,6 +639,24 @@
       "drafted_at": "2026-08-25",
       "subject": "Inquiry: Moore Site, Webster Parish (I-20/US-80) — powered-land interest",
       "notes": "84ac LED-certified I-20/US-80 site in Webster Parish, newly certified Aug 11 2026 with Entergy Louisiana participating in the certification review. Play 3. Added 2026-08-25. info@nlep.org confirmed on nlep.org's own domain (job-posting page listing it as the org's general inbox); no named staff contact found via WebFetch (EGRESS_BLOCKED network-wide this session) — WebSearch surfaced individual staff addresses (smartinez@nlep.org, awhite@nlep.org etc.) only via a third-party aggregator (LeadIQ), not confirmed on nlep.org itself, so not recorded per the masked/aggregator-address exclusion rule. Use the general inbox; reconfirm a named contact once WebFetch is available. Drafted 2026-08-25 citing the 84ac dual I-20/US-80 frontage and Entergy Louisiana's participation in the certification review."
+    },
+    {
+      "site_id": "littlerock-port-megasite-ar",
+      "org": "Little Rock Port Authority",
+      "to_name": "Bryan Day, Executive Director",
+      "to": "bryan.day@portoflittlerock.com",
+      "phone": "501-490-1468",
+      "status": "new",
+      "notes": "875ac Entergy Arkansas 'Select Site'-certified megasite (Mar 2025 certification; Entergy building a substation on the NW corner); expandable to 1,000+ac; on market ~1 year per Jan 2026 Arkansas Democrat-Gazette reporting. AR's first Play 1/3 (utility-certified megasite) entry. Email confirmed via WebSearch synthesis of the Port's own contact page (WebFetch EGRESS_BLOCKED network-wide this session, consistent with prior sessions) — recommend a human spot-check before send. Added 2026-08-26."
+    },
+    {
+      "site_id": "fairoaks-innovationpark-tulsa-ok",
+      "org": "PartnerTulsa",
+      "to_name": "Jonathan Sanders Sr., Economic Development Manager",
+      "to": "JonathanS@partnertulsa.org",
+      "phone": "918-237-0925",
+      "status": "new",
+      "notes": "2,000ac master-planned Tulsa industrial park with three available megasite parcels (542ac AEP-PSO dual-redundant power, 500ac, 104ac); Meta's separate $1B data center already anchors the park. Play 1/3. Email confirmed via WebSearch synthesis of partnertulsa.org (WebFetch EGRESS_BLOCKED network-wide this session) — recommend a human spot-check before send. Added 2026-08-26."
     }
   ]
 }
