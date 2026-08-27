@@ -663,6 +663,33 @@
       "drafted_at": "2026-08-26",
       "subject": "Inquiry: Fair Oaks Innovation Park, Tulsa — 542-acre powered-land interest",
       "notes": "2,000ac master-planned Tulsa industrial park with three available megasite parcels (542ac AEP-PSO dual-redundant power, 500ac, 104ac); Meta's separate $1B data center already anchors the park. Play 1/3. Email confirmed via WebSearch synthesis of partnertulsa.org (WebFetch EGRESS_BLOCKED network-wide this session) — recommend a human spot-check before send. Added 2026-08-26. Drafted 2026-08-26 citing the 542ac parcel's AEP-PSO dual-redundant power commitment and the Meta anchor tenant precedent in the park."
+    },
+    {
+      "site_id": "avoyelles-parish-port-la",
+      "org": "Avoyelles Parish Port Commission",
+      "to_name": null,
+      "to": "portofavoyelles@gmail.com",
+      "phone": "318-253-5544",
+      "status": "new",
+      "notes": "890ac river port site at Simmesport LA (Red/Mississippi/Atchafalaya confluence area). Email sourced from a Louisiana state Boards & Commissions meeting-notice PDF (wwwcfprd.doa.louisiana.gov, a government-hosted primary source) consistently paired with the Commission's official mailing address/phone across multiple independent citations -- same evidentiary class as the already-accepted lakeprovidence-port-la precedent (a personal-style address published on an official government directory). No named current director confirmed (Obie Ryland surfaces as a past/associated contact name but not clearly confirmed current) -- to_name left null. Play 4. Added 2026-08-27; WebFetch of portofavoyelles.com/contact and lacentralsites.com both EGRESS_BLOCKED this session -- a human should spot-check the official site before send."
+    },
+    {
+      "site_id": "stjohn-intermodal-wallace-la",
+      "org": "Beau Box Commercial Real Estate",
+      "to_name": "Marshall A. Rice, Commercial Broker",
+      "to": "mrice@beaubox.com",
+      "phone": null,
+      "status": "new",
+      "notes": "1,250ac Mississippi deep-draft megasite (11,000 LF river frontage), West Bank near Wallace, St. John the Baptist Parish. Regional Louisiana/Gulf South brokerage (Beau Box), not a national DC team -- Play 3/4 fit. Email surfaced via WebSearch as the listing broker's published address on beaubox.com/louisianasiteselection.com; WebFetch of both domains EGRESS_BLOCKED this session so not independently re-verified by direct fetch -- recommend a human spot-check before send. Note: this stretch of the St. John Parish West Bank has a documented history of organized community/historic-preservation opposition to prior large industrial proposals nearby -- worth factoring into diligence, not just outreach. Added 2026-08-27."
+    },
+    {
+      "site_id": "stcharles-intermodal-killona-la",
+      "org": "CBRE",
+      "to_name": "Bryce French, SVP",
+      "to": "bryce.french@cbre.com",
+      "phone": "504-427-2090",
+      "status": "new",
+      "notes": "1,165ac deepwater megasite (±3,601 LF Mississippi riverfront), Killona, St. Charles Parish; Entergy electric + natural gas on-site, adjacent to Air Products' Gulf Coast hydrogen pipeline system, ~2.5mi from Entergy's 980MW St. Charles gas CCGT plant. Strong Play 1 gas/pipeline signal. Email confirmed directly on CBRE's own site (cbre.com/people/bryce-french) via WebSearch -- CBRE's own domain, not a third-party aggregator. Added 2026-08-27."
     }
   ]
 }

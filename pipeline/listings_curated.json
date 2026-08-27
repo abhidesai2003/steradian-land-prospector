@@ -1,5 +1,5 @@
 {
-  "compiled": "2026-08-26",
+  "compiled": "2026-08-27",
   "note": "Publicly marketed powered-land listings and market signals compiled from broker pages, press releases, and news coverage. Coordinates are approximate (city/county-level) unless precision says 'exact'. Prices shown only where publicly stated.",
   "sites": [
     {
@@ -3706,6 +3706,63 @@
       "broker": "Frontier Group of Companies (site marketer/owner); Lone Star Industrial Park, LLC (named ERCOT interconnection applicant)",
       "source": "https://www.interconnection.fyi/project/ercot-27inr0324 ; https://frontier-companies.com/lone-star-industrial-park/ ; https://www.easttexasjournal.net/2025/08/15/war-time-plant-that-changed-the-world-idled-at-lone-star-steel/",
       "state": "TX"
+    },
+    {
+      "id": "avoyelles-parish-port-la",
+      "kind": "listing",
+      "name": "Avoyelles Parish Port — 890-Acre Industrial Site",
+      "county": "Avoyelles",
+      "city": "Simmesport",
+      "lat": 30.9977,
+      "lon": -91.8018,
+      "precision": "city",
+      "acres": 890,
+      "power_mw": null,
+      "power_notes": "Site-selection listing describes 'scalable utilities' available; no substation voltage, MW capacity, or gas-tap size published — flag for direct follow-up. Located at the Port of Avoyelles on the Atchafalaya River, ~10mi south of the confluence of the Red, Mississippi, and Atchafalaya rivers.",
+      "fiber_notes": null,
+      "price": "Contact port (not publicly posted)",
+      "status": "Active listing on the Louisiana LED site-selection database; max/min divisible both listed as the full 890ac (single large parcel). A separate, smaller ~195-ac tract at the same port is also independently listed on the same platform (Property/Detail/4201).",
+      "broker": "Avoyelles Parish Port Commission",
+      "source": "https://louisianasiteselection.com/LED/Property/Detail/21671/Avoyelles-Parish-Port-890-Acres ; https://lacentralsites.com/industrial-site/avoyelles-parish-port-industrial-site",
+      "state": "LA"
+    },
+    {
+      "id": "stjohn-intermodal-wallace-la",
+      "kind": "listing",
+      "name": "St. John Intermodal (1,250-Acre Mississippi Deep-Draft Megasite)",
+      "county": "St. John the Baptist",
+      "city": "Wallace",
+      "lat": 29.9508,
+      "lon": -90.6373,
+      "precision": "city",
+      "acres": 1250,
+      "power_mw": null,
+      "power_notes": "No substation voltage, MW capacity, or gas-tap size published yet — flag for direct follow-up. Sits within Louisiana's dense river-industrial corridor between Baton Rouge and New Orleans; zoned I-3 Heavy Industrial.",
+      "fiber_notes": null,
+      "price": null,
+      "status": "Active listing; ~11,000 LF Mississippi River frontage (3,000ft deep draft, 8,000ft barge depth, 8 mooring dolphins); Union Pacific Class I rail access; 7mi to I-10, 28mi to Baton Rouge, 30mi to New Orleans. Site sits on the historically significant West Bank near Wallace, where prior large industrial proposals in this same stretch have drawn organized community/preservation opposition — flag for site-specific diligence before outreach.",
+      "broker": "Beau Box Commercial Real Estate — Marshall A. Rice",
+      "source": "https://louisianasiteselection.com/led/Property/Detail/23477/St-John-Intermodal-1250-acre-Mississippi-River-Deep-Draft-In",
+      "state": "LA"
+    },
+    {
+      "id": "stcharles-intermodal-killona-la",
+      "kind": "listing",
+      "name": "St. Charles Intermodal (1,165-Acre Deepwater Megasite)",
+      "county": "St. Charles",
+      "city": "Killona",
+      "lat": 29.9877,
+      "lon": -90.3999,
+      "precision": "city",
+      "acres": 1165,
+      "power_mw": null,
+      "power_notes": "Entergy provides electric service on-site; natural gas and sewer also listed as available. Site has access to Air Products' Gulf Coast System, the world's largest hydrogen pipeline network — strong gas/behind-the-meter infrastructure signal. ~2.5mi from Entergy's St. Charles Power Station, a 980MW gas-fired CCGT plant that entered service 2023 — notable nearby grid-capacity signal. No specific substation voltage or MW allocation published for this tract itself.",
+      "fiber_notes": "Telecommunications listed as available; no specific fiber provider named.",
+      "price": null,
+      "status": "Active listing; ±3,601 LF Mississippi riverfront, deep-draft capable; within the Louisiana Energy Corridor.",
+      "broker": "CBRE — Bryce French, SVP",
+      "source": "https://www.cbre.com/properties/properties-for-lease/land/details/US-SMPL-182836/st-charles-intermodal-la-18-killona-la-70057 ; https://buildingsandsites.com/gnoinc/Property/Detail/23075/St-Charles-Intermodal-1165-Acres-Greenfield-Site-with-Deepwa",
+      "state": "LA"
     }
   ]
 }
