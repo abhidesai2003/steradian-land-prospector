@@ -1,5 +1,5 @@
 {
-  "compiled": "2026-08-27",
+  "compiled": "2026-08-28",
   "note": "Publicly marketed powered-land listings and market signals compiled from broker pages, press releases, and news coverage. Coordinates are approximate (city/county-level) unless precision says 'exact'. Prices shown only where publicly stated.",
   "sites": [
     {
@@ -3763,6 +3763,25 @@
       "broker": "CBRE — Bryce French, SVP",
       "source": "https://www.cbre.com/properties/properties-for-lease/land/details/US-SMPL-182836/st-charles-intermodal-la-18-killona-la-70057 ; https://buildingsandsites.com/gnoinc/Property/Detail/23075/St-Charles-Intermodal-1165-Acres-Greenfield-Site-with-Deepwa",
       "state": "LA"
+    },
+    {
+      "id": "whldallas-projectorange-labrador-lancaster-tx",
+      "kind": "signal",
+      "name": "Project Orange & Project Labrador (WHL Dallas 45 Dual-Site Campus)",
+      "county": "Dallas",
+      "city": "Lancaster",
+      "lat": 32.5921,
+      "lon": -96.7561,
+      "precision": "city",
+      "acres": 535,
+      "power_mw": null,
+      "power_notes": "WHL Dallas 45 LLC filed to develop two adjacent hyperscale sites in Lancaster: Project Orange (116ac, 201 Sunrise Road) — seven 36MW buildings, 252MW total (confirmed for this parcel); Project Labrador (419ac, 1401 Greene Road) — five two-story buildings plus four substations, ~1.07M sq ft technical space, no site-specific MW disclosed. Combined coverage describes 13 buildings, 2.5M+ sq ft and 'several hundred megawatts' in aggregate — do not read as a confirmed combined MW figure. Part of the broader Lancaster/south-Dallas DC cluster alongside Yondr, Skybox, QTS and STACK builds already in the area.",
+      "fiber_notes": null,
+      "price": null,
+      "status": "Filed/proposed; Lancaster City Council approved related zoning changes; go-live targeted by 2030",
+      "broker": null,
+      "source": "https://www.datacenterdynamics.com/en/news/large-data-center-campus-proposed-in-lancaster-area-of-dallas-texas/ ; https://dallasexpress.com/realestate/project-orange-and-project-labrador-north-texas-next-big-data-center-boom/",
+      "state": "TX"
     }
   ]
 }
