@@ -1,5 +1,5 @@
 {
-  "compiled": "2026-08-28",
+  "compiled": "2026-08-29",
   "note": "Publicly marketed powered-land listings and market signals compiled from broker pages, press releases, and news coverage. Coordinates are approximate (city/county-level) unless precision says 'exact'. Prices shown only where publicly stated.",
   "sites": [
     {
@@ -3710,7 +3710,7 @@
     {
       "id": "avoyelles-parish-port-la",
       "kind": "listing",
-      "name": "Avoyelles Parish Port — 890-Acre Industrial Site",
+      "name": "Avoyelles Parish Port \u2014 890-Acre Industrial Site",
       "county": "Avoyelles",
       "city": "Simmesport",
       "lat": 30.9977,
@@ -3718,7 +3718,7 @@
       "precision": "city",
       "acres": 890,
       "power_mw": null,
-      "power_notes": "Site-selection listing describes 'scalable utilities' available; no substation voltage, MW capacity, or gas-tap size published — flag for direct follow-up. Located at the Port of Avoyelles on the Atchafalaya River, ~10mi south of the confluence of the Red, Mississippi, and Atchafalaya rivers.",
+      "power_notes": "Site-selection listing describes 'scalable utilities' available; no substation voltage, MW capacity, or gas-tap size published \u2014 flag for direct follow-up. Located at the Port of Avoyelles on the Atchafalaya River, ~10mi south of the confluence of the Red, Mississippi, and Atchafalaya rivers.",
       "fiber_notes": null,
       "price": "Contact port (not publicly posted)",
       "status": "Active listing on the Louisiana LED site-selection database; max/min divisible both listed as the full 890ac (single large parcel). A separate, smaller ~195-ac tract at the same port is also independently listed on the same platform (Property/Detail/4201).",
@@ -3737,11 +3737,11 @@
       "precision": "city",
       "acres": 1250,
       "power_mw": null,
-      "power_notes": "No substation voltage, MW capacity, or gas-tap size published yet — flag for direct follow-up. Sits within Louisiana's dense river-industrial corridor between Baton Rouge and New Orleans; zoned I-3 Heavy Industrial.",
+      "power_notes": "No substation voltage, MW capacity, or gas-tap size published yet \u2014 flag for direct follow-up. Sits within Louisiana's dense river-industrial corridor between Baton Rouge and New Orleans; zoned I-3 Heavy Industrial.",
       "fiber_notes": null,
       "price": null,
-      "status": "Active listing; ~11,000 LF Mississippi River frontage (3,000ft deep draft, 8,000ft barge depth, 8 mooring dolphins); Union Pacific Class I rail access; 7mi to I-10, 28mi to Baton Rouge, 30mi to New Orleans. Site sits on the historically significant West Bank near Wallace, where prior large industrial proposals in this same stretch have drawn organized community/preservation opposition — flag for site-specific diligence before outreach.",
-      "broker": "Beau Box Commercial Real Estate — Marshall A. Rice",
+      "status": "Active listing; ~11,000 LF Mississippi River frontage (3,000ft deep draft, 8,000ft barge depth, 8 mooring dolphins); Union Pacific Class I rail access; 7mi to I-10, 28mi to Baton Rouge, 30mi to New Orleans. Site sits on the historically significant West Bank near Wallace, where prior large industrial proposals in this same stretch have drawn organized community/preservation opposition \u2014 flag for site-specific diligence before outreach.",
+      "broker": "Beau Box Commercial Real Estate \u2014 Marshall A. Rice",
       "source": "https://louisianasiteselection.com/led/Property/Detail/23477/St-John-Intermodal-1250-acre-Mississippi-River-Deep-Draft-In",
       "state": "LA"
     },
@@ -3756,11 +3756,11 @@
       "precision": "city",
       "acres": 1165,
       "power_mw": null,
-      "power_notes": "Entergy provides electric service on-site; natural gas and sewer also listed as available. Site has access to Air Products' Gulf Coast System, the world's largest hydrogen pipeline network — strong gas/behind-the-meter infrastructure signal. ~2.5mi from Entergy's St. Charles Power Station, a 980MW gas-fired CCGT plant that entered service 2023 — notable nearby grid-capacity signal. No specific substation voltage or MW allocation published for this tract itself.",
+      "power_notes": "Entergy provides electric service on-site; natural gas and sewer also listed as available. Site has access to Air Products' Gulf Coast System, the world's largest hydrogen pipeline network \u2014 strong gas/behind-the-meter infrastructure signal. ~2.5mi from Entergy's St. Charles Power Station, a 980MW gas-fired CCGT plant that entered service 2023 \u2014 notable nearby grid-capacity signal. No specific substation voltage or MW allocation published for this tract itself.",
       "fiber_notes": "Telecommunications listed as available; no specific fiber provider named.",
       "price": null,
-      "status": "Active listing; ±3,601 LF Mississippi riverfront, deep-draft capable; within the Louisiana Energy Corridor.",
-      "broker": "CBRE — Bryce French, SVP",
+      "status": "Active listing; \u00b13,601 LF Mississippi riverfront, deep-draft capable; within the Louisiana Energy Corridor.",
+      "broker": "CBRE \u2014 Bryce French, SVP",
       "source": "https://www.cbre.com/properties/properties-for-lease/land/details/US-SMPL-182836/st-charles-intermodal-la-18-killona-la-70057 ; https://buildingsandsites.com/gnoinc/Property/Detail/23075/St-Charles-Intermodal-1165-Acres-Greenfield-Site-with-Deepwa",
       "state": "LA"
     },
@@ -3775,13 +3775,32 @@
       "precision": "city",
       "acres": 535,
       "power_mw": null,
-      "power_notes": "WHL Dallas 45 LLC filed to develop two adjacent hyperscale sites in Lancaster: Project Orange (116ac, 201 Sunrise Road) — seven 36MW buildings, 252MW total (confirmed for this parcel); Project Labrador (419ac, 1401 Greene Road) — five two-story buildings plus four substations, ~1.07M sq ft technical space, no site-specific MW disclosed. Combined coverage describes 13 buildings, 2.5M+ sq ft and 'several hundred megawatts' in aggregate — do not read as a confirmed combined MW figure. Part of the broader Lancaster/south-Dallas DC cluster alongside Yondr, Skybox, QTS and STACK builds already in the area.",
+      "power_notes": "WHL Dallas 45 LLC filed to develop two adjacent hyperscale sites in Lancaster: Project Orange (116ac, 201 Sunrise Road) \u2014 seven 36MW buildings, 252MW total (confirmed for this parcel); Project Labrador (419ac, 1401 Greene Road) \u2014 five two-story buildings plus four substations, ~1.07M sq ft technical space, no site-specific MW disclosed. Combined coverage describes 13 buildings, 2.5M+ sq ft and 'several hundred megawatts' in aggregate \u2014 do not read as a confirmed combined MW figure. Part of the broader Lancaster/south-Dallas DC cluster alongside Yondr, Skybox, QTS and STACK builds already in the area.",
       "fiber_notes": null,
       "price": null,
       "status": "Filed/proposed; Lancaster City Council approved related zoning changes; go-live targeted by 2030",
       "broker": null,
       "source": "https://www.datacenterdynamics.com/en/news/large-data-center-campus-proposed-in-lancaster-area-of-dallas-texas/ ; https://dallasexpress.com/realestate/project-orange-and-project-labrador-north-texas-next-big-data-center-boom/",
       "state": "TX"
+    },
+    {
+      "id": "southwest-arkansas-megasite-clarkcounty-ar",
+      "kind": "listing",
+      "name": "Southwest Arkansas Mega Site",
+      "county": "Clark",
+      "city": "Arkadelphia (Gum Springs)",
+      "lat": 34.1209,
+      "lon": -93.0538,
+      "precision": "city",
+      "acres": 991,
+      "power_mw": null,
+      "power_notes": "Certified Feb 2026 as an Entergy Arkansas Select Site and Electric Cooperatives of Arkansas ONSite site (also holds AEDC's Competitive Communities Initiative designation); on-site natural gas transmission lines plus grid power coordinated with utilities per official site materials. July 2025 groundbreaking held at the Richwood Substation in Gum Springs as part of a $2.14M site-development project backed by a $1,013,710 grant from AEDC's inaugural Arkansas Site Development Program; Burns & McDonnell-authored Conceptual Master Plan; major infrastructure upgrades completed 2023; site largely cleared. No site-specific MW figure published.",
+      "fiber_notes": null,
+      "price": "Was under a ~$11.4M sale agreement (991ac) to a data-center developer (\"Project Pulse\", $1B+ planned campus, 150 jobs) approved by the Economic Development Corp. of Clark County in April 2026 \u2014 that agreement was terminated in late April 2026 after the buyer failed to deposit the required $200,000 in earnest money by deadline. No current asking price published.",
+      "status": "Available again \u2014 prior Project Pulse sale agreement terminated April 2026; shovel-ready megasite actively marketed by the Economic Development Corp. of Clark County / Arkadelphia Alliance, <1mi from I-30",
+      "broker": "Arkadelphia Alliance & Area Chamber of Commerce / Economic Development Corp. of Clark County \u2014 Shelley Short, President & CEO",
+      "source": "https://arkadelphiaalliance.com/southwestarkansasmegasite/ ; https://arkansassiteselection.com/aedc/Property/Detail/17222/Southwest-Arkansas-Mega-Site ; https://www.arkansasedc.com/news-events/newsroom/detail/2026/02/27/clark-county-receives-cci--select-site--and-onsite-recognition ; https://arkadelphian.com/2026/04/30/project-pulse-topic-of-special-edccc-meeting-friday-morning/ ; https://www.arkansasonline.com/news/2026/may/03/the-data-centers/",
+      "state": "AR"
     }
   ]
 }
