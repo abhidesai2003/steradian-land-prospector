@@ -1,5 +1,5 @@
 {
-  "compiled": "2026-08-29",
+  "compiled": "2026-08-30",
   "note": "Publicly marketed powered-land listings and market signals compiled from broker pages, press releases, and news coverage. Coordinates are approximate (city/county-level) unless precision says 'exact'. Prices shown only where publicly stated.",
   "sites": [
     {
@@ -3801,6 +3801,25 @@
       "broker": "Arkadelphia Alliance & Area Chamber of Commerce / Economic Development Corp. of Clark County \u2014 Shelley Short, President & CEO",
       "source": "https://arkadelphiaalliance.com/southwestarkansasmegasite/ ; https://arkansassiteselection.com/aedc/Property/Detail/17222/Southwest-Arkansas-Mega-Site ; https://www.arkansasedc.com/news-events/newsroom/detail/2026/02/27/clark-county-receives-cci--select-site--and-onsite-recognition ; https://arkadelphian.com/2026/04/30/project-pulse-topic-of-special-edccc-meeting-friday-morning/ ; https://www.arkansasonline.com/news/2026/may/03/the-data-centers/",
       "state": "AR"
+    },
+    {
+      "id": "vantage-frontier-shackelford-tx",
+      "kind": "signal",
+      "name": "Vantage Data Centers \u2014 \"Frontier\" Campus (Shackelford County)",
+      "county": "Shackelford",
+      "city": "Albany",
+      "lat": 32.7423,
+      "lon": -99.2942,
+      "precision": "city (county-seat centroid; exact parcel not geocoded, site is outside Albany per coverage)",
+      "acres": 1200,
+      "power_mw": 1400,
+      "power_notes": "Fully off-grid, behind-the-meter natural-gas microgrid built and operated by Voltagrid \u2014 hundreds of gas-fired generators/turbines (Siemens, GE and Jenbacher engines cited across coverage) supply the entire campus with no interconnection to the public grid (AEP Texas territory). 10 single-story buildings, 3.7M sq ft at full build-out. Reported end-tenant: Oracle/OpenAI \"Stargate\" workloads. Acreage reported inconsistently across sources: Vantage/most outlets cite ~1,200ac at full build-out; one industry newsletter cites 700ac for the initial phase \u2014 flagging discrepancy, treat acreage as approximate pending a primary-source confirmation.",
+      "fiber_notes": null,
+      "price": null,
+      "status": "Groundbreaking held 2026; first building targeted to enter service H2 2026, full build-out ~2028. This is a direct Vantage/Oracle/OpenAI build-to-suit, not third-party marketed land \u2014 no broker or public contact path.",
+      "broker": null,
+      "source": "https://vantage-dc.com/news/vantage-data-centers-unveils-plans-for-frontier-a-25b-mega-campus-in-texas-to-meet-unprecedented-ai-demand/ ; https://www.datacenterdynamics.com/en/news/vantage-breaks-ground-on-texas-gigawatt-data-center-campus-for-openai/ ; https://baxtel.com/data-center/vantage-shackelford-county-frontier-campus ; https://www.yahoo.com/news/articles/1-200-acre-data-center-001913881.html",
+      "state": "TX"
     }
   ]
 }
